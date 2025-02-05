@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 //首頁
 import HomeView from '@/views/home/HomeView.vue'
@@ -7,7 +7,7 @@ import HomeView from '@/views/home/HomeView.vue'
 import TempView from '@/views/temp/TempView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
