@@ -1,9 +1,15 @@
+@use '../config' as *;
 .menu-icon {
   position: absolute;
   right: 3vw;
   top: 2vw;
   width: 3vw;
   cursor: pointer;
+  @include pad {
+    right: 5%;
+    top: 7%;
+    width: 5vw;
+  }
 }
 
 .menu-main {
@@ -33,6 +39,11 @@
     justify-content: center;
     gap: 9vw;
     margin-top: 6vw;
+    @include pad {
+      margin-top: 12vw;
+      padding-right: 3vw;
+      gap: 5vw;
+    }
     .menu-top-left {
       display: flex;
       align-items: center;
@@ -40,10 +51,17 @@
       flex-direction: column;
       .menu-title-1 {
         width: 13.75vw;
+        margin-left: 1vw;
+        @include pad {
+          width: 18.5vw;
+        }
       }
       .menu-title-2 {
         width: 15.25vw;
         margin-top: 2.5vw;
+        @include pad {
+          width: 20.25vw;
+        }
       }
     }
     .menu-top-right {
@@ -51,6 +69,9 @@
       align-items: flex-start;
       justify-content: center;
       gap: 4vw;
+      @include pad {
+        gap: 3vw;
+      }
       .menu-top-right-item {
         position: relative;
         display: flex;
@@ -64,6 +85,10 @@
           height: 1.25vw;
           width: 1px;
           background-color: white;
+          @include pad {
+            right: -17.5%;
+            height: 1.5vw;
+          }
         }
         h4 {
           font-family: var(--serif);
@@ -71,6 +96,11 @@
           font-size: 1.25vw;
           letter-spacing: 10px;
           color: white;
+          @include pad {
+            font-weight: 600;
+            letter-spacing: 6px;
+            font-size: 1.5vw;
+          }
         }
         h5 {
           font-family: var(--cor);
@@ -79,6 +109,12 @@
           letter-spacing: 2px;
           margin-block: 1.75vw;
           color: #aeffe0;
+          @include pad {
+            font-weight: 600;
+            margin-block: 1.5vw;
+            letter-spacing: 1px;
+            font-size: 1.1vw;
+          }
         }
         .menu-links {
           display: flex;
@@ -91,6 +127,11 @@
             font-size: 1.1vw;
             letter-spacing: 6px;
             color: white;
+            @include pad {
+              font-weight: 400;
+              letter-spacing: 4px;
+              font-size: 1.2vw;
+            }
           }
         }
         &:last-child {
@@ -107,5 +148,10 @@
     top: 2vw;
     width: 2vw;
     cursor: pointer;
+    @include pad {
+      right: 5%;
+      top: 7%;
+      width: 3.5vw;
+    }
   }
 }

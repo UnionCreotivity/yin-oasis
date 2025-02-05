@@ -1,3 +1,4 @@
+@use '../config' as *;
 #home-view {
   position: relative;
   width: 100%;
@@ -15,6 +16,7 @@
     mask-repeat: no-repeat;
     img {
       height: 100%;
+      object-fit: cover;
     }
   }
   .home-view-init {
@@ -28,6 +30,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       cursor: pointer;
+      @include pad {
+        width: 22.5vw;
+      }
     }
   }
   .home-view-main {
@@ -83,10 +88,18 @@
     .home-view-title-1 {
       width: 16.65vw;
       margin-top: 1vw;
+      margin-left: 1vw;
+      @include pad {
+        width: 20vw;
+        margin-top: 5vw;
+      }
     }
     .home-view-title-2 {
       width: 18.5vw;
       margin-top: 2.5vw;
+      @include pad {
+        width: 22.5vw;
+      }
     }
     .home-view-menu {
       display: flex;
@@ -94,6 +107,9 @@
       justify-content: center;
       margin-top: 32vw;
       gap: 3vw;
+      @include pad {
+        margin-top: 37vw;
+      }
       .home-view-menu-item-link {
         display: flex;
         flex-direction: column;
@@ -104,6 +120,11 @@
           font-size: 1.15vw;
           letter-spacing: 10px;
           color: white;
+          @include pad {
+            font-weight: 600;
+            font-size: 1.3vw;
+            letter-spacing: 3px;
+          }
         }
         .home-view-menu-item-en {
           font-family: var(--cor);
@@ -111,6 +132,11 @@
           font-size: 1vw;
           letter-spacing: 3px;
           color: #aeffe0;
+          @include pad {
+            font-weight: 600;
+            font-size: 1.1vw;
+            letter-spacing: 1px;
+          }
         }
       }
     }

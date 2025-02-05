@@ -9,6 +9,18 @@
       </div>
     </FadeIn>
     <div class="home-view-main" v-show="isShow">
+      <div class="home-view-cloud home-view-cloud-1">
+        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
+      </div>
+      <div class="home-view-cloud home-view-cloud-2">
+        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
+      </div>
+      <div class="home-view-cloud home-view-cloud-3">
+        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
+      </div>
+      <div class="home-view-cloud home-view-cloud-4">
+        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
+      </div>
       <div class="home-view-title-1">
         <img src="../../assets/img/home/home-title-1.svg" alt="" />
       </div>
