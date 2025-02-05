@@ -59,31 +59,31 @@ const menuItems = [
     key: 'menu-2',
     zhName: '13期首席',
     enName: 'BEST CHOICE',
-    link: '',
+    link: 'temp',
   },
   {
     key: 'menu-3',
     zhName: '上質生活',
     enName: 'STYLE',
-    link: '',
+    link: 'temp',
   },
   {
     key: 'menu-4',
     zhName: '森粼雅居',
     enName: 'BUILDING',
-    link: '',
+    link: 'temp',
   },
   {
     key: 'menu-5',
     zhName: '智慧精工',
     enName: 'METHOD',
-    link: '',
+    link: 'temp',
   },
   {
     key: 'menu-6',
     zhName: '市場直擊',
     enName: 'LIVE',
-    link: '',
+    link: 'temp',
   },
 ]
 

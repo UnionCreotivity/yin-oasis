@@ -109,6 +109,7 @@
       gap: 3vw;
       @include pad {
         margin-top: 37vw;
+        gap: 3.5vw;
       }
       .home-view-menu-item-link {
         display: flex;
@@ -123,7 +124,7 @@
           @include pad {
             font-weight: 600;
             font-size: 1.3vw;
-            letter-spacing: 3px;
+            letter-spacing: 5px;
           }
         }
         .home-view-menu-item-en {
