@@ -1,0 +1,117 @@
+#home-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .home-view-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    mask-image: url('../../img/home/cloud.png');
+    mask-size: 50%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    img {
+      height: 100%;
+    }
+  }
+  .home-view-init {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .home-view-init-icon {
+      width: 18.5vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+  }
+  .home-view-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .home-view-cloud {
+      position: absolute;
+      top: 0;
+      width: 45vw;
+    }
+    .home-view-cloud-1 {
+      top: -1vw;
+      right: -42vw;
+      animation: right-left 120s linear forwards infinite;
+    }
+    .home-view-cloud-2 {
+      right: -42vw;
+      top: 6vw;
+      animation: right-left-second 120s 30s linear forwards infinite;
+    }
+    .home-view-cloud-3 {
+      top: -1vw;
+      right: -39vw;
+      animation: right-left 120s 60s linear forwards infinite;
+    }
+    .home-view-cloud-4 {
+      top: 6vw;
+      right: -39vw;
+      animation: right-left-second 120s 90s linear forwards infinite;
+    }
+    @keyframes right-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-140vw);
+      }
+    }
+    @keyframes right-left-second {
+      0% {
+        transform: translateX(0) rotateY(180deg);
+      }
+      100% {
+        transform: translateX(-140vw) rotateY(180deg);
+      }
+    }
+    .home-view-title-1 {
+      width: 16.65vw;
+      margin-top: 1vw;
+    }
+    .home-view-title-2 {
+      width: 18.5vw;
+      margin-top: 2.5vw;
+    }
+    .home-view-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32vw;
+      gap: 3vw;
+      .home-view-menu-item-link {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+        .home-view-menu-item-zh {
+          font-family: var(--serif);
+          font-weight: 500;
+          font-size: 1.15vw;
+          letter-spacing: 10px;
+          color: white;
+        }
+        .home-view-menu-item-en {
+          font-family: var(--cor);
+          font-weight: 400;
+          font-size: 1vw;
+          letter-spacing: 3px;
+          color: #aeffe0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.menu-icon {
+  position: absolute;
+  right: 3vw;
+  top: 2vw;
+  width: 3vw;
+  cursor: pointer;
+}
+
+.menu-main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mask-image: linear-gradient(to right, rgba(47, 104, 122, 0) 20%, rgb(0, 0, 0) 50%);
+  mask-size: 500% 100%;
+  mask-position: -260vw;
+  mask-repeat: no-repeat;
+  .menu-main-bg {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    img {
+      height: 100%;
+    }
+  }
+  .menu-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 9vw;
+    margin-top: 6vw;
+    .menu-top-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .menu-title-1 {
+        width: 13.75vw;
+      }
+      .menu-title-2 {
+        width: 15.25vw;
+        margin-top: 2.5vw;
+      }
+    }
+    .menu-top-right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 4vw;
+      .menu-top-right-item {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0.4vw;
+          right: -1.75vw;
+          height: 1.25vw;
+          width: 1px;
+          background-color: white;
+        }
+        h4 {
+          font-family: var(--serif);
+          font-weight: 400;
+          font-size: 1.25vw;
+          letter-spacing: 10px;
+          color: white;
+        }
+        h5 {
+          font-family: var(--cor);
+          font-weight: 400;
+          font-size: 1vw;
+          letter-spacing: 2px;
+          margin-block: 1.75vw;
+          color: #aeffe0;
+        }
+        .menu-links {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 1vw;
+          a {
+            font-family: var(--sans);
+            font-weight: 300;
+            font-size: 1.1vw;
+            letter-spacing: 6px;
+            color: white;
+          }
+        }
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .menu-icon-close {
+    position: absolute;
+    right: 3vw;
+    top: 2vw;
+    width: 2vw;
+    cursor: pointer;
+  }
+}
