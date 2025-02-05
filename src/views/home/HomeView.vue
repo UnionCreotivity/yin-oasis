@@ -1,24 +1,14 @@
 <template>
   <article id="home-view">
     <div class="home-view-bg"><img src="../../assets/img/home/home-bg@2x.webp" alt="" /></div>
-    <div class="home-view-init" v-show="!isShow" @click.stop="showClick">
-      <div class="home-view-init-icon">
-        <img src="../../assets/img/home/home-title-2.svg" alt="" />
+    <FadeIn>
+      <div class="home-view-init" v-show="!isShow" @click.stop="showClick">
+        <div class="home-view-init-icon">
+          <img src="../../assets/img/home/home-title-2.svg" alt="" />
+        </div>
       </div>
-    </div>
+    </FadeIn>
     <div class="home-view-main" v-show="isShow">
-      <!-- <div class="home-view-cloud home-view-cloud-1">
-        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
-      </div>
-      <div class="home-view-cloud home-view-cloud-2">
-        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
-      </div>
-      <div class="home-view-cloud home-view-cloud-3">
-        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
-      </div>
-      <div class="home-view-cloud home-view-cloud-4">
-        <img src="../../assets/img/home/cloud@2x.webp" alt="" />
-      </div> -->
       <div class="home-view-title-1">
         <img src="../../assets/img/home/home-title-1.svg" alt="" />
       </div>
@@ -41,6 +31,7 @@
 import { ref } from 'vue'
 import gsap from 'gsap'
 import screenfull from 'screenfull'
+import FadeIn from '@/components/transition/FadeIn.vue'
 import '@/assets/scss/home/home-view.scss'
 
 const isShow = ref(false)
