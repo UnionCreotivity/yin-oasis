@@ -152,6 +152,15 @@
         display: flex;
         flex-direction: column;
         gap: 0.5vw;
+        p {
+          transition: all 0.5s;
+        }
+        &:hover {
+          p {
+            transform: translateY(-1vw);
+            transition: all 0.5s;
+          }
+        }
         .home-view-menu-item-zh {
           font-family: var(--serif);
           font-weight: 500;
