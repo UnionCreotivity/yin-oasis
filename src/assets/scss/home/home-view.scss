@@ -44,6 +44,43 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    .home-view-bird {
+      position: absolute;
+    }
+    .home-view-bird-1 {
+      top: 42.25%;
+      left: 23.25%;
+      width: 2vw;
+      @include pad {
+        left: 12.5%;
+      }
+    }
+    .home-view-bird-2 {
+      top: 43.25%;
+      left: 14%;
+      width: 10.75vw;
+      @include pad {
+        top: 45%;
+        left: 5%;
+      }
+    }
+    .bird-float {
+      animation: float 3s ease-in-out forwards infinite;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(-10%);
+        @include pad {
+          transform: translateY(-20%);
+        }
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
     .home-view-cloud {
       position: absolute;
       top: 0;

@@ -9,6 +9,12 @@
       </div>
     </FadeIn>
     <div class="home-view-main" v-show="isShow">
+      <div class="home-view-bird home-view-bird-1">
+        <img src="../../assets/img/home/home-bird-1@2x.png" alt="" />
+      </div>
+      <div class="home-view-bird home-view-bird-2" :class="isStart ? 'bird-float' : ''">
+        <img src="../../assets/img/home/home-bird-2@2x.png" alt="" />
+      </div>
       <div class="home-view-cloud home-view-cloud-1">
         <img src="../../assets/img/home/cloud@2x.webp" alt="" />
       </div>
@@ -47,6 +53,8 @@ import FadeIn from '@/components/transition/FadeIn.vue'
 import '@/assets/scss/home/home-view.scss'
 
 const isShow = ref(false)
+
+const isStart = ref(false)
 
 const menuItems = [
   {
@@ -116,21 +124,29 @@ const initGsap = () => {
       },
       '<+0.75',
     )
-  //   tl.from('.home-view-title-1,.home-view-title-2', {
-  //     opacity: 0,
-  //     y: '5vw',
-  //     filter: 'blur(10px)',
-  //     duration: 2,
-  //   }).from(
-  //     '.home-view-menu-item',
-  //     {
-  //       y: '105%',
-  //       opacity: 0,
-  //       stagger: 0.1,
-  //       duration: 1.5,
-  //     },
-  //     '<+0.25',
-  //   )
+    .from(
+      '.home-view-bird-1',
+      {
+        x: '-50%',
+        y: '70%',
+        opacity: 0,
+        duration: 1.5,
+      },
+      '<+0.5',
+    )
+    .from(
+      '.home-view-bird-2',
+      {
+        x: '-50%',
+        y: '70%',
+        opacity: 0,
+        duration: 1,
+        onComplete: () => {
+          isStart.value = true
+        },
+      },
+      '<+0.25',
+    )
 }
 
 const showClick = () => {
