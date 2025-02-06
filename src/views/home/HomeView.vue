@@ -41,6 +41,7 @@
           </router-link>
         </li>
       </ul>
+      <FullScreen />
     </div>
   </article>
 </template>
@@ -50,6 +51,7 @@ import { ref } from 'vue'
 import gsap from 'gsap'
 import screenfull from 'screenfull'
 import FadeIn from '@/components/transition/FadeIn.vue'
+import FullScreen from '@/components/full-screen/FullScreen.vue'
 import '@/assets/scss/home/home-view.scss'
 
 const isShow = ref(false)
@@ -158,4 +160,8 @@ const showClick = () => {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.full-screen {
+  mix-blend-mode: screen;
+}
+</style>
