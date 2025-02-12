@@ -1,0 +1,44 @@
+@use '../config' as *;
+.imgBoxIn {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    @include pad {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.zoom {
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  padding: 0.6vw;
+  margin-bottom: 1vw;
+  position: fixed;
+  left: 72%;
+  bottom: 0%;
+  mix-blend-mode: difference;
+  gap: 1vw;
+  @include pad {
+    left: 71%;
+    bottom: 13%;
+    gap: 2vw;
+  }
+}
+
+.zoom img {
+  width: 2vw;
+  margin: 0.25vw 0;
+  cursor: pointer;
+  @include pad {
+    width: 2.75vw;
+  }
+}

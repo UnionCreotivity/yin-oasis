@@ -17,7 +17,7 @@ const handleClick = () => {
 <style lang="scss" scoped>
 .full-screen {
   position: absolute;
-  right: 2%;
+  right: 3vw;
   bottom: 5%;
   width: 3vw;
   height: 3vw;
@@ -27,6 +27,11 @@ const handleClick = () => {
   z-index: 15;
   img {
     height: 100%;
+  }
+  @media screen and (max-width: 1400px) {
+    width: 5vw;
+    height: 5vw;
+    bottom: 3%;
   }
 }
 </style>

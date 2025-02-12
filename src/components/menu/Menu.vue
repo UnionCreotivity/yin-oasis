@@ -1,6 +1,23 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="menu-icon" @click.stop="showClick(true)">
-    <img src="../../assets/img/other/menu-icon.svg" alt="" />
+  <div class="menu-icon-container" @click.stop="showClick(true)">
+    <div class="menu-right">
+      <img src="../../assets/img/other/menu-icon.svg" alt="" />
+    </div>
+    <div class="menu-left" @click.stop v-if="route.name !== 'life'">
+      <div
+        class="menu-left-item"
+        v-for="menu in subMenu"
+        :key="menu.key"
+        :class="menu.link === route.name ? 'menu-left-item-active' : ''"
+      >
+        <router-link :to="{ name: menu.link }"
+          >{{ menu.name }}
+          <div class="menu-left-triangle"></div>
+        </router-link>
+        <p>．</p>
+      </div>
+    </div>
   </div>
   <Transition name="mask">
     <div class="menu-main" v-if="is_Show">
@@ -33,15 +50,30 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import { useRoute } from 'vue-router'
 import { menuData } from './menuData'
 import '@/assets/scss/menu/menu.scss'
 
 const is_Show = ref(false)
 
+const subMenu = ref<{ key: string; name: string; link: string }[]>()
+
+const route = useRoute()
+
 const showClick = (val: boolean) => {
   is_Show.value = val
 }
+
+const findSubMenu = () => {
+  const path = route.path.split('/')[1]
+  const findList = menuData.find((item) => item.pathName === path)?.list
+  subMenu.value = findList
+}
+
+onMounted(() => {
+  findSubMenu()
+})
 </script>
 
 <style lang="scss">

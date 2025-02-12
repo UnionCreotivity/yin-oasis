@@ -19,6 +19,6 @@
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 0.75s;
+  transition: all 0.5s;
 }
 </style>

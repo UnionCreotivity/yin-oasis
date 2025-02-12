@@ -1,14 +1,81 @@
 @use '../config' as *;
-.menu-icon {
+.menu-icon-container {
   position: absolute;
   right: 3vw;
   top: 2vw;
-  width: 3vw;
-  cursor: pointer;
+  z-index: 15;
+  display: flex;
+  flex-direction: row-reverse;
   @include pad {
-    right: 5%;
+    right: 3%;
     top: 7%;
-    width: 5vw;
+  }
+  .menu-right {
+    width: 3vw;
+    cursor: pointer;
+    @include pad {
+      width: 5vw;
+    }
+  }
+  .menu-left {
+    display: flex;
+    padding-inline: 1vw;
+    background-color: rgba(255, 255, 255, 0.25);
+    @include pad {
+      padding-inline: 1.5vw;
+    }
+    .menu-left-item {
+      display: flex;
+      align-items: center;
+      a {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--serif);
+        font-weight: 300;
+        font-size: 1vw;
+        letter-spacing: 2px;
+        height: 100%;
+        color: white;
+        @include pad {
+          font-size: 1.2vw;
+        }
+        .menu-left-triangle {
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid #aeffe0;
+          opacity: 0;
+        }
+      }
+      p {
+        font-size: 1vw;
+        padding-inline: 0.25vw;
+        color: white;
+        @include pad {
+          font-size: 1.1vw;
+        }
+      }
+
+      &:last-child {
+        p {
+          display: none;
+        }
+      }
+    }
+    .menu-left-item-active {
+      a {
+        color: #aeffe0;
+        .menu-left-triangle {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -22,6 +89,7 @@
   mask-size: 500% 100%;
   mask-position: -260vw;
   mask-repeat: no-repeat;
+  z-index: 999;
   .menu-main-bg {
     width: 100%;
     height: 100%;
@@ -124,7 +192,7 @@
             font-family: var(--sans);
             font-weight: 300;
             font-size: 1.1vw;
-            letter-spacing: 6px;
+            letter-spacing: 4px;
             color: white;
             @include pad {
               font-weight: 400;

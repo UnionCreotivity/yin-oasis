@@ -63,37 +63,37 @@ const menuItems = [
     key: 'menu-1',
     zhName: '品牌精鑄',
     enName: 'BRAND',
-    link: 'temp',
+    link: '',
   },
   {
     key: 'menu-2',
     zhName: '13期首席',
     enName: 'BEST CHOICE',
-    link: 'temp',
+    link: 'metro',
   },
   {
     key: 'menu-3',
     zhName: '上質生活',
     enName: 'STYLE',
-    link: 'temp',
+    link: 'life',
   },
   {
     key: 'menu-4',
     zhName: '森粼雅居',
     enName: 'BUILDING',
-    link: 'temp',
+    link: '',
   },
   {
     key: 'menu-5',
     zhName: '智慧精工',
     enName: 'METHOD',
-    link: 'temp',
+    link: '',
   },
   {
     key: 'menu-6',
     zhName: '市場直擊',
     enName: 'LIVE',
-    link: 'temp',
+    link: '',
   },
 ]
 

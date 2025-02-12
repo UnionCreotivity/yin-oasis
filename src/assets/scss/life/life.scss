@@ -1,0 +1,119 @@
+@use '../config' as *;
+#life-view {
+  width: 100%;
+  height: 100%;
+  background-color: #5f8081;
+  overflow: hidden;
+  .life-view-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .life-view-left {
+      width: 76.5%;
+      img {
+        object-fit: cover;
+        height: 100%;
+        @include pad {
+          height: 74%;
+        }
+      }
+    }
+    .life-view-right {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      width: 24%;
+      @include pad {
+        justify-content: center;
+      }
+      .life-view-right-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 45%;
+        @include pad {
+          margin-top: 0%;
+        }
+        h3 {
+          font-family: var(--serif);
+          font-weight: 300;
+          font-size: var(--titleSize);
+          letter-spacing: 5px;
+          color: #fff9de;
+          @include pad {
+            font-size: 1.8vw;
+          }
+        }
+        .life-view-right-top-p-en {
+          width: 72%;
+          margin-top: 7%;
+        }
+      }
+      .life-view-right-bottm {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2.5vw;
+        margin-top: 37%;
+        .life-view-right-bottom-item {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          gap: 0.75vw;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -40%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+          }
+          .life-list-squre {
+            width: 0.4vw;
+            height: 0.4vw;
+            transform: rotate(45deg);
+            background-color: #aeffe0;
+          }
+          .life-list-zh {
+            font-family: var(--serif);
+            font-weight: 300;
+            font-size: 1.25vw;
+            letter-spacing: 6px;
+            color: white;
+            @include pad {
+              font-size: 1.35vw;
+            }
+          }
+          .life-list-en {
+            font-family: var(--cor);
+            font-weight: 400;
+            font-size: 1.1vw;
+            letter-spacing: 2px;
+            color: #fff9de;
+            @include pad {
+              font-size: 1.2vw;
+            }
+          }
+        }
+        .life-view-right-cloud {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 68.25%;
+          @include pad {
+            width: 28vw;
+          }
+        }
+      }
+    }
+  }
+}

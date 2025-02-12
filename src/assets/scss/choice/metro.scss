@@ -1,0 +1,116 @@
+@use '../config' as *;
+.metro-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #445e61 0%, #547273 26%, #5f8081 79%, #97a392 100%);
+  overflow: hidden;
+  .metro-view-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .metro-view-left {
+      width: 60%;
+      margin-top: 4%;
+      margin-left: 3%;
+      @include pad {
+        margin-left: 1.5%;
+      }
+    }
+    .metro-view-right {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-left: 4%;
+      width: 22.25%;
+      @include pad {
+        width: 25%;
+      }
+      h3 {
+        font-family: var(--serif);
+        font-weight: 300;
+        font-size: var(--titleSize);
+        letter-spacing: 5px;
+        margin-bottom: 7%;
+        color: #fff9de;
+        @include pad {
+          font-size: 1.8vw;
+        }
+      }
+      .metro-view-en {
+        width: 20.5vw;
+        margin-bottom: 20%;
+        @include pad {
+          width: 100%;
+        }
+      }
+      p {
+        font-family: var(--micro);
+        font-weight: 300;
+        font-size: var(--paraSize);
+        letter-spacing: 4px;
+        line-height: 1.8;
+        color: white;
+        @include pad {
+          font-size: 1.1vw;
+        }
+      }
+    }
+  }
+  .metro-view-title {
+    position: absolute;
+    right: 2vw;
+    top: 15%;
+    font-family: var(--cor);
+    font-size: 4vw;
+    font-weight: 300;
+    letter-spacing: 8px;
+    writing-mode: vertical-lr;
+    opacity: 0.25;
+    color: #ffffff;
+  }
+  .metro-cloud {
+    position: absolute;
+    pointer-events: none;
+  }
+  .metro-cloud-1 {
+    width: 40.5%;
+    right: 0;
+    bottom: -2%;
+    transform-origin: right bottom;
+    // animation: cloudAni1 15s infinite forwards;
+    @include pad {
+      width: 50.5%;
+    }
+  }
+  .metro-cloud-1-1 {
+    width: 40.5%;
+    right: 0;
+    bottom: -2%;
+    transform-origin: right bottom;
+    animation: cloudAni1 15s infinite forwards;
+    animation-delay: 7.5s;
+  }
+  @keyframes cloudAni1 {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(1.25);
+    }
+  }
+  .metro-cloud-2 {
+    width: 28%;
+    left: 0;
+    bottom: 0;
+    transform-origin: left bottom;
+    @include pad {
+      width: 38%;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@use '../config' as *;
+.trans-view {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #5f8081;
+  .trans-view-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5vw;
+    @include pad {
+      height: 85%;
+    }
+    .trans-bg {
+      position: relative;
+      width: 100%;
+      video {
+        position: absolute;
+        width: 10vw;
+        top: 49%;
+        left: 53%;
+        mix-blend-mode: screen;
+      }
+      @include pad {
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .trans-para {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8vw;
+      .trans-para-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1vw;
+        margin-bottom: 0.5vw;
+        @include pad {
+          width: 23%;
+          gap: 3vw;
+        }
+        h3 {
+          font-family: var(--serif);
+          font-weight: 300;
+          font-size: var(--titleSize);
+          letter-spacing: 5px;
+          text-align: center;
+          color: #fff9de;
+          @include pad {
+            font-size: 1.8vw;
+          }
+        }
+        .trans-para-left-img {
+          width: 18vw;
+          @include pad {
+            width: 100%;
+          }
+        }
+      }
+      p {
+        width: 40%;
+        font-family: var(--micro);
+        font-weight: 300;
+        font-size: var(--paraSize);
+        letter-spacing: 4px;
+        line-height: 1.8;
+        margin-right: 5%;
+        color: white;
+        @include pad {
+          font-size: 1.1vw;
+        }
+      }
+      .trans-cloud {
+        position: absolute;
+      }
+      .trans-cloud-1 {
+        right: 0;
+        bottom: 0;
+        width: 20.5%;
+        @include pad {
+          width: 26%;
+        }
+      }
+      .trans-cloud-2 {
+        left: 0;
+        bottom: 0;
+        width: 14.5%;
+        @include pad {
+          width: 23%;
+        }
+      }
+    }
+  }
+}

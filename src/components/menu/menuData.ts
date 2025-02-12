@@ -3,6 +3,7 @@ export const menuData = [
     key: 'menu-1',
     zhName: '品牌精鑄',
     enName: 'BRAND',
+    pathName: '',
     list: [
       {
         key: 'sub-1',
@@ -30,6 +31,7 @@ export const menuData = [
     key: 'menu-2',
     zhName: '13期首席',
     enName: 'BEST CHOICE',
+    pathName: 'choice',
     list: [
       {
         key: 'sub-1',
@@ -39,12 +41,12 @@ export const menuData = [
       {
         key: 'sub-2',
         name: '雙捷匯聚',
-        link: '',
+        link: 'metro',
       },
       {
         key: 'sub-3',
         name: '大道軸心',
-        link: '',
+        link: 'trans',
       },
     ],
   },
@@ -52,11 +54,12 @@ export const menuData = [
     key: 'menu-3',
     zhName: '上質生活',
     enName: 'STYLE',
+    pathName: '',
     list: [
       {
         key: 'sub-1',
-        name: '交通樞紐',
-        link: '',
+        name: '生活機能',
+        link: 'life',
       },
     ],
   },
@@ -64,6 +67,7 @@ export const menuData = [
     key: 'menu-4',
     zhName: '森粼雅居',
     enName: 'BUILDING',
+    pathName: '',
     list: [
       {
         key: 'sub-1',
@@ -86,6 +90,7 @@ export const menuData = [
     key: 'menu-5',
     zhName: '智慧精工',
     enName: 'METHOD',
+    pathName: '',
     list: [
       {
         key: 'sub-1',
@@ -103,6 +108,7 @@ export const menuData = [
     key: 'menu-6',
     zhName: '市場直擊',
     enName: 'LIVE',
+    pathName: '',
     list: [
       {
         key: 'sub-1',
