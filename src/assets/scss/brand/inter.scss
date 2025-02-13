@@ -1,0 +1,147 @@
+@use '../config' as *;
+.inter-view {
+  width: 100%;
+  height: 100%;
+  .inter-view-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    gap: 15%;
+    @include pad {
+      gap: 10%;
+    }
+    .inter-view-left {
+      display: flex;
+      gap: 3vw;
+      .inter-view-col,
+      .inter-view-col-2 {
+        display: flex;
+        gap: 1.25vw;
+
+        .inter-view-col-inner {
+          display: flex;
+          flex-direction: column;
+          gap: 1.25vw;
+        }
+        .inter-view-col-inner-2 {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 1.25vw;
+        }
+        .inter-view-col-item {
+          position: relative;
+          width: 22vw;
+          p {
+            position: absolute;
+            right: 2%;
+            bottom: 2%;
+            font-family: var(--micro);
+            font-size: var(--paraSize);
+            letter-spacing: 4px;
+            text-shadow: 1px 1px 3px black;
+            color: white;
+          }
+        }
+      }
+      .inter-view-col {
+        align-items: flex-start;
+      }
+      .inter-view-col-2 {
+        align-items: flex-end;
+      }
+      @keyframes transYAni {
+        0% {
+          transform: translateY(0%) translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translateY(-50.5%) translate3d(0, 0, 0);
+        }
+      }
+      @keyframes transYAniRev {
+        0% {
+          transform: translateY(0%) translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translateY(33.6%) translate3d(0, 0, 0);
+        }
+      }
+    }
+    .inter-view-right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      width: 21.5%;
+      margin-right: 3%;
+      @include pad {
+        width: 25%;
+      }
+      .inter-view-right-top {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 15%;
+      }
+      h3 {
+        font-family: var(--serif);
+        font-weight: 300;
+        font-size: var(--titleSize);
+        letter-spacing: 5px;
+        margin-bottom: 9%;
+        color: #fff9de;
+        @include pad {
+          font-size: 1.8vw;
+        }
+      }
+      .inter-view-title-en {
+        width: 83%;
+        @include pad {
+          width: 75%;
+        }
+      }
+      p {
+        font-family: var(--micro);
+        font-weight: 300;
+        font-size: var(--paraSize);
+        letter-spacing: 4px;
+        line-height: 1.8;
+        color: white;
+        margin-bottom: 20%;
+        @include pad {
+          font-size: 1.1vw;
+        }
+      }
+      .inter-view-right-bottom {
+        width: 85%;
+        @include pad {
+          width: 90%;
+        }
+      }
+    }
+    .inter-view-cloud {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 42%;
+      pointer-events: none;
+      @include pad {
+        width: 50%;
+      }
+    }
+    .inter-view-shine {
+      position: absolute;
+      right: 13%;
+      bottom: 0;
+      width: 36%;
+      mix-blend-mode: lighten;
+      pointer-events: none;
+      @include pad {
+        right: 12%;
+        width: 40%;
+      }
+    }
+  }
+}

@@ -66,10 +66,14 @@
     font-family: var(--cor);
     font-size: 4vw;
     font-weight: 300;
-    letter-spacing: 8px;
+    letter-spacing: 2px;
     writing-mode: vertical-lr;
     opacity: 0.25;
     color: #ffffff;
+    @include pad {
+      top: 20%;
+      font-size: 5vw;
+    }
   }
   .metro-cloud {
     position: absolute;
@@ -90,19 +94,6 @@
     right: 0;
     bottom: -2%;
     transform-origin: right bottom;
-    animation: cloudAni1 15s infinite forwards;
-    animation-delay: 7.5s;
-  }
-  @keyframes cloudAni1 {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    100% {
-      opacity: 0;
-      transform: scale(1.25);
-    }
   }
   .metro-cloud-2 {
     width: 28%;

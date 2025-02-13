@@ -36,11 +36,12 @@
         font-family: var(--serif);
         font-weight: 300;
         font-size: 1vw;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         height: 100%;
         color: white;
         @include pad {
           font-size: 1.2vw;
+          letter-spacing: 2px;
         }
         .menu-left-triangle {
           position: absolute;

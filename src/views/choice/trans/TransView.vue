@@ -3,7 +3,7 @@
     <div class="trans-view-container">
       <div class="trans-bg">
         <picture>
-          <source media="(max-width:1400px)" srcset="/src/assets/img/trans/trans-bg-mb@2x.webp" />
+          <source media="(max-width:1400px)" srcset="/src/assets/img/trans/空拍圖03@2x.webp" />
           <img src="/src/assets/img/trans/trans-bg@2x.webp" alt="" />
         </picture>
         <video src="/src/assets/video/img2024041709370816.mp4" autoplay muted loop></video>

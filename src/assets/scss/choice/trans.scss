@@ -12,7 +12,9 @@
     flex-direction: column;
     gap: 2.5vw;
     @include pad {
-      height: 85%;
+      height: 100%;
+      gap: 0vw;
+      justify-content: space-between;
     }
     .trans-bg {
       position: relative;
@@ -23,13 +25,16 @@
         top: 49%;
         left: 53%;
         mix-blend-mode: screen;
+        @include pad {
+          top: 52%;
+        }
       }
       @include pad {
-        height: 100%;
-        img {
-          height: 100%;
-          object-fit: cover;
-        }
+        // height: 100%;
+        // img {
+        //   height: 100%;
+        //   object-fit: cover;
+        // }
       }
     }
     .trans-para {
@@ -37,6 +42,9 @@
       align-items: center;
       justify-content: center;
       gap: 8vw;
+      @include pad {
+        height: 100%;
+      }
       .trans-para-left {
         display: flex;
         align-items: center;

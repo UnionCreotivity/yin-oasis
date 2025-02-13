@@ -3,17 +3,17 @@ export const menuData = [
     key: 'menu-1',
     zhName: '品牌精鑄',
     enName: 'BRAND',
-    pathName: '',
+    pathName: 'brand',
     list: [
       {
         key: 'sub-1',
         name: '35年深耕',
-        link: '',
+        link: 'deep',
       },
       {
         key: 'sub-2',
         name: '國際聯名',
-        link: '',
+        link: 'inter',
       },
       {
         key: 'sub-3',
