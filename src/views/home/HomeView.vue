@@ -63,7 +63,7 @@ const menuItems = [
     key: 'menu-1',
     zhName: '品牌精鑄',
     enName: 'BRAND',
-    link: '',
+    link: 'deep',
   },
   {
     key: 'menu-2',
