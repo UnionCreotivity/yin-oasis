@@ -21,7 +21,7 @@
   </div>
   <Transition name="mask">
     <div class="menu-main" v-if="is_Show">
-      <div class="menu-main-bg"><img src="../../assets/img/menu/menu-bg@2x.webp" alt="" /></div>
+      <div class="menu-main-bg"><img src="../../assets/img/menu/menu-bg02@2x.webp" alt="" /></div>
       <div class="menu-top">
         <router-link :to="{ name: 'home' }" class="menu-top-left">
           <div class="menu-title-1">
