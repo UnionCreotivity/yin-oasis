@@ -3,7 +3,16 @@
     <div class="life-view-container">
       <div class="life-view-left">
         <ScaleDrag :init="{ x: 100, y: 100 }" :max-ratio="2">
-          <img src="/src/assets/img/life/life-left-img02@2x.webp" alt="" />
+          <img class="life-map" src="/src/assets/img/life/map@2x.webp" alt="" />
+          <div
+            class="life-view-point"
+            v-for="point in lifeData"
+            :key="point.id"
+            :class="[point.className, tag === point.tag ? 'active' : '']"
+            @click.stop="showFancybox(point.id)"
+          >
+            <img src="/src/assets/img/life/point@2x.png" alt="" />
+          </div>
         </ScaleDrag>
       </div>
       <div class="life-view-right">
@@ -14,10 +23,18 @@
           </div>
         </div>
         <div class="life-view-right-bottm">
-          <div class="life-view-right-bottom-item" v-for="life in lifeList" :key="life.key">
+          <div
+            class="life-view-right-bottom-item"
+            v-for="life in lifeList"
+            :key="life.key"
+            @click.stop="handleTag(life.key)"
+            :class="tag === life.key ? 'active' : ''"
+          >
             <div class="life-list-squre"></div>
-            <p class="life-list-ani life-list-zh">{{ life.zhName }}</p>
-            <p class="life-list-ani life-list-en">{{ life.enName }}</p>
+            <div class="life-list-text">
+              <p class="life-list-ani life-list-zh">{{ life.zhName }}</p>
+              <p class="life-list-ani life-list-en">{{ life.enName }}</p>
+            </div>
           </div>
           <div class="life-view-right-cloud">
             <img src="/src/assets/img/life/life-cloud@2x.webp" alt="" />
@@ -25,43 +42,68 @@
         </div>
       </div>
     </div>
+    <FadeIn>
+      <LifeFancybox v-if="fancyboxItem" :fancyItem="fancyboxItem" @show-fancybox="showFancybox" />
+    </FadeIn>
   </ViewFixed>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import ViewFixed from '@/components/view-fixed/ViewFixed.vue'
+import LifeFancybox from '@/components/life-fancybox/LifeFancybox.vue'
+import FadeIn from '@/components/transition/FadeIn.vue'
+import { lifeData, lifeFancyData } from './LifeData'
 import '@/assets/scss/life/life.scss'
 
 const lifeList = [
   {
-    key: 'list-1',
+    key: 'life-1',
     zhName: '交通樞紐',
     enName: 'Transportation',
   },
   {
-    key: 'list-2',
+    key: 'life-2',
     zhName: '產業雲集',
     enName: 'Bustling Area',
   },
   {
-    key: 'list-3',
+    key: 'life-3',
     zhName: '購物商圈',
     enName: 'Shopping Hub',
   },
   {
-    key: 'list-4',
+    key: 'life-4',
     zhName: '公園休閒',
     enName: 'Verdant Park',
   },
   {
-    key: 'list-5',
+    key: 'life-5',
     zhName: '人文薈萃',
     enName: 'Cultural Hub',
   },
 ]
+
+const tag = ref('')
+
+const fancyboxItem = ref<{ key: string; image: string; txt: string }[] | null>(null)
+
+const handleTag = (val: string) => {
+  tag.value = val
+}
+
+const showFancybox = (val: string) => {
+  if (val) {
+    const fancyContent = lifeFancyData.find((item) => item.tag === val)?.content
+    if (fancyContent) {
+      fancyboxItem.value = fancyContent
+    }
+  } else {
+    fancyboxItem.value = null
+  }
+}
 
 const gsapInit = () => {
   const tl = gsap.timeline()

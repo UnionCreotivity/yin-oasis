@@ -12,11 +12,142 @@
     overflow: hidden;
     .life-view-left {
       width: 76.5%;
-      img {
+      .life-map {
         object-fit: cover;
         height: 100%;
         @include pad {
+          object-fit: fill;
           height: 74%;
+        }
+      }
+      .life-view-point {
+        position: absolute;
+        width: 2vw;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+      }
+      .life-point-1 {
+        top: 52%;
+        left: 23.25%;
+        @include pad {
+          left: 23.5%;
+        }
+      }
+      .life-point-2 {
+        top: 73%;
+        left: 19%;
+        @include pad {
+          top: 67.5%;
+          left: 19.25%;
+        }
+      }
+      .life-point-3 {
+        top: 75%;
+        left: 70%;
+        @include pad {
+          top: 68.25%;
+        }
+      }
+      .life-point-4 {
+        top: 53%;
+        left: 27%;
+        @include pad {
+          top: 54%;
+          left: 28%;
+        }
+      }
+      .life-point-5 {
+        top: 31%;
+        left: 5%;
+        @include pad {
+          top: 36%;
+        }
+      }
+      .life-point-6 {
+        top: 80%;
+        left: 93%;
+        @include pad {
+          top: 72.15%;
+        }
+      }
+      .life-point-7 {
+        top: 79%;
+        left: 96.5%;
+        @include pad {
+          top: 71.8%;
+          left: 96.15%;
+        }
+      }
+      .life-point-8 {
+        top: 37%;
+        left: 80.5%;
+        @include pad {
+          top: 40%;
+        }
+      }
+      .life-point-9 {
+        top: 41%;
+        left: 71.5%;
+        @include pad {
+          top: 43.25%;
+        }
+      }
+      .life-point-10 {
+        top: 71%;
+        left: 91.5%;
+        @include pad {
+          top: 65.5%;
+        }
+      }
+      .life-point-11 {
+        top: 43%;
+        left: 78.5%;
+        @include pad {
+          top: 45%;
+        }
+      }
+      .life-point-12 {
+        top: 46%;
+        left: 29.5%;
+      }
+      .life-point-13 {
+        top: 71%;
+        left: 82.5%;
+        @include pad {
+          top: 65.5%;
+        }
+      }
+      .life-point-14 {
+        top: 34%;
+        left: 51.5%;
+        @include pad {
+          top: 38%;
+        }
+      }
+      .life-point-15 {
+        top: 62%;
+        left: 32.5%;
+        @include pad {
+          top: 59%;
+        }
+      }
+      .active {
+        transition: all 0.5s;
+        animation: pointAni 1.5s ease infinite forwards;
+      }
+      @keyframes pointAni {
+        0% {
+          transform: translateY(0%);
+        }
+        50% {
+          transform: translateY(-30%);
+        }
+      }
+      .zoom {
+        @include pad {
+          flex-direction: row;
+          left: 67%;
         }
       }
     }
@@ -83,25 +214,37 @@
             transform: rotate(45deg);
             background-color: #aeffe0;
           }
-          .life-list-zh {
-            font-family: var(--serif);
-            font-weight: 300;
-            font-size: 1.25vw;
-            letter-spacing: 6px;
-            color: white;
-            @include pad {
-              font-size: 1.35vw;
+          .life-list-text {
+            display: flex;
+            align-items: center;
+            gap: 0.75vw;
+            transition: all 0.5s;
+            .life-list-zh {
+              font-family: var(--serif);
+              font-weight: 300;
+              font-size: 1.25vw;
+              letter-spacing: 6px;
+              color: white;
+              @include pad {
+                font-size: 1.35vw;
+              }
+            }
+            .life-list-en {
+              font-family: var(--cor);
+              font-weight: 400;
+              font-size: 1.1vw;
+              letter-spacing: 2px;
+              color: #fff9de;
+              @include pad {
+                font-size: 1.2vw;
+              }
             }
           }
-          .life-list-en {
-            font-family: var(--cor);
-            font-weight: 400;
-            font-size: 1.1vw;
-            letter-spacing: 2px;
-            color: #fff9de;
-            @include pad {
-              font-size: 1.2vw;
-            }
+        }
+        .active {
+          .life-list-text {
+            transform: translateX(1vw);
+            transition: all 0.5s;
           }
         }
         .life-view-right-cloud {
