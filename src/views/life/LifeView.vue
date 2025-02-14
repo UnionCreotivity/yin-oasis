@@ -3,7 +3,7 @@
     <div class="life-view-container">
       <div class="life-view-left">
         <ScaleDrag :init="{ x: 100, y: 100 }" :max-ratio="2">
-          <img src="/src/assets/img/life/life-left-img@2x.webp" alt="" />
+          <img src="/src/assets/img/life/life-left-img02@2x.webp" alt="" />
         </ScaleDrag>
       </div>
       <div class="life-view-right">
