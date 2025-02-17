@@ -16,6 +16,7 @@
     "@vitejs/plugin-legacy": "^6.0.0",
     "axios": "^1.7.9",
     "gsap": "^3.12.7",
+    "nanoid": "^5.1.0",
     "pinia": "^2.3.1",
     "sass": "^1.83.4",
     "screenfull": "^6.0.2",

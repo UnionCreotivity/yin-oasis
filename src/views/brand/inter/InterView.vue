@@ -18,6 +18,7 @@
             </div>
             <div class="inter-view-col-item">
               <img src="/src/assets/img/inter/inter-img-4@2x.webp" alt="" />
+              <p>日月町天外奇蹟</p>
             </div>
             <div class="inter-view-col-item">
               <img src="/src/assets/img/inter/inter-img-1@2x.webp" alt="" />
@@ -33,6 +34,7 @@
             </div>
             <div class="inter-view-col-item">
               <img src="/src/assets/img/inter/inter-img-4@2x.webp" alt="" />
+              <p>日月町天外奇蹟</p>
             </div>
           </div>
         </div>

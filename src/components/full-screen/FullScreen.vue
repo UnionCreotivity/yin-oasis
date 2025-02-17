@@ -22,7 +22,6 @@ const handleClick = () => {
   width: 3vw;
   height: 3vw;
   opacity: 0.5;
-  mix-blend-mode: difference;
   cursor: pointer;
   z-index: 15;
   img {

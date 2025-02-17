@@ -13,19 +13,19 @@
     height: 100%;
     .life-swiper-prev,
     .life-swiper-next {
-      width: 3%;
+      width: 2%;
       &::after {
         display: none;
       }
     }
     .life-swiper-prev {
-      left: 1.5%;
+      left: 2%;
       @include pad {
         left: 2.5%;
       }
     }
     .life-swiper-next {
-      right: 1.5%;
+      right: 2%;
       @include pad {
         right: 2.5%;
       }
@@ -78,8 +78,8 @@
     position: absolute;
     right: 3vw;
     top: 2vw;
-    width: 3vw;
-    height: 3vw;
+    width: 2vw;
+    height: 2vw;
     cursor: pointer;
     z-index: 1;
     @include pad() {

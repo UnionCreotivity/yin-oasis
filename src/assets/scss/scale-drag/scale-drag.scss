@@ -23,14 +23,15 @@
   padding: 0.6vw;
   margin-bottom: 1vw;
   position: fixed;
-  left: 72%;
   bottom: 0%;
-  mix-blend-mode: difference;
+  left: 77%;
   gap: 1vw;
+  z-index: 16;
   @include pad {
-    left: 71%;
-    bottom: 13%;
-    gap: 2vw;
+    position: absolute;
+    left: 77%;
+    bottom: 5%;
+    gap: 1vw;
   }
 }
 

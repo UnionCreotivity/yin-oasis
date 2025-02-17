@@ -2,8 +2,14 @@
   <ViewFixed id="life-view">
     <div class="life-view-container">
       <div class="life-view-left">
-        <ScaleDrag :init="{ x: 100, y: 100 }" :max-ratio="2">
+        <ScaleDrag :init="initXY" :max-ratio="2">
           <img class="life-map" src="/src/assets/img/life/map@2x.webp" alt="" />
+          <Glow />
+          <div class="life-mask">
+            <div class="life-mask-inner">
+              <div class="life-mask-light"></div>
+            </div>
+          </div>
           <div
             class="life-view-point"
             v-for="point in lifeData"
@@ -49,11 +55,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import ViewFixed from '@/components/view-fixed/ViewFixed.vue'
 import LifeFancybox from '@/components/life-fancybox/LifeFancybox.vue'
+import Glow from '@/components/glow/Glow.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import { lifeData, lifeFancyData } from './LifeData'
 import '@/assets/scss/life/life.scss'
@@ -135,6 +142,9 @@ const gsapInit = () => {
     )
 }
 
+const initXY = computed(() => {
+  return window.innerWidth > 1400 ? { x: 300, y: -200 } : { x: 100, y: -100 }
+})
 onMounted(() => {
   gsapInit()
 })
