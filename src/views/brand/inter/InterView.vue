@@ -96,9 +96,9 @@
       <div class="inter-view-cloud">
         <img src="/src/assets/img/inter/inter-cloud@2x.webp" alt="" />
       </div>
-      <div class="inter-view-shine">
+      <!-- <div class="inter-view-shine">
         <img src="/src/assets/img/inter/inter-shine@2x.webp" alt="" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -159,13 +159,13 @@ const imageInfinite = () => {
   tl.to('.inter-view-col-inner-2', {
     y: '33.6%',
     ease: 'linear',
-    duration: 10,
+    duration: 30,
   })
   const tlSecond = gsap.timeline({ repeat: -1 })
   tlSecond.to('.inter-view-col-inner', {
     y: '-50.5%',
     ease: 'linear',
-    duration: 12.5,
+    duration: 36,
   })
 }
 

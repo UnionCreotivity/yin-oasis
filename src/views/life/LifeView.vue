@@ -4,7 +4,7 @@
       <div class="life-view-left">
         <ScaleDrag :init="initXY" :max-ratio="2">
           <img class="life-map" src="/src/assets/img/life/map@2x.webp" alt="" />
-          <Glow />
+          <!-- <Glow /> -->
           <!-- <div class="life-mask">
             <div class="life-mask-inner">
               <div class="life-mask-light"></div>

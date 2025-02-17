@@ -145,11 +145,11 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/交通/捷運大慶站03.webp', import.meta.url).href,
         txt: '捷運大慶站',
       },
-      {
-        key: 'metro-4',
-        image: new URL('@/assets/img/life/交通/捷運大慶站04.webp', import.meta.url).href,
-        txt: '捷運大慶站',
-      },
+      // {
+      //   key: 'metro-4',
+      //   image: new URL('@/assets/img/life/交通/捷運大慶站04.webp', import.meta.url).href,
+      //   txt: '捷運大慶站',
+      // },
     ],
   },
   {
@@ -185,21 +185,21 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/產業/精密機械科學園區02.webp', import.meta.url).href,
         txt: '精密機械科學園區',
       },
-      {
-        key: 'machine-3',
-        image: new URL('@/assets/img/life/產業/精密機械科學園區03.webp', import.meta.url).href,
-        txt: '精密機械科學園區',
-      },
+      // {
+      //   key: 'machine-3',
+      //   image: new URL('@/assets/img/life/產業/精密機械科學園區03.webp', import.meta.url).href,
+      //   txt: '精密機械科學園區',
+      // },
       {
         key: 'machine-4',
         image: new URL('@/assets/img/life/產業/精密機械科學園區04.webp', import.meta.url).href,
         txt: '精密機械科學園區',
       },
-      {
-        key: 'machine-5',
-        image: new URL('@/assets/img/life/產業/精密機械科學園區05.webp', import.meta.url).href,
-        txt: '精密機械科學園區',
-      },
+      // {
+      //   key: 'machine-5',
+      //   image: new URL('@/assets/img/life/產業/精密機械科學園區05.webp', import.meta.url).href,
+      //   txt: '精密機械科學園區',
+      // },
     ],
   },
   {
@@ -208,12 +208,17 @@ export const lifeFancyData = [
       {
         key: 'night-market-1',
         image: new URL('@/assets/img/life/購物/大慶夜市01.webp', import.meta.url).href,
-        txt: '精大慶夜市',
+        txt: '大慶夜市',
       },
       {
         key: 'night-market-2',
         image: new URL('@/assets/img/life/購物/大慶夜市02.webp', import.meta.url).href,
-        txt: '精大慶夜市',
+        txt: '大慶夜市',
+      },
+      {
+        key: 'night-market-3',
+        image: new URL('@/assets/img/life/購物/大慶夜市03.webp', import.meta.url).href,
+        txt: '大慶夜市',
       },
     ],
   },
@@ -228,6 +233,11 @@ export const lifeFancyData = [
       {
         key: 'px-mart-2',
         image: new URL('@/assets/img/life/購物/全聯台中楓樹店02.webp', import.meta.url).href,
+        txt: '全聯台中楓樹店',
+      },
+      {
+        key: 'px-mart-3',
+        image: new URL('@/assets/img/life/購物/全聯台中楓樹店03.webp', import.meta.url).href,
         txt: '全聯台中楓樹店',
       },
     ],
@@ -305,6 +315,11 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/購物/迪卡儂-66.webp', import.meta.url).href,
         txt: '迪卡儂',
       },
+      {
+        key: 'Decathlon-3',
+        image: new URL('@/assets/img/life/購物/迪卡儂03.webp', import.meta.url).href,
+        txt: '迪卡儂',
+      },
     ],
   },
   {
@@ -320,11 +335,11 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/公園/高鐵新市鎮生態公園02.webp', import.meta.url).href,
         txt: '高鐵新市鎮生態公園',
       },
-      {
-        key: 'high-spped-rail-3',
-        image: new URL('@/assets/img/life/公園/高鐵新市鎮生態公園03.webp', import.meta.url).href,
-        txt: '高鐵新市鎮生態公園',
-      },
+      // {
+      //   key: 'high-spped-rail-3',
+      //   image: new URL('@/assets/img/life/公園/高鐵新市鎮生態公園03.webp', import.meta.url).href,
+      //   txt: '高鐵新市鎮生態公園',
+      // },
       {
         key: 'high-spped-rail-4',
         image: new URL('@/assets/img/life/公園/高鐵新市鎮生態公園04.webp', import.meta.url).href,
@@ -345,6 +360,11 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/公園/樂田公園02.webp', import.meta.url).href,
         txt: '樂田公園',
       },
+      {
+        key: 'park2-3',
+        image: new URL('@/assets/img/life/公園/樂田公園03.webp', import.meta.url).href,
+        txt: '樂田公園',
+      },
     ],
   },
   {
@@ -360,21 +380,21 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/公園/豐樂雕塑公園02.webp', import.meta.url).href,
         txt: '豐樂雕塑公園',
       },
-      {
-        key: 'park3-3',
-        image: new URL('@/assets/img/life/公園/豐樂雕塑公園03.webp', import.meta.url).href,
-        txt: '豐樂雕塑公園',
-      },
+      // {
+      //   key: 'park3-3',
+      //   image: new URL('@/assets/img/life/公園/豐樂雕塑公園03.webp', import.meta.url).href,
+      //   txt: '豐樂雕塑公園',
+      // },
       {
         key: 'park3-4',
         image: new URL('@/assets/img/life/公園/豐樂雕塑公園04.webp', import.meta.url).href,
         txt: '豐樂雕塑公園',
       },
-      {
-        key: 'park3-5',
-        image: new URL('@/assets/img/life/公園/豐樂雕塑公園05.webp', import.meta.url).href,
-        txt: '豐樂雕塑公園',
-      },
+      // {
+      //   key: 'park3-5',
+      //   image: new URL('@/assets/img/life/公園/豐樂雕塑公園05.webp', import.meta.url).href,
+      //   txt: '豐樂雕塑公園',
+      // },
     ],
   },
   {
@@ -385,11 +405,11 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/人文/中山醫學大學01.webp', import.meta.url).href,
         txt: '中山醫學大學',
       },
-      {
-        key: 'Zhongshan-2',
-        image: new URL('@/assets/img/life/人文/中山醫學大學02.webp', import.meta.url).href,
-        txt: '中山醫學大學',
-      },
+      // {
+      //   key: 'Zhongshan-2',
+      //   image: new URL('@/assets/img/life/人文/中山醫學大學02.webp', import.meta.url).href,
+      //   txt: '中山醫學大學',
+      // },
       {
         key: 'Zhongshan-3',
         image: new URL('@/assets/img/life/人文/中山醫學大學附設醫院01.webp', import.meta.url).href,
@@ -415,6 +435,11 @@ export const lifeFancyData = [
         image: new URL('@/assets/img/life/人文/萬和國中02.webp', import.meta.url).href,
         txt: '萬和國中',
       },
+      {
+        key: 'junior-3',
+        image: new URL('@/assets/img/life/人文/萬和國中03.webp', import.meta.url).href,
+        txt: '萬和國中',
+      },
     ],
   },
   {
@@ -428,6 +453,11 @@ export const lifeFancyData = [
       {
         key: 'elementary-2',
         image: new URL('@/assets/img/life/人文/鎮平國小02.webp', import.meta.url).href,
+        txt: '鎮平國小',
+      },
+      {
+        key: 'elementary-2',
+        image: new URL('@/assets/img/life/人文/鎮平國小03.webp', import.meta.url).href,
         txt: '鎮平國小',
       },
     ],
