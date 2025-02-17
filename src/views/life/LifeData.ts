@@ -60,6 +60,16 @@ export const lifeData = [
     className: 'life-point-12',
   },
   {
+    tag: 'life-4',
+    id: 'park2',
+    className: 'life-point-16',
+  },
+  {
+    tag: 'life-4',
+    id: 'park3',
+    className: 'life-point-17',
+  },
+  {
     tag: 'life-5',
     id: 'Zhongshan',
     className: 'life-point-13',
@@ -303,7 +313,7 @@ export const lifeFancyData = [
       {
         key: 'high-spped-rail-1',
         image: new URL('@/assets/img/life/公園/高鐵新市鎮公園01.webp', import.meta.url).href,
-        txt: '高鐵新市鎮公園',
+        txt: '高鐵新市鎮生態公園',
       },
       {
         key: 'high-spped-rail-2',
@@ -319,6 +329,51 @@ export const lifeFancyData = [
         key: 'high-spped-rail-4',
         image: new URL('@/assets/img/life/公園/高鐵新市鎮生態公園04.webp', import.meta.url).href,
         txt: '高鐵新市鎮生態公園',
+      },
+    ],
+  },
+  {
+    tag: 'park2',
+    content: [
+      {
+        key: 'park2-1',
+        image: new URL('@/assets/img/life/公園/樂田公園01.webp', import.meta.url).href,
+        txt: '樂田公園',
+      },
+      {
+        key: 'park2-2',
+        image: new URL('@/assets/img/life/公園/樂田公園02.webp', import.meta.url).href,
+        txt: '樂田公園',
+      },
+    ],
+  },
+  {
+    tag: 'park3',
+    content: [
+      {
+        key: 'park3-1',
+        image: new URL('@/assets/img/life/公園/豐樂公園01.webp', import.meta.url).href,
+        txt: '豐樂雕塑公園',
+      },
+      {
+        key: 'park3-2',
+        image: new URL('@/assets/img/life/公園/豐樂雕塑公園02.webp', import.meta.url).href,
+        txt: '豐樂雕塑公園',
+      },
+      {
+        key: 'park3-3',
+        image: new URL('@/assets/img/life/公園/豐樂雕塑公園03.webp', import.meta.url).href,
+        txt: '豐樂雕塑公園',
+      },
+      {
+        key: 'park3-4',
+        image: new URL('@/assets/img/life/公園/豐樂雕塑公園04.webp', import.meta.url).href,
+        txt: '豐樂雕塑公園',
+      },
+      {
+        key: 'park3-5',
+        image: new URL('@/assets/img/life/公園/豐樂雕塑公園05.webp', import.meta.url).href,
+        txt: '豐樂雕塑公園',
       },
     ],
   },
