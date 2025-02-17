@@ -150,4 +150,12 @@ onMounted(() => {
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+#life-view .life-view-container .life-view-left .life-view-point:hover{
+  animation: pointAni 1.5s ease infinite forwards;
+}
+#life-view .life-view-container .life-view-right .life-view-right-bottom-item:hover .life-list-text{
+  transform: translateX(1vw);
+}
+
+</style>
