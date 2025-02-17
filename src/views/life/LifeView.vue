@@ -5,11 +5,11 @@
         <ScaleDrag :init="initXY" :max-ratio="2">
           <img class="life-map" src="/src/assets/img/life/map@2x.webp" alt="" />
           <Glow />
-          <div class="life-mask">
+          <!-- <div class="life-mask">
             <div class="life-mask-inner">
               <div class="life-mask-light"></div>
             </div>
-          </div>
+          </div> -->
           <div
             class="life-view-point"
             v-for="point in lifeData"
@@ -151,11 +151,14 @@ onMounted(() => {
 </script>
 
 <style scoped>
-#life-view .life-view-container .life-view-left .life-view-point:hover{
+#life-view .life-view-container .life-view-left .life-view-point:hover {
   animation: pointAni 1.5s ease infinite forwards;
 }
-#life-view .life-view-container .life-view-right .life-view-right-bottom-item:hover .life-list-text{
+#life-view
+  .life-view-container
+  .life-view-right
+  .life-view-right-bottom-item:hover
+  .life-list-text {
   transform: translateX(1vw);
 }
-
 </style>
