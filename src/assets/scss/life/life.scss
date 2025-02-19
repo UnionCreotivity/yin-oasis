@@ -12,8 +12,11 @@
     overflow: hidden;
     .life-view-left {
       width: 76.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .life-map {
-        object-fit: cover;
+        object-fit: fill;
         height: 100%;
         @include pad {
           object-fit: fill;
@@ -74,7 +77,7 @@
       }
       .life-point-7 {
         top: 79%;
-        left: 96.5%;
+        left: 96.25%;
         @include pad {
           top: 71.8%;
           left: 96.15%;
@@ -137,6 +140,9 @@
       .life-point-16 {
         top: 61%;
         left: 65.2%;
+        @include pad {
+          top: 58%;
+        }
       }
       .life-point-17 {
         top: 44%;
@@ -208,20 +214,18 @@
     .life-view-right {
       display: flex;
       align-items: center;
+      justify-content: center;
       flex-direction: column;
       position: relative;
       overflow: hidden;
       width: 24%;
-      @include pad {
-        justify-content: center;
-      }
       .life-view-right-top {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        margin-top: 45%;
+        margin-top: 0%;
         @include pad {
           margin-top: 0%;
         }
@@ -245,7 +249,7 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 2.5vw;
-        margin-top: 37%;
+        margin-top: 25%;
         .life-view-right-bottom-item {
           position: relative;
           display: flex;

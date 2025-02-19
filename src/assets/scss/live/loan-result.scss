@@ -1,0 +1,78 @@
+@use '../config' as *;
+.loan-view-result {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4vw;
+  @include pad {
+    gap: 3vw;
+  }
+  .loan-result-col {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+    .loan-result-li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      .loan-result-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+      }
+      .loan-result-li-top {
+        display: flex;
+        align-items: center;
+      }
+      .loan-result-li-bottom {
+        font-family: var(--serif);
+        font-size: 0.9vw;
+        letter-spacing: 4px;
+        color: #afd7c8;
+      }
+      h4 {
+        font-size: var(--paraSize);
+        font-family: var(--serif);
+        font-weight: 400;
+        width: 7vw;
+        text-align-last: justify;
+        @include pad {
+          width: 7.5vw;
+        }
+      }
+      .loan-result-number {
+        position: relative;
+        text-align: center;
+        font-family: var(--serif);
+        font-size: var(--paraSize);
+        letter-spacing: 2px;
+        width: 7vw;
+        margin-left: 1vw;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 1px;
+          background-color: white;
+        }
+        @include pad {
+          width: 6vw;
+          font-size: 1.1vw;
+        }
+      }
+      .loan-result-text {
+        font-size: var(--paraSize);
+        font-family: var(--serif);
+        font-weight: 400;
+        letter-spacing: 4px;
+        margin-left: 1vw;
+      }
+    }
+  }
+}

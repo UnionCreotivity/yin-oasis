@@ -108,7 +108,7 @@ export const menuData = [
     key: 'menu-6',
     zhName: '市場直擊',
     enName: 'LIVE',
-    pathName: '',
+    pathName: 'live',
     list: [
       {
         key: 'sub-1',
@@ -123,7 +123,7 @@ export const menuData = [
       {
         key: 'sub-3',
         name: '房貸試算',
-        link: '',
+        link: 'loan',
       },
     ],
   },

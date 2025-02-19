@@ -16,8 +16,9 @@ import TransView from '@/views/choice/trans/TransView.vue'
 //生活機能
 import LifeView from '@/views/life/LifeView.vue'
 
-//暫時
-import TempView from '@/views/temp/TempView.vue'
+//市場直擊
+import LiveView from '@/views/live/LiveView.vue'
+import LoanView from '@/views/live/loan/LoanView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -26,11 +27,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-    },
-    {
-      path: '/temp',
-      name: 'temp',
-      component: TempView,
     },
     {
       path: '/brand',
@@ -68,6 +64,17 @@ const router = createRouter({
       path: '/life',
       name: 'life',
       component: LifeView,
+    },
+    {
+      path: '/live',
+      component: LiveView,
+      children: [
+        {
+          path: '',
+          name: 'loan',
+          component: LoanView,
+        },
+      ],
     },
   ],
 })

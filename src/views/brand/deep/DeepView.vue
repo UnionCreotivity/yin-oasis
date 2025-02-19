@@ -1,5 +1,5 @@
 <template>
-  <div class="deep-view">
+  <section class="deep-view">
     <div class="deep-view-container">
       <div class="deep-view-left"><img src="/src/assets/img/35/光束+字.webp" alt="" /></div>
       <div class="deep-view-right">
@@ -16,7 +16,7 @@
       <h1 class="deep-view-title">BRAND VALUES</h1>
       <div class="deep-view-cloud"><img src="/src/assets/img/35/inter-cloud@2x.webp" alt="" /></div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
