@@ -33,6 +33,10 @@
         font-size: 0.9vw;
         letter-spacing: 4px;
         color: #afd7c8;
+        @include pad {
+          font-size: 1.25vw;
+          letter-spacing: 2px;
+        }
       }
       h4 {
         font-size: var(--paraSize);
