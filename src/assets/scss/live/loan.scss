@@ -65,6 +65,9 @@
               letter-spacing: 4px;
               margin-bottom: 0.5vw;
               color: white;
+              @include pad {
+                font-size: 1.25vw;
+              }
             }
             .loan-input {
               display: flex;
@@ -75,6 +78,10 @@
                 border: 0px;
                 border-radius: 2vw;
                 padding: 0.5vw 0.75vw;
+                @include pad {
+                  font-size: 1.25vw;
+                  padding: 0.5vw 1vw;
+                }
               }
               p {
                 font-family: var(--serif);
@@ -83,6 +90,9 @@
                 letter-spacing: 2px;
                 margin-left: 1vw;
                 color: white;
+                @include pad {
+                  font-size: 1.25vw;
+                }
               }
             }
           }
@@ -98,6 +108,9 @@
               font-weight: 400;
               letter-spacing: 2px;
               color: white;
+              @include pad {
+                font-size: 1.25vw;
+              }
             }
             .loan-select-main {
               display: flex;
@@ -112,6 +125,9 @@
                 font-weight: 400;
                 letter-spacing: 2px;
                 color: white;
+                @include pad {
+                  font-size: 1.25vw;
+                }
                 input {
                   margin-right: 0.5vw;
                 }
@@ -156,8 +172,9 @@
                 transition: all 0.1s;
               }
               @include pad {
-                font-size: 1.1vw;
-                padding-block: 0.75vw;
+                font-size: 1.25vw;
+                padding-block: 0.5vw;
+                padding-inline: 3vw;
               }
             }
           }
@@ -168,7 +185,7 @@
           margin-inline: 3.5vw;
           background-color: white;
           @include pad {
-            margin-inline: 2.5vw;
+            margin-inline: 2vw;
           }
         }
       }
