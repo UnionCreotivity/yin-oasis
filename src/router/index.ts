@@ -7,6 +7,7 @@ import HomeView from '@/views/home/HomeView.vue'
 import BrandView from '@/views/brand/BrandView.vue'
 import DeepView from '@/views/brand/deep/DeepView.vue'
 import InterView from '@/views/brand/inter/InterView.vue'
+// import TeamView from '@/views/brand/team/TeamView.vue'
 
 //13期首席
 import ChoiceView from '@/views/choice/ChoiceView.vue'

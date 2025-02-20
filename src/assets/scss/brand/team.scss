@@ -1,0 +1,97 @@
+.team-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(68, 94, 97, 1) 0%,
+    rgba(84, 114, 115, 1) 44%,
+    rgba(95, 128, 129, 1) 100%
+  );
+  .team-view-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .team-view-left {
+      width: 24%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-family: var(--cor);
+        font-weight: 500;
+        font-size: 7vw;
+        letter-spacing: 2px;
+        writing-mode: vertical-lr;
+        color: #aeffe0;
+      }
+      .team-view-left-inner {
+        display: flex;
+        align-items: center;
+        writing-mode: vertical-lr;
+        letter-spacing: 6px;
+        color: #fff9de;
+        gap: 1.75vw;
+        h3 {
+          font-family: var(--serif);
+          font-weight: 400;
+          font-size: 2.75vw;
+        }
+        h4 {
+          font-family: var(--serif);
+          font-weight: 400;
+          font-size: 1.65vw;
+          padding-inline: 0.75vw;
+          padding-block: 0.25vw;
+          border: 1px solid #aeffe0;
+        }
+      }
+    }
+    .team-view-right {
+      position: relative;
+      width: 76%;
+      .team-view-people-1 {
+        position: absolute;
+        width: 40%;
+        top: 6%;
+        left: 1%;
+        .team-view-people-main {
+          width: 100%;
+        }
+        .team-view-people-para-container {
+          position: relative;
+          .team-view-people-para-1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+        }
+      }
+      .team-view-people-2 {
+        position: absolute;
+        width: 40%;
+        bottom: 0%;
+        left: 30%;
+        z-index: 1;
+        .team-view-people-main {
+          width: 100%;
+        }
+      }
+      .team-view-people-3 {
+        position: absolute;
+        width: 42%;
+        top: 11%;
+        left: 54%;
+        .team-view-people-main {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

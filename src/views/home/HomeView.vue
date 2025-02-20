@@ -93,7 +93,7 @@ const menuItems = [
     key: 'menu-6',
     zhName: '市場直擊',
     enName: 'LIVE',
-    link: '',
+    link: 'loan',
   },
 ]
 
