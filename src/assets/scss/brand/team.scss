@@ -61,15 +61,15 @@
         .team-view-people-main {
           width: 100%;
         }
-        .team-view-people-para-container {
-          position: relative;
-          .team-view-people-para-1 {
-            position: absolute;
-            left: 0;
-            top: 0;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
+        .team-view-people-para-1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          .team-view-people-name {
+            width: 73%;
           }
         }
       }

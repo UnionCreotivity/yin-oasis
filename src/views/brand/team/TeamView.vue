@@ -16,14 +16,12 @@
           <div class="team-view-people-main">
             <img src="/src/assets/img/team/team-people-1@2x.webp" alt="" />
           </div>
-          <div class="team-view-people-para-container">
-            <div class="team-view-people-para-1">
-              <div class="team-view-people-name">
-                <img src="/src/assets/img/team/team-people-1-name.svg" alt="" />
-              </div>
-              <div class="team-view-people-spec">
-                <img src="/src/assets/img/team/team-people-1-para.svg" alt="" />
-              </div>
+          <div class="team-view-people-para-1">
+            <div class="team-view-people-name">
+              <img src="/src/assets/img/team/team-people-1-name.svg" alt="" />
+            </div>
+            <div class="team-view-people-spec">
+              <img src="/src/assets/img/team/team-people-1-para.svg" alt="" />
             </div>
           </div>
         </div>

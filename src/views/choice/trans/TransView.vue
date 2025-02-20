@@ -11,7 +11,7 @@
       <div class="trans-para">
         <div class="trans-para-left">
           <h3>
-            13 期首席 雙大道軸心<br />
+            13期首席 雙大道軸心<br />
             輕取八期繁華
           </h3>
           <div class="trans-para-left-img">
@@ -19,10 +19,7 @@
           </div>
         </div>
         <p class="trans-para-right">
-          13期是南台中最大市地重劃區，鄰近商業高度發展的八期，以及全台最大高鐵
-          娛樂購物城的烏日。本案坐擁80米環中路第一排，黎明路直達七期核心，是13
-          期最靠近台74線和高鐵站的交通樞紐。周邊具備10公里水岸綠廊、1.3萬坪生
-          態公園、捷運站、COSTCO、文心秀泰等多元機能
+          13期是南台中最大市地重劃區，鄰近商業高度發展的八期，以及全台最大高鐵娛樂購物城的烏日。本案坐擁80米環中路第一排，黎明路直達七期核心，是13期最靠近台74線和高鐵站的交通樞紐。周邊具備10公里水岸綠廊、1.3萬坪生態公園、捷運站、COSTCO、文心秀泰等多元機能
         </p>
         <div class="trans-cloud trans-cloud-1">
           <img src="/src/assets/img/trans/trans-cloud-1@2x.webp" alt="" />
