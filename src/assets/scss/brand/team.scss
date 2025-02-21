@@ -1,3 +1,4 @@
+@use '../config' as *;
 .team-view {
   position: relative;
   width: 100%;
@@ -15,6 +16,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
     .team-view-left {
       width: 24%;
       display: flex;
@@ -27,6 +29,9 @@
         letter-spacing: 2px;
         writing-mode: vertical-lr;
         color: #aeffe0;
+        @include pad {
+          font-size: 7.5vw;
+        }
       }
       .team-view-left-inner {
         display: flex;
@@ -53,6 +58,21 @@
     .team-view-right {
       position: relative;
       width: 76%;
+      .team-view-right-bg {
+        width: 100%;
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+      .team-view-people {
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.5s;
+        }
+      }
       .team-view-people-1 {
         position: absolute;
         width: 40%;
@@ -63,13 +83,12 @@
         }
         .team-view-people-para-1 {
           position: absolute;
-          left: 0;
-          top: 0;
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          .team-view-people-name {
-            width: 73%;
+          left: 15%;
+          top: 50%;
+          width: 34%;
+          gap: 1.5vw;
+          @include pad {
+            width: 37%;
           }
         }
       }
@@ -82,6 +101,15 @@
         .team-view-people-main {
           width: 100%;
         }
+        .team-view-people-para-2 {
+          position: absolute;
+          left: 58%;
+          top: 47%;
+          width: 33%;
+          @include pad {
+            left: 57%;
+          }
+        }
       }
       .team-view-people-3 {
         position: absolute;
@@ -90,6 +118,12 @@
         left: 54%;
         .team-view-people-main {
           width: 100%;
+        }
+        .team-view-people-para-3 {
+          position: absolute;
+          left: 42%;
+          top: 56%;
+          width: 39%;
         }
       }
     }

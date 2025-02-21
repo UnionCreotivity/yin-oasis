@@ -23,7 +23,7 @@ export const menuData = [
       {
         key: 'sub-4',
         name: '建築團隊',
-        link: '',
+        link: 'team',
       },
     ],
   },

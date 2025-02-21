@@ -35,7 +35,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import '@/assets/scss/life/life-fancybox.scss'
@@ -47,10 +46,6 @@ const emits = defineEmits(['show-fancybox'])
 const closeClick = () => {
   emits('show-fancybox')
 }
-
-onMounted(() => {
-  console.log(props.fancyItem)
-})
 </script>
 
 <style scoped></style>
