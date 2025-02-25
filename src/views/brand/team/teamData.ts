@@ -107,17 +107,19 @@ export const teamData = [
       {
         key: 'project-3',
         p: '坤聯富 豐原匯',
-        img: new URL('@/assets/img/team/people-2/people-2-project-3@2x.webp', import.meta.url).href,
+        img: new URL('@/assets/img/team/people-2/坤聯富 豐原匯-small@2x.webp', import.meta.url)
+          .href,
       },
       {
         key: 'project-4',
-        p: 'YCM 企業總部大樓',
-        img: new URL('@/assets/img/team/people-2/people-2-project-4@2x.webp', import.meta.url).href,
+        p: '坤聯發 博館匯',
+        img: new URL('@/assets/img/team/people-2/坤聯發 博館匯 -small@2x.webp', import.meta.url)
+          .href,
       },
       {
         key: 'project-5',
-        p: '登陽 松悅',
-        img: new URL('@/assets/img/team/people-2/people-2-project-5@2x.webp', import.meta.url).href,
+        p: '聚合發 艾麗',
+        img: new URL('@/assets/img/team/people-2/聚合發 艾麗-small@2x.webp', import.meta.url).href,
       },
       {
         key: 'project-6',
@@ -141,26 +143,22 @@ export const teamData = [
       {
         key: 'project-3',
         p: '坤聯富 豐原匯',
-        img: new URL('@/assets/img/team/people-2/people-2-project-3-big@2x.webp', import.meta.url)
-          .href,
+        img: new URL('@/assets/img/team/people-2/坤聯富 豐原匯.webp', import.meta.url).href,
       },
       {
         key: 'project-4',
-        p: 'YCM 企業總部大樓',
-        img: new URL('@/assets/img/team/people-2/people-2-project-4-big@2x.webp', import.meta.url)
-          .href,
+        p: '坤聯發 博館匯 ',
+        img: new URL('@/assets/img/team/people-2/坤聯發 博館匯 .webp', import.meta.url).href,
       },
       {
         key: 'project-5',
-        p: '登陽 松悅',
-        img: new URL('@/assets/img/team/people-2/people-2-project-5-big@2x.webp', import.meta.url)
-          .href,
+        p: '聚合發 艾麗',
+        img: new URL('@/assets/img/team/people-2/聚合發 艾麗.webp', import.meta.url).href,
       },
       {
         key: 'project-6',
         p: '坤悅 心富郁',
-        img: new URL('@/assets/img/team/people-2/people-2-project-6-big@2x.webp', import.meta.url)
-          .href,
+        img: new URL('@/assets/img/team/people-2/心富郁@2x.webp', import.meta.url).href,
       },
     ],
   },
@@ -180,7 +178,8 @@ export const teamData = [
       {
         key: 'project-1',
         p: '精銳Garden One',
-        img: new URL('@/assets/img/team/people-3/people-3-project-1@2x.webp', import.meta.url).href,
+        img: new URL('@/assets/img/team/people-3/精銳Garden One-small@2x.webp', import.meta.url)
+          .href,
       },
       {
         key: 'project-2',
@@ -192,8 +191,7 @@ export const teamData = [
       {
         key: 'project-1',
         p: '精銳Garden One',
-        img: new URL('@/assets/img/team/people-3/people-3-project-1-big@2x.webp', import.meta.url)
-          .href,
+        img: new URL('@/assets/img/team/people-3/精銳Garden One-big@2x.webp', import.meta.url).href,
       },
       {
         key: 'project-2',
