@@ -75,15 +75,26 @@ export const useLoanStore = defineStore('loan', () => {
     //契稅
     state.value.tax = toMoneyStyle(Math.ceil(val.total * 0.25))
     //結構完成(工程款)
-    state.value.construction = toMoneyStyle(Math.ceil(val.total * 0.1))
+    // state.value.construction = toMoneyStyle(Math.ceil(val.total * 0.1))
     //交屋款
     state.value.delivery = toMoneyStyle(Math.ceil(val.total * 0.05))
 
     //---------------- 拆款 END ----------------
     //自備款
+    // state.value.ownMoney = toMoneyStyle(Math.ceil(val.total * 0.5))
     state.value.ownMoney = toMoneyStyle(Math.ceil(val.total * 0.5))
     //貸款
     state.value.loanMoney = toMoneyStyle(Math.floor(val.total * 0.5))
+
+    //結構完成(工程款)
+    state.value.construction = toMoneyStyle(
+      Math.ceil(val.total * 0.5) -
+        10 -
+        Math.ceil(val.total * 0.07 - 10) -
+        Math.ceil(val.total * 0.03) -
+        Math.ceil(val.total * 0.25) -
+        Math.ceil(val.total * 0.05),
+    )
 
     //使照申請 自備款減去拆款後的值當作使照申請
     state.value.license = toMoneyStyle(
@@ -105,7 +116,8 @@ export const useLoanStore = defineStore('loan', () => {
     state.value.afterAllowancePeriodCost = toMoneyStyle(
       Math.floor(val.total * 0.5 * avgMonthRatio * 10000),
     )
-    console.log(state.value)
+    console.log(state.value.ownMoney)
+    console.log(typeof state.value.ownMoney)
   }
   function cleanAll() {
     state.value.deposit = ''

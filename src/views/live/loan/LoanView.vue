@@ -9,20 +9,6 @@
         <div class="loan-view-bottom">
           <div class="loan-view-input-container">
             <div class="loan-input-item">
-              <h4>貸款年限</h4>
-              <div class="loan-input">
-                <input
-                  type="number"
-                  id="cal-year"
-                  min="0"
-                  max="99"
-                  v-model="loanInputModel.year"
-                  @click.stop="checkClick('cal-year')"
-                />
-                <p>年</p>
-              </div>
-            </div>
-            <div class="loan-input-item">
               <h4>總金額</h4>
               <div class="loan-input">
                 <input
@@ -34,6 +20,20 @@
                   @click.stop="checkClick('cal-total')"
                 />
                 <p>萬元</p>
+              </div>
+            </div>
+            <div class="loan-input-item">
+              <h4>貸款年限</h4>
+              <div class="loan-input">
+                <input
+                  type="number"
+                  id="cal-year"
+                  min="0"
+                  max="99"
+                  v-model="loanInputModel.year"
+                  @click.stop="checkClick('cal-year')"
+                />
+                <p>年</p>
               </div>
             </div>
             <div class="loan-input-item">

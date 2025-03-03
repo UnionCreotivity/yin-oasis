@@ -48,6 +48,11 @@
         <p class="loan-result-number">{{ state.ownMoney }}</p>
         <div class="loan-result-text">萬元</div>
       </li>
+      <li class="loan-result-li">
+        <h4>貸款金額:</h4>
+        <p class="loan-result-number">{{ state.loanMoney }}</p>
+        <div class="loan-result-text">萬元</div>
+      </li>
       <li class="loan-result-li" v-if="is_Allowance">
         <h4>前三年寬限期:</h4>
         <p class="loan-result-number">{{ state.allowancePeriodCost }}</p>
