@@ -110,12 +110,12 @@ export const teamData = [
         img: new URL('@/assets/img/team/people-2/坤聯富 豐原匯-small@2x.webp', import.meta.url)
           .href,
       },
-      {
-        key: 'project-4',
-        p: '坤聯發 博館匯',
-        img: new URL('@/assets/img/team/people-2/坤聯發 博館匯 -small@2x.webp', import.meta.url)
-          .href,
-      },
+      // {
+      //   key: 'project-4',
+      //   p: '坤聯發 博館匯',
+      //   img: new URL('@/assets/img/team/people-2/坤聯發 博館匯 -small@2x.webp', import.meta.url)
+      //     .href,
+      // },
       {
         key: 'project-5',
         p: '聚合發 艾麗',
