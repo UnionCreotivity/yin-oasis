@@ -13,6 +13,7 @@ import TeamView from '@/views/brand/team/TeamView.vue'
 import ChoiceView from '@/views/choice/ChoiceView.vue'
 import MetroView from '@/views/choice/metro/MetroView.vue'
 import TransView from '@/views/choice/trans/TransView.vue'
+import RiseView from '@/views/choice/rise/RiseView.vue'
 
 //生活機能
 import LifeView from '@/views/life/LifeView.vue'
@@ -63,6 +64,11 @@ const router = createRouter({
           path: 'trans',
           name: 'trans',
           component: TransView,
+        },
+        {
+          path: 'rise',
+          name: 'rise',
+          component: RiseView,
         },
       ],
     },

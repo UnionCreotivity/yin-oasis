@@ -36,7 +36,7 @@ export const menuData = [
       {
         key: 'sub-1',
         name: '台中崛起',
-        link: '',
+        link: 'rise',
       },
       {
         key: 'sub-2',

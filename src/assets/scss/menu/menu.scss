@@ -58,6 +58,7 @@
         font-size: 1vw;
         padding-inline: 0.25vw;
         color: white;
+        user-select: none;
         @include pad {
           font-size: 1.1vw;
         }
