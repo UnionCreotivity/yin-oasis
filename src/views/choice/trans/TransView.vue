@@ -3,8 +3,11 @@
     <div class="trans-view-container">
       <div class="trans-bg">
         <picture>
-          <source media="(max-width:1400px)" srcset="/src/assets/img/trans/空拍圖03@2x.webp" />
-          <img src="/src/assets/img/trans/trans-bg@2x.webp" alt="" />
+          <source
+            media="(max-width:1400px)"
+            srcset="/src/assets/img/trans/trans-new-bg@2x-tb.webp"
+          />
+          <img src="/src/assets/img/trans/trans-new-bg@2x03.webp" alt="" />
         </picture>
         <video src="/src/assets/video/img2024041709370816.mp4" autoplay muted loop></video>
       </div>
