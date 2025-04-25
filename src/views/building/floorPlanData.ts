@@ -7,7 +7,7 @@ export const FloorPlanList = [
   { id: 'B2', tag: 'B2', floor: 'B2' },
   { id: 'B1', tag: 'B1', floor: 'B1' },
   { id: '1F', tag: '1F', floor: '1F' },
-  { id: '1F', tag: '1F', floor: '1F夾層' },
+  { id: 'M-1F', tag: 'M-1F', floor: '1F夾層' },
   { id: '2F', tag: '2F', floor: '2F' },
   { id: '3F', tag: '3F', floor: '3F' },
   { id: '4F', tag: '4F-9F', floor: '4F' },
@@ -159,6 +159,12 @@ export const FloorPlanAest = [
         numberList: 9,
       },
     ],
+  },
+  {
+    id: 'M-1F',
+    tag: 'M-1F',
+    floor: '1F夾層',
+    image: new URL('@/assets/img/floor-plan/new/1F夾層@2x.webp', import.meta.url).href,
   },
   {
     id: '2F',
@@ -444,11 +450,7 @@ export const FloorPlanAest = [
     id: 'R1',
     tag: 'R1',
     floor: 'RF',
-<<<<<<< HEAD
     image: new URL('@/assets/img/floor-plan/RF@2x.webp', import.meta.url).href,
-=======
-    image: new URL('@/assets/img/floor-plan/new/RF@2x.webp', import.meta.url).href,
->>>>>>> d0cb9190b9d95256711d3949a2fa3eb72f6b7c52
     points: [
       {
         className: 'point-r1-1',
@@ -575,11 +577,11 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-1',
-        img: new URL('@/assets/img/floor-plan/家配/接待大廳@2x.webp', import.meta.url).href,
+        img: null,
       },
       {
         id: '1f-1-2',
-        img: new URL('@/assets/img/floor-plan/家配/接待大廳2.jpg', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -589,11 +591,11 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-2',
-        img: new URL('@/assets/img/floor-plan/家配/健身房@2x.webp', import.meta.url).href,
+        img: null,
       },
       {
         id: '1f-2-2',
-        img: new URL('@/assets/img/floor-plan/家配/健身房2.jpg', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -603,11 +605,11 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-3',
-        img: new URL('@/assets/img/floor-plan/家配/韻律教室@2x.webp', import.meta.url).href,
+        img: null,
       },
       {
         id: '1f-3-2',
-        img: new URL('@/assets/img/floor-plan/家配/資產 18-100.webp', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -617,7 +619,7 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-4',
-        img: new URL('@/assets/img/floor-plan/家配/多功能交誼廳@2x.webp', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -627,11 +629,11 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-5',
-        img: new URL('@/assets/img/floor-plan/家配/視聽室@2x.webp', import.meta.url).href,
+        img: null,
       },
       {
         id: '1f-5-2',
-        img: new URL('@/assets/img/floor-plan/家配/資產 19-100.webp', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -641,7 +643,7 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-6',
-        img: new URL('@/assets/img/floor-plan/家配/梯廳A.webp', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -651,7 +653,7 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-7',
-        img: new URL('@/assets/img/floor-plan/家配/過廊@2x.webp', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -661,7 +663,7 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-8',
-        img: new URL('@/assets/img/floor-plan/家配/信箱區.jpg', import.meta.url).href,
+        img: null,
       },
     ],
   },
@@ -671,7 +673,7 @@ export const FloorPlanImg = [
     image: [
       {
         id: '1f-9',
-        img: new URL('@/assets/img/floor-plan/家配/梯廳@2x.webp', import.meta.url).href,
+        img: null,
       },
     ],
   },
