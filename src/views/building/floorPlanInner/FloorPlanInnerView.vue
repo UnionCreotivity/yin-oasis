@@ -47,7 +47,7 @@
                   />
                 </div>
               </FadeIn>
-              <img class="imgBoxMap" :src="mainItem?.image" />
+              <img  class="imgBoxMap" :src="mainItem?.image" />
             </div>
           </div>
         </div>
@@ -192,6 +192,7 @@ onMounted(() => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const findItem = FloorPlanAest.find((item: any) => item.tag === tag.value)
   mainItem.value = findItem
+  console.log(mainItem.value)
 })
 
 provide('toggle', backToFloor)

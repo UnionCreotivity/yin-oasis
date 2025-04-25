@@ -28,19 +28,19 @@ export const FloorPlanAest = [
     id: 'B3',
     tag: 'B3',
     floor: 'B3',
-    image: new URL('@/assets/img/floor-plan/B3@2x.png', import.meta.url).href,
+    image: new URL('@/assets/img/floor-plan/new/B3@2x.webp', import.meta.url).href,
   },
   {
     id: 'B2',
     tag: 'B2',
     floor: 'B2',
-    image: new URL('@/assets/img/floor-plan/B2@2x.png', import.meta.url).href,
+    image: new URL('@/assets/img/floor-plan/new/B2@2x.webp', import.meta.url).href,
   },
   {
     id: 'B1',
     tag: 'B1',
     floor: 'B1',
-    image: new URL('@/assets/img/floor-plan/B1@2x.png', import.meta.url).href,
+    image: new URL('@/assets/img/floor-plan/new/B1@2x.webp', import.meta.url).href,
   },
   {
     id: '1F',
@@ -444,7 +444,11 @@ export const FloorPlanAest = [
     id: 'R1',
     tag: 'R1',
     floor: 'RF',
+<<<<<<< HEAD
     image: new URL('@/assets/img/floor-plan/RF@2x.webp', import.meta.url).href,
+=======
+    image: new URL('@/assets/img/floor-plan/new/RF@2x.webp', import.meta.url).href,
+>>>>>>> d0cb9190b9d95256711d3949a2fa3eb72f6b7c52
     points: [
       {
         className: 'point-r1-1',
