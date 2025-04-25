@@ -1,6 +1,6 @@
 <template>
   <div class="floor-plan-inner-fancybox" @click.stop="handleBack">
-    <div class="floor-plan-inner-fancybox-1" v-if="props.boxContent?.tag !== '1f'">
+    <div class="floor-plan-inner-fancybox-1" v-if="props.boxContent?.tag !== '1f' && props.boxContent?.tag !== '2f'">
       <div
         class="floor-plan-inner-fancybox-left"
         :class="[show ? 'plan-inner-fancybox-left-hide' : '']"

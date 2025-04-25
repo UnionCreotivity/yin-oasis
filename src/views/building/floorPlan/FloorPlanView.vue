@@ -22,7 +22,7 @@
           @mouseover="addTag(item.tag)"
           @mouseout="removeTag()"
         >
-          <router-link :to="{ name: 'floorInner', query: { q: item.tag } }">
+          <router-link :to="{ name: 'floorInner', query: { q: item.tag } }" :class="[item.is_use ? '' : 'disabled-link']">
             <div class="floor-plan-right-tag">{{ item.floor }}</div>
             <div class="floor-plan-right-ul-line"></div>
           </router-link>
@@ -43,6 +43,7 @@ import '@/assets/scss/building/floor-plan.scss'
 
 const liTag = ref('')
 
+
 const addTag = (val: string) => {
   liTag.value = val
 }
@@ -52,4 +53,6 @@ const removeTag = () => {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

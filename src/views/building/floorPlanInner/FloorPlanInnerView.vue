@@ -16,7 +16,7 @@
         景觀 VIEW
       </div>
     </div>
-    <div class="floor-plan-inner-right" :class="[show ? 'plan-inner-zIndex' : '', mainItem?.id]">
+    <div class="floor-plan-inner-right" :class="[show ? 'plan-inner-zIndex' : '', `F-${mainItem?.id}`]">
       <ScaleDrag
         :max-ratio="2"
         :init="{ x: -350, y: -100 }"
@@ -73,7 +73,7 @@
     </div>
     <!-- <Back /> -->
     <FadeIn>
-      <!-- <FloorPlanInFancyBox :boxContent="boxContent" @remove-tag="removeTag" v-if="boxContent" /> -->
+      <FloorPlanInFancyBox :boxContent="boxContent" @remove-tag="removeTag" v-if="boxContent" />
     </FadeIn>
     <FadeIn>
       <FloorView v-if="viewContent" :viewContent="viewContent" @view-click="viewClick" />
@@ -87,7 +87,7 @@ import { useRoute, useRouter } from 'vue-router'
 import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import FloorPoints from '@/components/floorPlan/FloorPoints.vue'
 import FloorView from '@/components/floorPlan/FloorView.vue'
-// import FloorPlanInFancyBox from '@/components/floorPlan/FloorPlanInFancyBox.vue'
+import FloorPlanInFancyBox from '@/components/floorPlan/FloorPlanInFancyBox.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import { FloorPlanAest, FloorPlanImg, FloorViewData } from '@/views/building/floorPlanData'
 import '@/assets/scss/building/floor-plan-in-page.scss'
@@ -135,6 +135,7 @@ const outListHandle = () => {
 }
 
 const handleClick = (val: string) => {
+ 
   clickTag.value = val
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const findItem = FloorPlanImg.find((item: any) => item.name === clickTag.value)

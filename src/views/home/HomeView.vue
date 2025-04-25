@@ -81,7 +81,7 @@ const menuItems = [
     key: 'menu-4',
     zhName: '森粼雅居',
     enName: 'BUILDING',
-    link: '',
+    link: 'floorplan',
   },
   {
     key: 'menu-5',

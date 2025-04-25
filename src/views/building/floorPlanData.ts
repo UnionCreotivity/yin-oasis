@@ -1,26 +1,22 @@
 export const FloorPlanList = [
-  {
-    id: 'B3',
-    tag: 'B3',
-    floor: 'B3',
-  },
-  { id: 'B2', tag: 'B2', floor: 'B2' },
-  { id: 'B1', tag: 'B1', floor: 'B1' },
-  { id: '1F', tag: '1F', floor: '1F' },
-  { id: 'M-1F', tag: 'M-1F', floor: '1F夾層' },
-  { id: '2F', tag: '2F', floor: '2F' },
-  { id: '3F', tag: '3F', floor: '3F' },
-  { id: '4F', tag: '4F-9F', floor: '4F' },
-  { id: '5F', tag: '10F', floor: '5F' },
-  { id: '6F', tag: '4F-9F', floor: '6F' },
-  { id: '7F', tag: '4F-9F', floor: '7F' },
-  { id: '8F', tag: '10F', floor: '8F' },
-  { id: '9F', tag: '4F-9F', floor: '9F' },
-  { id: '10F', tag: '4F-9F', floor: '10F' },
-  { id: '10F', tag: '10F', floor: '11F' },
-  { id: '10F', tag: '4F-9F', floor: '12F' },
-  { id: '10F', tag: '4F-9F', floor: '13F' },
-  { id: 'R1', tag: 'R1', floor: 'RF' },
+  { id: 'B3',tag: 'B3', floor: 'B3' , is_use:true},
+  { id: 'B2', tag: 'B2', floor: 'B2', is_use:true },
+  { id: 'B1', tag: 'B1', floor: 'B1', is_use:true },
+  { id: '1F', tag: '1F', floor: '1F', is_use:true },
+  { id: 'M-1F', tag: 'M-1F', floor: '1MF', is_use:true },
+  { id: '2F', tag: '2F', floor: '2F', is_use:true },
+  { id: '3F', tag: '3F', floor: '3F' , is_use:false },
+  { id: '4F', tag: '4F-9F', floor: '4F', is_use:false },
+  { id: '5F', tag: '10F', floor: '5F', is_use:false },
+  { id: '6F', tag: '4F-9F', floor: '6F', is_use:false },
+  { id: '7F', tag: '4F-9F', floor: '7F', is_use:false },
+  { id: '8F', tag: '10F', floor: '8F', is_use:false },
+  { id: '9F', tag: '4F-9F', floor: '9F', is_use:false },
+  { id: '10F', tag: '4F-9F', floor: '10F', is_use:false },
+  { id: '10F', tag: '10F', floor: '11F', is_use:false },
+  { id: '10F', tag: '4F-9F', floor: '12F', is_use:false },
+  { id: '10F', tag: '4F-9F', floor: '13F', is_use:false },
+  { id: 'R1', tag: 'R1', floor: 'RF', is_use:false },
 ]
 
 export const FloorPlanAest = [
@@ -69,7 +65,7 @@ export const FloorPlanAest = [
       {
         number: new URL('@/assets/img/floor-plan/number/number-4@2x.png', import.meta.url).href,
         id: 'fourth',
-        name: '花園入口',
+        name: '花園小徑',
         numberList: 4,
       },
       {
@@ -93,7 +89,7 @@ export const FloorPlanAest = [
       {
         number: new URL('@/assets/img/floor-plan/number/number-8@2x.png', import.meta.url).href,
         id: 'seventh',
-        name: '宅配區',
+        name: '宅配室',
         numberList: 7,
       },
       {
@@ -163,71 +159,43 @@ export const FloorPlanAest = [
   {
     id: 'M-1F',
     tag: 'M-1F',
-    floor: '1F夾層',
+    floor: '1MF',
     image: new URL('@/assets/img/floor-plan/new/1F夾層@2x.webp', import.meta.url).href,
   },
   {
     id: '2F',
     tag: '2F',
     floor: '2F',
-    image: new URL('@/assets/img/floor-plan/2F@2x.png', import.meta.url).href,
+    image: new URL('@/assets/img/floor-plan/new/2F@2x.webp', import.meta.url).href,
+    list: [
+      {
+        number: new URL('@/assets/img/floor-plan/number/number-1@2x.png', import.meta.url).href,
+        id: 'first',
+        name: '健身房',
+        numberList: 1,
+      },
+      {
+        number: new URL('@/assets/img/floor-plan/number/number-2@2x.png', import.meta.url).href,
+        id: 'second',
+        name: '交誼廳',
+        numberList: 2,
+      },
+      
+    ],
     points: [
       {
-        className: 'a1-2F',
-        name: 'A1',
+        className: 'point-1-2F',
+        tag: 'first',
+        fName: '健身房',
+        numberList: 1,
       },
       {
-        className: 'a2-2F',
-        name: 'A2',
+        className: 'point-2-2F',
+        tag: 'second',
+        fName: '交誼廳',
+        numberList: 2,
       },
-      {
-        className: 'a3-2F',
-        name: 'A3',
-      },
-      {
-        className: 'a5-2F',
-        name: 'A5',
-      },
-      {
-        className: 'a6-2F',
-        name: 'A6',
-      },
-      {
-        className: 'a9-2F',
-        name: 'A9',
-      },
-      {
-        className: 'b1-2F',
-        name: 'B1',
-      },
-      {
-        className: 'b2-2F',
-        name: 'B2',
-      },
-      {
-        className: 'b3-2F',
-        name: 'B3',
-      },
-      {
-        className: 'b5-2F',
-        name: 'B5',
-      },
-      {
-        className: 'b6-2F',
-        name: 'B6',
-      },
-      {
-        className: 'b7-2F',
-        name: 'B7',
-      },
-      {
-        className: 'b8-2F',
-        name: 'B8',
-      },
-      {
-        className: 'b9-2F',
-        name: 'B9',
-      },
+      
     ],
   },
   {
@@ -571,109 +539,123 @@ export const FloorPlanImg = [
     name: 'B9',
     image: new URL('@/assets/img/floor-plan/家配/B9@2x.png', import.meta.url).href,
   },
+  // {
+  //   tag: '1f',
+  //   name: '接待大廳',
+  //   image: [
+  //     {
+  //       id: '1f-1',
+  //       img: null,
+  //     },
+  //     {
+  //       id: '1f-1-2',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+  // {
+  //   tag: '1f',
+  //   name: '韻律教室',
+  //   image: [
+  //     {
+  //       id: '1f-3',
+  //       img: null,
+  //     },
+  //     {
+  //       id: '1f-3-2',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+  // {
+  //   tag: '1f',
+  //   name: '多功能交誼廳',
+  //   image: [
+  //     {
+  //       id: '1f-4',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+  // {
+  //   tag: '1f',
+  //   name: '視聽室',
+  //   image: [
+  //     {
+  //       id: '1f-5',
+  //       img: null,
+  //     },
+  //     {
+  //       id: '1f-5-2',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+  // {
+  //   tag: '1f',
+  //   name: '梯廳A',
+  //   image: [
+  //     {
+  //       id: '1f-6',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+  // {
+  //   tag: '1f',
+  //   name: '過廊',
+  //   image: [
+  //     {
+  //       id: '1f-7',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+  // {
+  //   tag: '1f',
+  //   name: '信箱區',
+  //   image: [
+  //     {
+  //       id: '1f-8',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+  // {
+  //   tag: '1f',
+  //   name: '梯廳B',
+  //   image: [
+  //     {
+  //       id: '1f-9',
+  //       img: null,
+  //     },
+  //   ],
+  // },
+
   {
-    tag: '1f',
-    name: '接待大廳',
-    image: [
-      {
-        id: '1f-1',
-        img: null,
-      },
-      {
-        id: '1f-1-2',
-        img: null,
-      },
-    ],
-  },
-  {
-    tag: '1f',
+    tag: '2f',
     name: '健身房',
     image: [
       {
-        id: '1f-2',
-        img: null,
-      },
-      {
-        id: '1f-2-2',
-        img: null,
-      },
-    ],
-  },
-  {
-    tag: '1f',
-    name: '韻律教室',
-    image: [
-      {
-        id: '1f-3',
-        img: null,
-      },
-      {
-        id: '1f-3-2',
-        img: null,
+        id: '2f-1',
+        img: new URL(
+          "@/assets/img/floor-plan/家配/健身房.webp",
+          import.meta.url
+        ).href,
       },
     ],
   },
+
   {
-    tag: '1f',
-    name: '多功能交誼廳',
+    tag: '2f',
+    name: '交誼廳',
     image: [
       {
-        id: '1f-4',
-        img: null,
-      },
-    ],
-  },
-  {
-    tag: '1f',
-    name: '視聽室',
-    image: [
-      {
-        id: '1f-5',
-        img: null,
-      },
-      {
-        id: '1f-5-2',
-        img: null,
-      },
-    ],
-  },
-  {
-    tag: '1f',
-    name: '梯廳A',
-    image: [
-      {
-        id: '1f-6',
-        img: null,
-      },
-    ],
-  },
-  {
-    tag: '1f',
-    name: '過廊',
-    image: [
-      {
-        id: '1f-7',
-        img: null,
-      },
-    ],
-  },
-  {
-    tag: '1f',
-    name: '信箱區',
-    image: [
-      {
-        id: '1f-8',
-        img: null,
-      },
-    ],
-  },
-  {
-    tag: '1f',
-    name: '梯廳B',
-    image: [
-      {
-        id: '1f-9',
-        img: null,
+        id: '2f-2',
+        img: new URL(
+          "@/assets/img/floor-plan/家配/交誼廳.webp",
+          import.meta.url
+        ).href,
       },
     ],
   },
