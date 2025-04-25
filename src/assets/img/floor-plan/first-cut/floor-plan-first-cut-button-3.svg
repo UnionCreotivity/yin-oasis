@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 429.49 429.49">
+  <defs>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g filter="url(#drop-shadow-1)">
+      <circle cx="214.74" cy="214.74" r="214.74" fill="#fff" opacity=".8"/>
+      <circle cx="214.74" cy="214.74" r="193.6" fill="#fff" opacity=".8"/>
+      <text transform="translate(120.1 311.07)" fill="#1a1a1a" font-family="jf-jinxuan-fresh-Medium-B5pc-H, jf-jinxuan-fresh" font-size="28.68" letter-spacing=".1em"><tspan x="0" y="0">低碳建築認證</tspan></text>
+      <text transform="translate(140.68 339.41)" fill="#1a1a1a" font-family="jf-jinxuan-fresh-Medium-B5pc-H, jf-jinxuan-fresh" font-size="14.34"><tspan x="0" y="0" letter-spacing=".1em">PL</tspan><tspan x="18.94" y="0" letter-spacing=".03em">A</tspan><tspan x="28.87" y="0" letter-spacing=".1em">TFORM OF</tspan><tspan x="108.25" y="0" letter-spacing=".12em"> </tspan><tspan x="113.72" y="0" letter-spacing=".02em">L</tspan><tspan x="121.19" y="0" letter-spacing=".08em">O</tspan><tspan x="133.24" y="0" letter-spacing=".1em">W</tspan><tspan x="-40.66" y="25.1" letter-spacing=".08em">C</tspan><tspan x="-30.54" y="25.1" letter-spacing=".1em">ARBON</tspan><tspan x="25.18" y="25.1" letter-spacing=".12em"> </tspan><tspan x="30.64" y="25.1" letter-spacing=".1em">BUILDING INDUST</tspan><tspan x="168.9" y="25.1" letter-spacing=".07em">R</tspan><tspan x="178.75" y="25.1" letter-spacing=".1em">Y</tspan></text>
+      <g>
+        <g>
+          <path d="M215.31,76.07c1.28,1.6,2.82,2.95,4.25,4.4,7.42,7.46,14.88,14.89,22.32,22.33,8.64,8.65,17.28,17.3,25.92,25.94,.12,.12,.22,.26,.32,.39,.1,.53-.36,.74-.64,1.02-6.19,6.21-12.39,12.41-18.59,18.62-2.01,2.01-4.02,4.03-6.04,6.04-.3,.3-.56,.67-1.05,.67-2.93-2.91-5.86-5.82-8.78-8.74-5.72-5.72-11.45-11.45-17.15-17.19-.52-.52-.8-.47-1.29,.02-8.31,8.35-16.64,16.68-24.97,25.01-.26,.26-.54,.51-.81,.76-.55,.21-.77-.26-1.05-.54-2.47-2.45-4.92-4.91-7.38-7.37-5.76-5.77-11.53-11.53-17.28-17.31-.32-.32-.84-.57-.67-1.18,5.73-5.75,11.46-11.5,17.19-17.24,11.61-11.63,23.23-23.25,34.84-34.88,.21-.21,.54-.34,.5-.73h.34Z" fill="#9fe932"/>
+          <path d="M241.8,155.47c3.99-3.98,7.99-7.96,11.98-11.94,4.59-4.59,9.18-9.18,13.77-13.78,.2-.2,.39-.42,.58-.62,1.7,1.41,3.18,3.07,4.74,4.63,15.53,15.53,31.05,31.07,46.58,46.61,.16,.16,.34,.29,.51,.43v2.57c-.19,.36-.45,.65-.73,.94-16.66,16.67-33.32,33.34-49.97,50.01-.28,.28-.58,.54-.94,.73h-.17c-3.34-3.36-6.66-6.74-10.01-10.09-5.28-5.29-10.57-10.58-15.87-15.85-.43-.42-.39-.62,.03-1.03,8.41-8.39,16.81-16.81,25.21-25.22,.87-.88,.96-.61-.02-1.6-8.37-8.38-16.75-16.76-25.13-25.14-.2-.2-.36-.43-.54-.64Z" fill="#236f08"/>
+          <path d="M162.43,128.92c.05,.37,.34,.58,.58,.82,8.33,8.34,16.66,16.67,24.99,25,.24,.24,.43,.54,.81,.58-5.49,5.51-10.98,11.02-16.47,16.52-3.18,3.19-6.35,6.38-9.56,9.54-.58,.57-.53,.91,.02,1.45,4.38,4.34,8.73,8.7,13.09,13.05,4.01,4.01,8.02,8.03,12.05,12.02,.55,.54,.54,.87-.02,1.42-8.36,8.33-16.69,16.67-25.01,25.03-.52,.52-.81,.55-1.35,.01-17.18-17.22-34.38-34.42-51.58-51.62-.43-.43-.67-.72-.09-1.3,17.53-17.5,35.04-35.02,52.55-52.54Z" fill="#d8f34e"/>
+          <path d="M181.54,182.12c11.24-11.25,22.48-22.5,33.74-33.77,5.47,5.48,10.97,10.99,16.46,16.49,5.56,5.57,11.11,11.13,16.69,16.68,.42,.42,.5,.62,.03,1.09-10.92,10.89-21.81,21.79-32.7,32.71-.37,.37-.56,.52-1.02,.06-10.98-11.02-21.98-22.03-32.98-33.03-.08-.08-.16-.17-.21-.23Z" fill="#3e3d65"/>
+        </g>
+        <text transform="translate(158.31 268.81)" fill="#3e3d65" font-family="AcuminConcept-Bold, &apos;Acumin Variable Concept&apos;" font-size="37.52" font-variation-settings="&apos;wght&apos; 700, &apos;wdth&apos; 100, &apos;slnt&apos; 0"><tspan x="0" y="0" letter-spacing=".09em">P</tspan><tspan x="27.88" y="0" letter-spacing=".08em">L</tspan><tspan x="53.01" y="0" letter-spacing=".09em">C</tspan><tspan x="83.03" y="0" letter-spacing=".1em">B</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

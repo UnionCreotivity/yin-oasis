@@ -1,0 +1,223 @@
+@use '../config' as *;
+
+.floor-plan-inner-fancybox {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 18;
+  .floor-plan-inner-fancybox-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    .floor-plan-inner-fancybox-left {
+      width: 22.5%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      letter-spacing: 2px;
+      padding-bottom: 14vw;
+      transition: opacity 0.5s;
+      h1 {
+        color: #216f37;
+        font-size: 4.5vw;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 4vw;
+        z-index: 8;
+      }
+      .floor-plan-inner-fancybox-left-item-1 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-family: var(--serif);
+        font-weight: 600;
+        font-size: 1.75vw;
+        width: 18.5vw;
+        color: #216f37;
+        z-index: 8;
+        .floor-plan-inner-fancybox-left-item-1-line {
+          width: 24.25%;
+          height: 1px;
+          margin-bottom: 0.55vw;
+          margin-left: 0.5vw;
+          background-color: #216f37;
+        }
+      }
+      .floor-plan-inner-fancybox-left-item-2 {
+        text-align: end;
+        font-family: var(--lato);
+        font-weight: 300;
+        font-size: 1vw;
+        margin-top: 0.25vw;
+        margin-left: 4.75vw;
+        color: #717071;
+        z-index: 8;
+      }
+      @include pad {
+        h1 {
+          font-size: 3.75vw;
+        }
+        .floor-plan-inner-fancybox-left-item-1 {
+          font-size: 1.25vw;
+          width: 15.5vw;
+        }
+        .floor-plan-inner-fancybox-left-item-2 {
+          font-size: 0.8vw;
+          margin-left: 4.5vw;
+        }
+      }
+    }
+
+    .floor-plan-inner-fancybox-right {
+      position: absolute;
+      top: 0;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      .imgBoxIn {
+        height: auto;
+        padding-block: 1vw;
+      }
+      .container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 96%;
+        padding-right: 7vw;
+        .anchor-area {
+          position: relative;
+          width: auto;
+          height: 100%;
+          .anchor-area-map {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            .imgBoxMap {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .plan-inner-fancybox-left-hide {
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      .zoom {
+        position: relative;
+        left: 0;
+        justify-content: flex-end;
+        margin-inline: 2vw;
+        margin-bottom: 7vw;
+        z-index: 11;
+      }
+    }
+    .plan-inner-fancybox-zIndex {
+      .imgBoxIn {
+        height: auto;
+        z-index: 15;
+      }
+    }
+  }
+  .floor-plan-inner-fancybox-2 {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    transition: opacity 0.5s;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    p {
+      position: absolute;
+      right: 5%;
+      bottom: 10%;
+      font-size: 0.65vw;
+      color: white;
+      z-index: 2;
+      letter-spacing: 2px;
+    }
+    .floor-plan-inner-fancybox-2-swiper {
+      position: relative;
+      .swiper-slide {
+        margin: auto;
+      }
+    }
+  }
+
+  .floor-plan-inner-fancybox-2-spec {
+    margin: auto;
+    width: auto;
+    height: 95%;
+    z-index: 1;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    p {
+      bottom: 3%;
+    }
+    .floor-plan-inner-fancybox-2-swiper {
+      height: 100%;
+      .swiper-slide {
+        width: auto !important;
+      }
+    }
+  }
+  .floor-plan-prev,
+  .floor-plan-next {
+    color: #ccc;
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+
+    &::after {
+      font-size: 75px;
+    }
+  }
+  .floor-plan-prev {
+    left: 2%;
+  }
+  .floor-plan-next {
+    right: 2%;
+  }
+  .floor-plan-inner-fancybox-left-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    opacity: 1;
+    transition: all 0.5s;
+    @include pad {
+      width: 40%;
+    }
+  }
+  .plan-inner-fancybox-left-hide {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .floor-plan-inner-fancybox-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+}

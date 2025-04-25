@@ -15,6 +15,11 @@ import MetroView from '@/views/choice/metro/MetroView.vue'
 import TransView from '@/views/choice/trans/TransView.vue'
 import RiseView from '@/views/choice/rise/RiseView.vue'
 
+//森粼雅居
+import BuildingView from '@/views/building/BuildingView.vue'
+import FloorPlanView from '@/views/building/floorPlan/FloorPlanView.vue'
+import FloorPlanInnerView from '@/views/building/floorPlanInner/FloorPlanInnerView.vue'
+
 //生活機能
 import LifeView from '@/views/life/LifeView.vue'
 
@@ -69,6 +74,22 @@ const router = createRouter({
           path: 'rise',
           name: 'rise',
           component: RiseView,
+        },
+      ],
+    },
+    {
+      path: '/building',
+      component: BuildingView,
+      children: [
+        {
+          path: '',
+          name: 'floorplan',
+          component: FloorPlanView,
+        },
+        {
+          path: '/floorInner',
+          name: 'floorInner',
+          component: FloorPlanInnerView,
         },
       ],
     },

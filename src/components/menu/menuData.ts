@@ -67,12 +67,12 @@ export const menuData = [
     key: 'menu-4',
     zhName: '森粼雅居',
     enName: 'BUILDING',
-    pathName: '',
+    pathName: 'building',
     list: [
       {
         key: 'sub-1',
         name: '風尚美築',
-        link: '',
+        link: 'floorplan',
       },
       {
         key: 'sub-2',

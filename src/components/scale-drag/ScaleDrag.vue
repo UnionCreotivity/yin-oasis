@@ -41,6 +41,8 @@ const props = defineProps<{
   init: InitPosition
 }>()
 
+const emits = defineEmits(['show-text', 'hide-text', 'isInter', 'watch-scale'])
+
 const scaleRatio = ref(1)
 const x = ref(0)
 const y = ref(0)
@@ -70,6 +72,7 @@ const zoomIn = (e: MouseEvent) => {
     x.value = props.init.x
     y.value = props.init.y
     startScale.value = true
+    emits('hide-text')
   }
 }
 
@@ -79,6 +82,7 @@ const zoomOut = (e: MouseEvent) => {
   if (scaleRatio.value > 1) {
     scaleRatio.value -= 1
     startScale.value = false
+    emits('show-text')
   }
   if (scaleRatio.value < 2) {
     x.value = 0

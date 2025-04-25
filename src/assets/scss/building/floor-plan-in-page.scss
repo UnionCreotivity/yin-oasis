@@ -1,0 +1,300 @@
+@use '../config' as *;
+
+#floor-plan-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(67, 93, 96, 1) 0%,
+    rgba(83, 113, 113, 1) 26%,
+    rgba(94, 126, 127, 1) 79%,
+    rgba(149, 161, 144, 1) 100%
+  );
+  overflow: hidden;
+
+  .floor-plan-inner-left {
+    width: 22.5%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    transition: opacity 0.5s;
+    margin-top: 1%;
+    .floor-plan-inner-left-item-1-squre {
+      width: 4%;
+      height: 71%;
+      background-color: #fdf7dd;
+    }
+    h1 {
+      color: white;
+      font-size: 4.5vw;
+      font-weight: 500;
+      text-align: center;
+      margin-left: 3vw;
+      z-index: 8;
+    }
+    .floor-plan-inner-left-item-1 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      flex-direction: column;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1.5vw;
+      width: 18.5vw;
+      color: white;
+      margin-left: 2%;
+      z-index: 8;
+
+      .floor-plan-inner-left-item-1-line {
+        width: 24.25%;
+        height: 1px;
+        margin-bottom: 0.55vw;
+        margin-left: 0.5vw;
+        background-color: #216f37;
+      }
+      p {
+        font-size: 1.1vw;
+      }
+    }
+    .floor-plan-inner-left-item-2 {
+      text-align: end;
+      font-family: var(--lato);
+      font-weight: 300;
+      font-size: 1vw;
+      margin-top: 0.25vw;
+      margin-left: 4.75vw;
+      color: #717071;
+      z-index: 8;
+    }
+    .floor-plan-inner-left-view {
+      color: #216f37;
+      z-index: 1;
+      text-align: center;
+      margin-left: 4vw;
+      letter-spacing: 6px;
+      border-radius: 40px;
+      border: 1px solid green;
+      padding: 7px 3vw;
+      font-size: 1.25vw;
+      margin-top: 1.5vw;
+      cursor: pointer;
+    }
+
+    @include pad {
+      h1 {
+        font-size: 3.75vw;
+      }
+      .floor-plan-inner-left-item-1 {
+        font-size: 1.25vw;
+        width: 15.5vw;
+      }
+      .floor-plan-inner-left-item-2 {
+        font-size: 0.8vw;
+        margin-left: 4.5vw;
+      }
+    }
+  }
+
+  .floor-plan-inner-right {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include pad {
+      top: 12%;
+      right: 0;
+      width: 77%;
+      height: 77%;
+    }
+    .floor-plan-inner-left-item-3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      .floor-plan-inner-left-tree {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        gap: 1vw;
+        margin-top: 1.5vw;
+        .tree-button {
+          width: 6.5vw;
+          transition: all 0.3s;
+
+          &.active {
+            transform: scale(1.1);
+            filter: drop-shadow(2px 4px 4px #aaa);
+          }
+        }
+        .tree-5 {
+          width: 2.5vw;
+          cursor: pointer;
+        }
+      }
+      .floor-plan-inner-left-ul {
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        list-style-type: none;
+        gap: 1vw;
+        margin-top: 1.5vw;
+        li {
+          font-family: var(--serif);
+          font-size: 1.1vw;
+          font-weight: 500;
+          display: flex;
+          flex-direction: column;
+          width: 9vw;
+          z-index: 10;
+          .floor-plan-inner-left-li-top {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .floor-plan-inner-left-li-squre {
+              margin-right: 0.5vw;
+              width: 1.5vw;
+              color: white;
+            }
+          }
+          .floor-plan-inner-left-li-text {
+            color: white;
+            transition: all 0.5s;
+          }
+          .floor-plan-inner-left-li-line {
+            width: 12vw;
+            height: 1px;
+            margin-block: 0.75vw;
+            background-color: #216f37;
+          }
+        }
+        .floor-plan-inner-left-hover {
+          .floor-plan-inner-left-li-text {
+            // transform: translateX(1vw);
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+    .imgBoxIn {
+      width: 90%;
+      height: auto;
+      padding-block: 1vw;
+      .box {
+        justify-content: center;
+      }
+    }
+    .container {
+      // position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      .anchor-area {
+        position: relative;
+        width: auto;
+        height: 100%;
+        .anchor-area-map {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          .floor-plan-inner-right-points {
+            position: absolute;
+            top: 0;
+            left: 0;
+            // pointer-events: none;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+          }
+          .imgBoxMap {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .zoom {
+      position: absolute;
+      right: 0;
+      left: unset;
+      bottom: 0;
+      justify-content: flex-end;
+      margin-inline: 2vw;
+      margin-bottom: 7vw;
+      z-index: 15;
+      @include pad {
+        margin-bottom: 0vw;
+      }
+    }
+  }
+  .plan-inner-zIndex {
+    .imgBoxIn {
+      height: auto;
+      z-index: 15;
+    }
+  }
+  .floor-plan-inner-left-bottom {
+    position: absolute;
+    left: 0;
+    bottom: -8%;
+    width: 50%;
+    transition: opacity 0.5s;
+    @include pad {
+      width: 40%;
+    }
+  }
+  .tree-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .tree-video-close {
+      position: absolute;
+      top: 5vw;
+      right: 2vw;
+      width: 2vw;
+      height: 2vw;
+      cursor: pointer;
+      z-index: 16;
+    }
+    video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 15;
+    }
+  }
+  .plan-inner-left-hide {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .back {
+    z-index: 9;
+  }
+  .floor-plan-inner-mention {
+    position: absolute;
+    right: 8%;
+    bottom: 7%;
+    font-family: var(--micro);
+    font-size: 0.6vw;
+    letter-spacing: 4px;
+    color: white;
+  }
+}

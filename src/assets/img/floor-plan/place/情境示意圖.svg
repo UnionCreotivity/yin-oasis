@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 117.68 763.32">
+  <defs>
+    <linearGradient id="_未命名漸層_11" data-name="未命名漸層 11" x1="58.84" y1="763.32" x2="58.84" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42b14e" stop-opacity="0"/>
+      <stop offset=".24" stop-color="#42b14e"/>
+      <stop offset=".86" stop-color="#228842"/>
+    </linearGradient>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g>
+      <rect y="0" width="117.68" height="763.32" fill="url(#_未命名漸層_11)"/>
+      <text transform="translate(51.28 33.7) rotate(90)" fill="#fff" font-family="Lato-Light, Lato" font-size="30" letter-spacing=".1em"><tspan x="0" y="0">LANDSCAPE PLANTING</tspan></text>
+      <text transform="translate(64 472.62)" fill="#fff" font-family="NotoSerifTC-SemiBold-90ms-RKSJ-H, &apos;Noto Serif TC&apos;" font-size="27.94" glyph-orientation-vertical="0deg" letter-spacing=".08em" text-orientation="upright" writing-mode="tb"><tspan x="0" y="0">情境示意圖</tspan></text>
+      <line y1="440.48" x2="117.68" y2="440.48" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".49"/>
+    </g>
+  </g>
+</svg>
