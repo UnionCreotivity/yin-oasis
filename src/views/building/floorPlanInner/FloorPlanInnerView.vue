@@ -25,7 +25,7 @@
         @show-text="showLeft"
         @watch-scale="watchScale"
       >
-        <div class="container">
+        <div :id="mainItem?.id" class="container">
           <div class="anchor-area">
             <div class="anchor-area-map">
               <FadeIn>
@@ -39,6 +39,7 @@
                     :fName="item?.fName"
                     :content="item?.content"
                     :swiperTag="item?.swiperTag"
+                    :numberList="item?.numberList"
                     :listTag="listTag"
                     @hover-list-handle="hoverListHandle"
                     @out-list-handle="outListHandle"

@@ -23,7 +23,7 @@
       v-else-if="props.swiperTag"
     >
       <div class="floor-red-point-img">
-        <img src="../../assets/img/floor-plan/point.svg" />
+        <!-- <img src="../../assets/img/floor-plan/point.svg" /> -->
       </div>
       <div className="radiation">
         <div className="circle"></div>
@@ -75,7 +75,8 @@
       v-else
     >
       <div class="floor-red-point-img">
-        <img src="../../assets/img/floor-plan/point.svg" />
+        {{ props.numberList }}
+        <!-- <img src="../../assets/img/floor-plan/point.svg" /> -->
       </div>
       <div className="radiation">
         <div className="circle"></div>
@@ -93,7 +94,16 @@ import { Navigation } from 'swiper/modules'
 import FadeIn from '../transition/FadeIn.vue'
 import '@/assets/scss/building/floor-points.scss'
 
-const props = defineProps(['className', 'name', 'fName', 'tag', 'listTag', 'content', 'swiperTag'])
+const props = defineProps([
+  'className',
+  'name',
+  'fName',
+  'tag',
+  'listTag',
+  'content',
+  'swiperTag',
+  'numberList',
+])
 
 const emits = defineEmits(['hover-list-handle', 'out-list-handle', 'handle-click'])
 

@@ -23,7 +23,7 @@
       background-color: #256634;
     }
     .radiation {
-      top: 1%;
+      top: 0%;
       opacity: 0;
       transition: opacity 0.5s;
       .circle {
@@ -51,11 +51,18 @@
     }
   }
   .floor-red-point-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 3vw;
-    padding: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
     z-index: 12;
+    font-size: 0.9vw;
+    color: white;
+    background-color: #435d60;
     pointer-events: auto;
+    border-radius: 50%;
     cursor: pointer;
   }
   .floor-red-stop {
@@ -170,46 +177,46 @@
 
 //1F
 .point-1-1F {
-  top: 52%;
-  left: 31%;
+  top: 57%;
+  left: 56%;
 }
 .point-2-1F {
-  top: 58%;
-  left: 39%;
+  top: 20%;
+  left: 87.5%;
 }
 .point-3-1F {
-  top: 33%;
-  left: 51%;
+  top: 44%;
+  left: 48.5%;
 }
 .point-4-1F {
-  top: 25%;
-  left: 62%;
+  top: 88%;
+  left: 37%;
 }
 .point-5-1F {
-  top: 39%;
-  left: 61%;
+  top: 27.5%;
+  left: 68%;
 }
 .point-6-1F {
-  top: 9.5%;
-  left: 72.5%;
+  top: 43.5%;
+  left: 21.5%;
 }
 .point-7-1F {
-  top: 35.5%;
-  left: 76.5%;
+  top: 61.5%;
+  left: 87.5%;
 }
 .point-8-1F {
-  top: 38%;
-  left: 44%;
+  top: 71%;
+  left: 48%;
 }
 .point-9-1F {
-  top: 27%;
-  left: 73%;
+  top: 70%;
+  left: 42.5%;
 }
 
 .radiation {
   position: absolute;
   left: 0;
-  top: 1vw;
+  top: 0;
   right: 0;
   margin: 0 auto;
   width: 1.5vw;
