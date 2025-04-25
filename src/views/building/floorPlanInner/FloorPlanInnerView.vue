@@ -25,7 +25,7 @@
         @show-text="showLeft"
         @watch-scale="watchScale"
       >
-        <div class="container">
+        <div :id="mainItem?.id" class="container">
           <div class="anchor-area">
             <div class="anchor-area-map">
               <FadeIn>
@@ -46,7 +46,7 @@
                   />
                 </div>
               </FadeIn>
-              <img class="imgBoxMap" :src="mainItem?.image" />
+              <img  class="imgBoxMap" :src="mainItem?.image" />
             </div>
           </div>
         </div>
@@ -191,6 +191,7 @@ onMounted(() => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const findItem = FloorPlanAest.find((item: any) => item.tag === tag.value)
   mainItem.value = findItem
+  console.log(mainItem.value)
 })
 
 provide('toggle', backToFloor)
