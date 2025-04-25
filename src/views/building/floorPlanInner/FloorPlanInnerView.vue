@@ -1,5 +1,5 @@
 <template>
-  <div id="floor-plan-inner" @click.stop="backToFloor">
+  <div id="floor-plan-inner" :class="mainItem?.id" @click.stop="backToFloor">
     <p class="floor-plan-inner-mention">本圖面僅供參考，實際圖面依合約書附圖為準</p>
     <div class="floor-plan-inner-left" :class="[show ? 'plan-inner-left-hide' : '']">
       <div class="floor-plan-inner-left-item-1-squre"></div>
@@ -16,7 +16,7 @@
         景觀 VIEW
       </div>
     </div>
-    <div class="floor-plan-inner-right" :class="[show ? 'plan-inner-zIndex' : '']">
+    <div class="floor-plan-inner-right" :class="[show ? 'plan-inner-zIndex' : '', mainItem?.id]">
       <ScaleDrag
         :max-ratio="2"
         :init="{ x: -350, y: -100 }"
@@ -24,7 +24,7 @@
         @show-text="showLeft"
         @watch-scale="watchScale"
       >
-        <div :id="mainItem?.id" class="container">
+        <div class="container">
           <div class="anchor-area">
             <div class="anchor-area-map">
               <FadeIn>

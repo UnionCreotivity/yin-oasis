@@ -297,21 +297,50 @@
     letter-spacing: 4px;
     color: white;
   }
-
   //-- 樓層 --
-  #R1 {
-    width: 92.5%;
+  .R1 {
+    .imgBoxIn {
+      .box {
+        .container {
+          width: 92.5%;
+        }
+      }
+    }
   }
-  #B1 {
-    width: 92.5%;
+  .B1 {
+    .imgBoxIn {
+      .box {
+        .container {
+          width: 92.5%;
+        }
+      }
+    }
   }
-  #B2 {
-    width: 92.5%;
+  .B2 {
+    .imgBoxIn {
+      .box {
+        .container {
+          width: 92.5%;
+        }
+      }
+    }
   }
-  #B3 {
-    width: 92.5%;
+  .B3 {
+    .imgBoxIn {
+      .box {
+        .container {
+          width: 92.5%;
+        }
+      }
+    }
   }
-  #M-1F {
-    width: 92.5%;
+  .M-1F {
+    .imgBoxIn {
+      .box {
+        .container {
+          width: 92.5%;
+        }
+      }
+    }
   }
 }
