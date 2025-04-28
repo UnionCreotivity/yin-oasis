@@ -116,11 +116,6 @@ export const menuData = [
         link: '',
       },
       {
-        key: 'sub-2',
-        name: '競品比較',
-        link: '',
-      },
-      {
         key: 'sub-3',
         name: '房貸試算',
         link: 'loan',
