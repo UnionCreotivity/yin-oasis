@@ -10,7 +10,7 @@ export const FloorPlanList = [
   { id: '5F', tag: '5F-11F', floor: '5F', is_use: true },
   { id: '6F', tag: '6F-13F', floor: '6F', is_use: true },
   { id: '7F', tag: '6F-13F', floor: '7F', is_use: true },
-  { id: '8F', tag: '5F-11F', floor: '8F', is_use: false },
+  { id: '8F', tag: '5F-11F', floor: '8F', is_use: true },
   { id: '9F', tag: '6F-13F', floor: '9F', is_use: true },
   { id: '10F', tag: '6F-13F', floor: '10F', is_use: true },
   { id: '11F', tag: '5F-11F', floor: '11F', is_use: true },
