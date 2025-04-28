@@ -57,7 +57,7 @@ const startScale = ref(false)
 
 const dragTarget = ref<HTMLElement | null>(null)
 const imgBox = ref<HTMLElement | null>(null)
-
+// z
 const onClick = (e: MouseEvent) => {
   if (scaleRatio.value >= props.maxRatio) {
     e.stopPropagation()
