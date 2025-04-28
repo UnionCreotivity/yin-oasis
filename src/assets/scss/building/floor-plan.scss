@@ -25,10 +25,14 @@
     width: 100%;
     .floor-plan-left-text {
       position: absolute;
-      left: 58%;
-      top: 91%;
+      left: 62%;
+      top: 93%;
       font-size: 0.8vw;
       color: white;
+      @include pad {
+        left: 57%;
+        font-size: 1vw;
+      }
     }
     .imgBoxIn {
       margin: 1vw 1vw 1vw 2vw;

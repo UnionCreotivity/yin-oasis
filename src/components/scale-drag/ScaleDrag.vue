@@ -1,14 +1,14 @@
 <template>
   <div
     class="imgBoxIn"
-    @click="onClick"
-    @mousedown="onMouseDown"
-    @mousemove="onMouseMove"
-    @mouseup="onMouseUp"
-    @mouseleave="onMouseUp"
-    @touchstart="onTouchStart"
-    @touchmove="onTouchMove"
-    @touchend="onTouchEnd"
+    @click.stop="onClick"
+    @mousedown.stop="onMouseDown"
+    @mousemove.stop="onMouseMove"
+    @mouseup.stop="onMouseUp"
+    @mouseleave.stop="onMouseUp"
+    @touchstart.stop="onTouchStart"
+    @touchmove.stop="onTouchMove"
+    @touchend.stop="onTouchEnd"
   >
     <div
       class="box"
@@ -92,6 +92,7 @@ const zoomOut = (e: MouseEvent) => {
 
 const onMouseMove = (e: MouseEvent) => {
   e.stopPropagation()
+  e.preventDefault()
   const maxHorizontal = (mapRect.width - boxRect.width) / 2
   const maxVertical = (mapRect.height - boxRect.height) / 2
   if (flag.value && scaleRatio.value >= 2) {

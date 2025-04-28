@@ -1,7 +1,10 @@
 <template>
-  <div id="floor-plan-inner" :class="mainItem?.id" @click.stop="backToFloor">
+  <div id="floor-plan-inner" :class="`F-${mainItem?.id}-out`" @click.stop="backToFloor">
     <p class="floor-plan-inner-mention">本圖面僅供參考，實際圖面依合約書附圖為準</p>
-    <div class="floor-plan-inner-left" :class="[show ? 'plan-inner-left-hide' : '']">
+    <div class="floor-plan-inner-txt-img" v-if="mainItem?.txtImg">
+      <img :src="mainItem?.txtImg" alt="" />
+    </div>
+    <div class="floor-plan-inner-left" :class="[show ? 'plan-inner-left-hide' : '']" v-else>
       <div class="floor-plan-inner-left-item-1-squre"></div>
       <h1>{{ mainItem?.floor }}</h1>
       <div class="floor-plan-inner-left-item-1">
@@ -16,10 +19,13 @@
         景觀 VIEW
       </div>
     </div>
-    <div class="floor-plan-inner-right" :class="[show ? 'plan-inner-zIndex' : '', `F-${mainItem?.id}`]">
+    <div
+      class="floor-plan-inner-right"
+      :class="[show ? 'plan-inner-zIndex' : '', `F-${mainItem?.id}`]"
+    >
       <ScaleDrag
         :max-ratio="2"
-        :init="{ x: -350, y: -100 }"
+        :init="{ x: 0, y: 0 }"
         @hide-text="hideLeft"
         @show-text="showLeft"
         @watch-scale="watchScale"
@@ -135,7 +141,6 @@ const outListHandle = () => {
 }
 
 const handleClick = (val: string) => {
- 
   clickTag.value = val
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const findItem = FloorPlanImg.find((item: any) => item.name === clickTag.value)
@@ -144,7 +149,6 @@ const handleClick = (val: string) => {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const removeTag = () => {
   boxContent.value = null
   clickTag.value = ''
@@ -193,7 +197,6 @@ onMounted(() => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const findItem = FloorPlanAest.find((item: any) => item.tag === tag.value)
   mainItem.value = findItem
-  console.log(mainItem.value)
 })
 
 provide('toggle', backToFloor)

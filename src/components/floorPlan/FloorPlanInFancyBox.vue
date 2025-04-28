@@ -1,6 +1,9 @@
 <template>
   <div class="floor-plan-inner-fancybox" @click.stop="handleBack">
-    <div class="floor-plan-inner-fancybox-1" v-if="props.boxContent?.tag !== '1f' && props.boxContent?.tag !== '2f'">
+    <div
+      class="floor-plan-inner-fancybox-1"
+      v-if="props.boxContent?.tag !== '1f' && props.boxContent?.tag !== '2f'"
+    >
       <div
         class="floor-plan-inner-fancybox-left"
         :class="[show ? 'plan-inner-fancybox-left-hide' : '']"
@@ -54,7 +57,10 @@
       >
         <swiper-slide v-for="item in props.boxContent?.image" :key="item.id">
           <img :src="item.img" />
-          <p>3D示意圖</p>
+          <p>
+            <span>{{ item.name }}</span
+            >3D示意圖
+          </p>
         </swiper-slide>
 
         <div class="swiper-button-prev floor-plan-prev" @click.stop="handleClick"></div>

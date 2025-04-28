@@ -29,12 +29,13 @@
       height: 71%;
       background-color: #fdf7dd;
     }
-    h1 {
+    > h1 {
       color: white;
       font-size: 4.5vw;
       font-weight: 400;
       text-align: center;
       margin-left: 3vw;
+      white-space: pre-wrap;
       z-index: 8;
     }
     .floor-plan-inner-left-item-1 {
@@ -110,10 +111,10 @@
     justify-content: center;
     flex-direction: column;
     @include pad {
-      top: 12%;
+      top: 0%;
       right: 0;
-      width: 77%;
-      height: 77%;
+      width: 100%;
+      height: 100%;
     }
     .floor-plan-inner-left-item-3 {
       display: flex;
@@ -150,6 +151,9 @@
         list-style-type: none;
         gap: 1vw;
         margin-top: 1.5vw;
+        @include pad {
+          width: 60%;
+        }
         li {
           font-family: var(--serif);
           font-size: 1.1vw;
@@ -158,6 +162,10 @@
           flex-direction: column;
           width: 9vw;
           z-index: 10;
+          @include pad {
+            font-size: 1.5vw;
+            width: 11vw;
+          }
           .floor-plan-inner-left-li-top {
             display: flex;
             align-items: center;
@@ -238,7 +246,8 @@
       margin-bottom: 7vw;
       z-index: 15;
       @include pad {
-        margin-bottom: 0vw;
+        margin-inline: 3vw;
+        margin-bottom: 9vw;
       }
     }
   }
@@ -296,6 +305,10 @@
     font-size: 0.6vw;
     letter-spacing: 4px;
     color: white;
+    @include pad {
+      font-size: 1vw;
+      right: 10%;
+    }
   }
   //-- 樓層 --
   .F-R1 {
@@ -343,13 +356,137 @@
       }
     }
   }
-  .F-2F{
+  .F-2F {
     width: 87%;
     top: 1%;
     left: 10%;
-
-    .zoom{
+    .zoom {
       right: -2%;
+    }
+  }
+  .F-3F {
+    .imgBoxIn {
+      width: 54%;
+      align-self: flex-end;
+      margin-right: 8%;
+      @include pad {
+        width: 66%;
+        margin-right: 9%;
+      }
+    }
+  }
+  .F-4F {
+    .imgBoxIn {
+      width: 54%;
+      align-self: flex-end;
+      margin-right: 8%;
+      @include pad {
+        width: 66%;
+        margin-right: 9%;
+      }
+    }
+  }
+  .F-5F-11F {
+    .imgBoxIn {
+      width: 54%;
+      align-self: flex-end;
+      margin-right: 8%;
+      @include pad {
+        width: 66%;
+        margin-right: 9%;
+      }
+    }
+  }
+  .F-6F-13F {
+    .imgBoxIn {
+      width: 54%;
+      align-self: flex-end;
+      margin-right: 8%;
+      @include pad {
+        width: 66%;
+        margin-right: 9%;
+      }
+    }
+  }
+  .F-R1 {
+    .imgBoxIn {
+      width: 56%;
+      align-self: flex-end;
+      margin-right: 7%;
+      @include pad {
+        width: 68%;
+        margin-right: 8%;
+      }
+    }
+  }
+}
+
+.F-3F-out {
+  .floor-plan-inner-txt-img {
+    width: 9.75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13%;
+    @include pad {
+      width: 11.75vw;
+      margin-left: 6%;
+    }
+  }
+}
+
+.F-4F-out {
+  .floor-plan-inner-txt-img {
+    width: 9.75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13%;
+    @include pad {
+      width: 11.75vw;
+      margin-left: 6%;
+    }
+  }
+}
+
+.F-5F-11F-out {
+  .floor-plan-inner-txt-img {
+    width: 15.25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11%;
+    @include pad {
+      width: 17.25vw;
+      margin-left: 4.5%;
+    }
+  }
+}
+
+.F-6F-13F-out {
+  .floor-plan-inner-txt-img {
+    width: 18.25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9%;
+    @include pad {
+      width: 22.25vw;
+      margin-left: 4%;
+    }
+  }
+}
+
+.F-R1-out {
+  .floor-plan-inner-txt-img {
+    width: 9.75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13%;
+    @include pad {
+      width: 11.75vw;
+      margin-left: 6%;
     }
   }
 }

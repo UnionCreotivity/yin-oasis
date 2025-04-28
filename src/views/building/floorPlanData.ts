@@ -1,22 +1,22 @@
 export const FloorPlanList = [
-  { id: 'B3',tag: 'B3', floor: 'B3' , is_use:true},
-  { id: 'B2', tag: 'B2', floor: 'B2', is_use:true },
-  { id: 'B1', tag: 'B1', floor: 'B1', is_use:true },
-  { id: '1F', tag: '1F', floor: '1F', is_use:true },
-  { id: 'M-1F', tag: 'M-1F', floor: '1MF', is_use:true },
-  { id: '2F', tag: '2F', floor: '2F', is_use:true },
-  { id: '3F', tag: '3F', floor: '3F' , is_use:false },
-  { id: '4F', tag: '4F-9F', floor: '4F', is_use:false },
-  { id: '5F', tag: '10F', floor: '5F', is_use:false },
-  { id: '6F', tag: '4F-9F', floor: '6F', is_use:false },
-  { id: '7F', tag: '4F-9F', floor: '7F', is_use:false },
-  { id: '8F', tag: '10F', floor: '8F', is_use:false },
-  { id: '9F', tag: '4F-9F', floor: '9F', is_use:false },
-  { id: '10F', tag: '4F-9F', floor: '10F', is_use:false },
-  { id: '10F', tag: '10F', floor: '11F', is_use:false },
-  { id: '10F', tag: '4F-9F', floor: '12F', is_use:false },
-  { id: '10F', tag: '4F-9F', floor: '13F', is_use:false },
-  { id: 'R1', tag: 'R1', floor: 'RF', is_use:false },
+  { id: 'B3', tag: 'B3', floor: 'B3', is_use: true },
+  { id: 'B2', tag: 'B2', floor: 'B2', is_use: true },
+  { id: 'B1', tag: 'B1', floor: 'B1', is_use: true },
+  { id: '1F', tag: '1F', floor: '1F', is_use: true },
+  { id: 'M-1F', tag: 'M-1F', floor: '1MF', is_use: true },
+  { id: '2F', tag: '2F', floor: '2F', is_use: true },
+  { id: '3F', tag: '3F', floor: '3F', is_use: true },
+  { id: '4F', tag: '4F', floor: '4F', is_use: true },
+  { id: '5F', tag: '5F-11F', floor: '5F', is_use: true },
+  { id: '6F', tag: '6F-13F', floor: '6F', is_use: true },
+  { id: '7F', tag: '6F-13F', floor: '7F', is_use: true },
+  { id: '8F', tag: '5F-11F', floor: '8F', is_use: false },
+  { id: '9F', tag: '6F-13F', floor: '9F', is_use: true },
+  { id: '10F', tag: '6F-13F', floor: '10F', is_use: true },
+  { id: '11F', tag: '5F-11F', floor: '11F', is_use: true },
+  { id: '12F', tag: '6F-13F', floor: '12F', is_use: true },
+  { id: '13F', tag: '6F-13F', floor: '13F', is_use: true },
+  { id: 'R1', tag: 'R1', floor: 'RF', is_use: true },
 ]
 
 export const FloorPlanAest = [
@@ -109,7 +109,7 @@ export const FloorPlanAest = [
       {
         className: 'point-5-1F',
         tag: 'second',
-        fName: '健身房',
+        fName: '機車道出入口',
         numberList: 2,
       },
       {
@@ -180,7 +180,6 @@ export const FloorPlanAest = [
         name: '交誼廳',
         numberList: 2,
       },
-      
     ],
     points: [
       {
@@ -195,152 +194,167 @@ export const FloorPlanAest = [
         fName: '交誼廳',
         numberList: 2,
       },
-      
     ],
   },
   {
     id: '3F',
     tag: '3F',
     floor: '3F',
-    image: new URL('@/assets/img/floor-plan/3F@2x.png', import.meta.url).href,
-    points: [
-      {
-        className: 'a1-3F',
-        name: 'A1',
-      },
-      {
-        className: 'a2-3F',
-        name: 'A2',
-      },
-      {
-        className: 'a3-3F',
-        name: 'A3',
-      },
-      {
-        className: 'a5-3F',
-        name: 'A5',
-      },
-      {
-        className: 'a6-3F',
-        name: 'A6',
-      },
-      {
-        className: 'a7-3F',
-        name: 'A7',
-      },
-      {
-        className: 'a8-3F',
-        name: 'A8',
-      },
-      {
-        className: 'a9-3F',
-        name: 'A9',
-      },
-      {
-        className: 'b1-3F',
-        name: 'B1',
-      },
-      {
-        className: 'b2-3F',
-        name: 'B2',
-      },
-      {
-        className: 'b3-3F',
-        name: 'B3',
-      },
-      {
-        className: 'b5-3F',
-        name: 'B5',
-      },
-      {
-        className: 'b6-3F',
-        name: 'B6',
-      },
-      {
-        className: 'b7-3F',
-        name: 'B7',
-      },
-      {
-        className: 'b8-3F',
-        name: 'B8',
-      },
-      {
-        className: 'b9-3F',
-        name: 'B9',
-      },
-    ],
+    image: new URL('@/assets/img/floor-plan/new/3F@2x.webp', import.meta.url).href,
+    txtImg: new URL('@/assets/img/floor-plan/new/3F-txt@2x.webp', import.meta.url).href,
+    // points: [
+    //   {
+    //     className: 'a1-3F',
+    //     name: 'A1',
+    //   },
+    //   {
+    //     className: 'a2-3F',
+    //     name: 'A2',
+    //   },
+    //   {
+    //     className: 'a3-3F',
+    //     name: 'A3',
+    //   },
+    //   {
+    //     className: 'a5-3F',
+    //     name: 'A5',
+    //   },
+    //   {
+    //     className: 'a6-3F',
+    //     name: 'A6',
+    //   },
+    //   {
+    //     className: 'a7-3F',
+    //     name: 'A7',
+    //   },
+    //   {
+    //     className: 'a8-3F',
+    //     name: 'A8',
+    //   },
+    //   {
+    //     className: 'a9-3F',
+    //     name: 'A9',
+    //   },
+    //   {
+    //     className: 'b1-3F',
+    //     name: 'B1',
+    //   },
+    //   {
+    //     className: 'b2-3F',
+    //     name: 'B2',
+    //   },
+    //   {
+    //     className: 'b3-3F',
+    //     name: 'B3',
+    //   },
+    //   {
+    //     className: 'b5-3F',
+    //     name: 'B5',
+    //   },
+    //   {
+    //     className: 'b6-3F',
+    //     name: 'B6',
+    //   },
+    //   {
+    //     className: 'b7-3F',
+    //     name: 'B7',
+    //   },
+    //   {
+    //     className: 'b8-3F',
+    //     name: 'B8',
+    //   },
+    //   {
+    //     className: 'b9-3F',
+    //     name: 'B9',
+    //   },
+    // ],
   },
   {
-    id: '4F-9F',
-    tag: '4F-9F',
-    floor: '4F-9F',
-    image: new URL('@/assets/img/floor-plan/4F-9F@2x.png', import.meta.url).href,
-    points: [
-      {
-        className: 'a1-4F-9F',
-        name: 'A1',
-      },
-      {
-        className: 'a2-4F-9F',
-        name: 'A2',
-      },
-      {
-        className: 'a3-4F-9F',
-        name: 'A3',
-      },
-      {
-        className: 'a5-4F-9F',
-        name: 'A5',
-      },
-      {
-        className: 'a6-4F-9F',
-        name: 'A6',
-      },
-      {
-        className: 'a7-4F-9F',
-        name: 'A7',
-      },
-      {
-        className: 'a8-4F-9F',
-        name: 'A8',
-      },
-      {
-        className: 'a9-4F-9F',
-        name: 'A9',
-      },
-      {
-        className: 'b1-4F-9F',
-        name: 'B1',
-      },
-      {
-        className: 'b2-4F-9F',
-        name: 'B2',
-      },
-      {
-        className: 'b3-4F-9F',
-        name: 'B3',
-      },
-      {
-        className: 'b5-4F-9F',
-        name: 'B5',
-      },
-      {
-        className: 'b6-4F-9F',
-        name: 'B6',
-      },
-      {
-        className: 'b7-4F-9F',
-        name: 'B7',
-      },
-      {
-        className: 'b8-4F-9F',
-        name: 'B8',
-      },
-      {
-        className: 'b9-4F-9F',
-        name: 'B9',
-      },
-    ],
+    id: '4F',
+    tag: '4F',
+    floor: '4F',
+    image: new URL('@/assets/img/floor-plan/new/4F@2x.webp', import.meta.url).href,
+    txtImg: new URL('@/assets/img/floor-plan/new/4F-txt@2x.webp', import.meta.url).href,
+    // points: [
+    //   {
+    //     className: 'a1-4F-9F',
+    //     name: 'A1',
+    //   },
+    //   {
+    //     className: 'a2-4F-9F',
+    //     name: 'A2',
+    //   },
+    //   {
+    //     className: 'a3-4F-9F',
+    //     name: 'A3',
+    //   },
+    //   {
+    //     className: 'a5-4F-9F',
+    //     name: 'A5',
+    //   },
+    //   {
+    //     className: 'a6-4F-9F',
+    //     name: 'A6',
+    //   },
+    //   {
+    //     className: 'a7-4F-9F',
+    //     name: 'A7',
+    //   },
+    //   {
+    //     className: 'a8-4F-9F',
+    //     name: 'A8',
+    //   },
+    //   {
+    //     className: 'a9-4F-9F',
+    //     name: 'A9',
+    //   },
+    //   {
+    //     className: 'b1-4F-9F',
+    //     name: 'B1',
+    //   },
+    //   {
+    //     className: 'b2-4F-9F',
+    //     name: 'B2',
+    //   },
+    //   {
+    //     className: 'b3-4F-9F',
+    //     name: 'B3',
+    //   },
+    //   {
+    //     className: 'b5-4F-9F',
+    //     name: 'B5',
+    //   },
+    //   {
+    //     className: 'b6-4F-9F',
+    //     name: 'B6',
+    //   },
+    //   {
+    //     className: 'b7-4F-9F',
+    //     name: 'B7',
+    //   },
+    //   {
+    //     className: 'b8-4F-9F',
+    //     name: 'B8',
+    //   },
+    //   {
+    //     className: 'b9-4F-9F',
+    //     name: 'B9',
+    //   },
+    // ],
+  },
+  {
+    id: '5F-11F',
+    tag: '5F-11F',
+    floor: '5F|8F|11F',
+    image: new URL('@/assets/img/floor-plan/new/5-11F@2x.webp', import.meta.url).href,
+    txtImg: new URL('@/assets/img/floor-plan/new/5-11F-txt@2x.webp', import.meta.url).href,
+  },
+  {
+    id: '6F-13F',
+    tag: '6F-13F',
+    floor: '6F|7F|9F\n10F|12F|13F',
+    image: new URL('@/assets/img/floor-plan/new/6-13F@2x.webp', import.meta.url).href,
+    txtImg: new URL('@/assets/img/floor-plan/new/6-13F-txt@2x.webp', import.meta.url).href,
   },
   {
     id: '10F',
@@ -418,59 +432,60 @@ export const FloorPlanAest = [
     id: 'R1',
     tag: 'R1',
     floor: 'RF',
-    image: new URL('@/assets/img/floor-plan/RF@2x.webp', import.meta.url).href,
-    points: [
-      {
-        className: 'point-r1-1',
-        swiperTag: true,
-        content: [
-          {
-            key: 'point-r1-1-1',
-            image: new URL('@/assets/img/floor-plan/資產 1@2x.png', import.meta.url).href,
-          },
-        ],
-      },
-      {
-        className: 'point-r1-2',
-        swiperTag: true,
-        content: [
-          {
-            key: 'point-r1-2-1',
-            image: new URL('@/assets/img/floor-plan/R1-swiper-2-1.png', import.meta.url).href,
-          },
-        ],
-      },
-      {
-        className: 'point-r1-3',
-        swiperTag: true,
-        content: [
-          {
-            key: 'point-r1-3-1',
-            image: new URL('@/assets/img/floor-plan/R1-swiper-3-1.png', import.meta.url).href,
-          },
-        ],
-      },
-      {
-        className: 'point-r1-4',
-        swiperTag: true,
-        content: [
-          {
-            key: 'point-r1-4-1',
-            image: new URL('@/assets/img/floor-plan/R1-swiper-1-1.png', import.meta.url).href,
-          },
-        ],
-      },
-      {
-        className: 'point-r1-5',
-        swiperTag: true,
-        content: [
-          {
-            key: 'point-r1-5-1',
-            image: new URL('@/assets/img/floor-plan/R1-swiper-1-2.png', import.meta.url).href,
-          },
-        ],
-      },
-    ],
+    image: new URL('@/assets/img/floor-plan/new/RF@2x.webp', import.meta.url).href,
+    txtImg: new URL('@/assets/img/floor-plan/new/RF-txt@2x.webp', import.meta.url).href,
+    // points: [
+    //   {
+    //     className: 'point-r1-1',
+    //     swiperTag: true,
+    //     content: [
+    //       {
+    //         key: 'point-r1-1-1',
+    //         image: new URL('@/assets/img/floor-plan/資產 1@2x.png', import.meta.url).href,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     className: 'point-r1-2',
+    //     swiperTag: true,
+    //     content: [
+    //       {
+    //         key: 'point-r1-2-1',
+    //         image: new URL('@/assets/img/floor-plan/R1-swiper-2-1.png', import.meta.url).href,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     className: 'point-r1-3',
+    //     swiperTag: true,
+    //     content: [
+    //       {
+    //         key: 'point-r1-3-1',
+    //         image: new URL('@/assets/img/floor-plan/R1-swiper-3-1.png', import.meta.url).href,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     className: 'point-r1-4',
+    //     swiperTag: true,
+    //     content: [
+    //       {
+    //         key: 'point-r1-4-1',
+    //         image: new URL('@/assets/img/floor-plan/R1-swiper-1-1.png', import.meta.url).href,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     className: 'point-r1-5',
+    //     swiperTag: true,
+    //     content: [
+    //       {
+    //         key: 'point-r1-5-1',
+    //         image: new URL('@/assets/img/floor-plan/R1-swiper-1-2.png', import.meta.url).href,
+    //       },
+    //     ],
+    //   },
+    // ],
   },
 ]
 
@@ -638,24 +653,19 @@ export const FloorPlanImg = [
     image: [
       {
         id: '2f-1',
-        img: new URL(
-          "@/assets/img/floor-plan/家配/健身房.webp",
-          import.meta.url
-        ).href,
+        name: '健身房',
+        img: new URL('@/assets/img/floor-plan/家配/健身房.webp', import.meta.url).href,
       },
     ],
   },
-
   {
     tag: '2f',
     name: '交誼廳',
     image: [
       {
         id: '2f-2',
-        img: new URL(
-          "@/assets/img/floor-plan/家配/交誼廳.webp",
-          import.meta.url
-        ).href,
+        name: '交誼廳',
+        img: new URL('@/assets/img/floor-plan/家配/交誼廳.webp', import.meta.url).href,
       },
     ],
   },
