@@ -4,7 +4,7 @@
     <div class="menu-right">
       <img src="../../assets/img/other/menu-icon.svg" alt="" />
     </div>
-    <div class="menu-left" @click.stop v-if="route.name !== 'life'">
+    <div class="menu-left" @click.stop v-if="showMenuLeft">
       <div
         class="menu-left-item"
         v-for="menu in subMenu"
@@ -50,14 +50,17 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { menuData } from './menuData'
 import '@/assets/scss/menu/menu.scss'
 
+const pathMap = ['building', 'life', 'floorInner']
 const is_Show = ref(false)
 
 const subMenu = ref<{ key: string; name: string; link: string }[]>()
+
+const pathName = ref<string>('')
 
 const route = useRoute()
 
@@ -68,8 +71,13 @@ const showClick = (val: boolean) => {
 const findSubMenu = () => {
   const path = route.path.split('/')[1]
   const findList = menuData.find((item) => item.pathName === path)?.list
+  pathName.value = path
   subMenu.value = findList
 }
+
+const showMenuLeft = computed(() => {
+  return pathMap.includes(pathName.value) ? false : true
+})
 
 onMounted(() => {
   findSubMenu()

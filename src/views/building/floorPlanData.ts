@@ -275,72 +275,12 @@ export const FloorPlanAest = [
     floor: '4F',
     image: new URL('@/assets/img/floor-plan/new/4F@2x.webp', import.meta.url).href,
     txtImg: new URL('@/assets/img/floor-plan/new/4F-txt@2x.webp', import.meta.url).href,
-    // points: [
-    //   {
-    //     className: 'a1-4F-9F',
-    //     name: 'A1',
-    //   },
-    //   {
-    //     className: 'a2-4F-9F',
-    //     name: 'A2',
-    //   },
-    //   {
-    //     className: 'a3-4F-9F',
-    //     name: 'A3',
-    //   },
-    //   {
-    //     className: 'a5-4F-9F',
-    //     name: 'A5',
-    //   },
-    //   {
-    //     className: 'a6-4F-9F',
-    //     name: 'A6',
-    //   },
-    //   {
-    //     className: 'a7-4F-9F',
-    //     name: 'A7',
-    //   },
-    //   {
-    //     className: 'a8-4F-9F',
-    //     name: 'A8',
-    //   },
-    //   {
-    //     className: 'a9-4F-9F',
-    //     name: 'A9',
-    //   },
-    //   {
-    //     className: 'b1-4F-9F',
-    //     name: 'B1',
-    //   },
-    //   {
-    //     className: 'b2-4F-9F',
-    //     name: 'B2',
-    //   },
-    //   {
-    //     className: 'b3-4F-9F',
-    //     name: 'B3',
-    //   },
-    //   {
-    //     className: 'b5-4F-9F',
-    //     name: 'B5',
-    //   },
-    //   {
-    //     className: 'b6-4F-9F',
-    //     name: 'B6',
-    //   },
-    //   {
-    //     className: 'b7-4F-9F',
-    //     name: 'B7',
-    //   },
-    //   {
-    //     className: 'b8-4F-9F',
-    //     name: 'B8',
-    //   },
-    //   {
-    //     className: 'b9-4F-9F',
-    //     name: 'B9',
-    //   },
-    // ],
+    points: [
+      {
+        className: 'a-a2',
+        name: 'A2',
+      },
+    ],
   },
   {
     id: '5F-11F',
@@ -348,6 +288,28 @@ export const FloorPlanAest = [
     floor: '5F|8F|11F',
     image: new URL('@/assets/img/floor-plan/new/5-11F@2x.webp', import.meta.url).href,
     txtImg: new URL('@/assets/img/floor-plan/new/5-11F-txt@2x.webp', import.meta.url).href,
+    points: [
+      {
+        className: 'a-a1',
+        name: 'A1',
+      },
+      {
+        className: 'a-a3',
+        name: 'A3',
+      },
+      {
+        className: 'a-a5',
+        name: 'A5',
+      },
+      {
+        className: 'a-a6',
+        name: 'A6',
+      },
+      {
+        className: 'a-a7',
+        name: 'A7',
+      },
+    ],
   },
   {
     id: '6F-13F',
@@ -492,67 +454,39 @@ export const FloorPlanAest = [
 export const FloorPlanImg = [
   {
     name: 'A1',
-    image: new URL('@/assets/img/floor-plan/家配/A1@2x.png', import.meta.url).href,
+    className: 'a1-inner',
+    image: new URL('@/assets/img/floor-plan/new/A1@2x.webp', import.meta.url).href,
+    innerImage: new URL('@/assets/img/floor-plan/new/a1-inner@2x.webp', import.meta.url).href,
   },
   {
     name: 'A2',
-    image: new URL('@/assets/img/floor-plan/家配/A2@2x.png', import.meta.url).href,
+    className: 'a2-inner',
+    image: new URL('@/assets/img/floor-plan/new/A2@2x.webp', import.meta.url).href,
+    innerImage: new URL('@/assets/img/floor-plan/new/a2-inner@2x.webp', import.meta.url).href,
   },
   {
     name: 'A3',
-    image: new URL('@/assets/img/floor-plan/家配/A3@2x.png', import.meta.url).href,
+    className: 'a3-inner',
+    image: new URL('@/assets/img/floor-plan/new/A3@2x.webp', import.meta.url).href,
+    innerImage: new URL('@/assets/img/floor-plan/new/a3-inner@2x.webp', import.meta.url).href,
   },
   {
     name: 'A5',
-    image: new URL('@/assets/img/floor-plan/家配/A5@2x.png', import.meta.url).href,
+    className: 'a5-inner',
+    image: new URL('@/assets/img/floor-plan/new/A5@2x.webp', import.meta.url).href,
+    innerImage: new URL('@/assets/img/floor-plan/new/a5-inner@2x.webp', import.meta.url).href,
   },
   {
     name: 'A6',
-    image: new URL('@/assets/img/floor-plan/家配/A6@2x.png', import.meta.url).href,
+    className: 'a6-inner',
+    image: new URL('@/assets/img/floor-plan/new/A6@2x.webp', import.meta.url).href,
+    innerImage: new URL('@/assets/img/floor-plan/new/a6-inner@2x.webp', import.meta.url).href,
   },
   {
     name: 'A7',
-    image: new URL('@/assets/img/floor-plan/家配/A7@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'A8',
-    image: new URL('@/assets/img/floor-plan/家配/A8@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'A9',
-    image: new URL('@/assets/img/floor-plan/家配/A9@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B1',
-    image: new URL('@/assets/img/floor-plan/家配/B1@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B2',
-    image: new URL('@/assets/img/floor-plan/家配/B2@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B3',
-    image: new URL('@/assets/img/floor-plan/家配/B3@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B5',
-    image: new URL('@/assets/img/floor-plan/家配/B5@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B6',
-    image: new URL('@/assets/img/floor-plan/家配/B6@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B7',
-    image: new URL('@/assets/img/floor-plan/家配/B7@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B8',
-    image: new URL('@/assets/img/floor-plan/家配/B8@2x.png', import.meta.url).href,
-  },
-  {
-    name: 'B9',
-    image: new URL('@/assets/img/floor-plan/家配/B9@2x.png', import.meta.url).href,
+    className: 'a7-inner',
+    image: new URL('@/assets/img/floor-plan/new/A7@2x.webp', import.meta.url).href,
+    innerImage: new URL('@/assets/img/floor-plan/new/a7-inner@2x.webp', import.meta.url).href,
   },
   // {
   //   tag: '1f',

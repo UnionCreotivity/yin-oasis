@@ -54,7 +54,7 @@ export const menuData = [
     key: 'menu-3',
     zhName: '上質生活',
     enName: 'STYLE',
-    pathName: '',
+    pathName: 'life',
     list: [
       {
         key: 'sub-1',
@@ -74,23 +74,13 @@ export const menuData = [
         name: '風尚美築',
         link: 'floorplan',
       },
-      {
-        key: 'sub-2',
-        name: '雅緻格局',
-        link: '',
-      },
-      {
-        key: 'sub-3',
-        name: '精品家居',
-        link: '',
-      },
     ],
   },
   {
     key: 'menu-5',
     zhName: '智慧精工',
     enName: 'METHOD',
-    pathName: '',
+    pathName: 'method',
     list: [
       {
         key: 'sub-1',

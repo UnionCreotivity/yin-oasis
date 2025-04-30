@@ -260,9 +260,8 @@
   .floor-plan-inner-left-bottom {
     position: absolute;
     left: 0;
-    bottom: -8%;
-    width: 50%;
-    transition: opacity 0.5s;
+    bottom: 0;
+    width: 26vw;
     @include pad {
       width: 40%;
     }

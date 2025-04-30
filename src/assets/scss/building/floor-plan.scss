@@ -154,7 +154,9 @@
       margin-top: 2vw;
       margin-right: 14%;
       z-index: 5;
-
+      @include pad {
+        margin-right: 27%;
+      }
       .disabled-link {
         pointer-events: none;
         cursor: not-allowed;

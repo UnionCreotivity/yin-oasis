@@ -77,6 +77,9 @@
         </ul>
       </div>
     </div>
+    <div class="floor-plan-inner-fancybox-left-bottom">
+      <img src="@/assets/img/floor-plan/new/left-bottom-cloud@2x.webp" />
+    </div>
     <!-- <Back /> -->
     <FadeIn>
       <FloorPlanInFancyBox :boxContent="boxContent" @remove-tag="removeTag" v-if="boxContent" />

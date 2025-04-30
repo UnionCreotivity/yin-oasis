@@ -1,19 +1,21 @@
 <template>
-  <div class="floor-plan-inner-fancybox" @click.stop="handleBack">
+  <div
+    class="floor-plan-inner-fancybox"
+    :class="props.boxContent?.className"
+    @click.stop="handleBack"
+  >
     <div
       class="floor-plan-inner-fancybox-1"
       v-if="props.boxContent?.tag !== '1f' && props.boxContent?.tag !== '2f'"
     >
-      <div
-        class="floor-plan-inner-fancybox-left"
-        :class="[show ? 'plan-inner-fancybox-left-hide' : '']"
-      >
+      <div class="floor-plan-inner-fancybox-left">
         <h1>{{ props.boxContent.name }}</h1>
-        <div class="floor-plan-inner-fancybox-left-item-1">
-          <div>傢俱配置圖</div>
-          <div class="floor-plan-inner-fancybox-left-item-1-line"></div>
+        <div class="floor-plan-inner-fancybox-left-item-1">傢俱配置圖</div>
+        <div class="floor-plan-inner-fancybox-left-item-2">FLOOR PLAN</div>
+        <div class="floor-plan-inner-fancybox-left-item-1-line"></div>
+        <div class="floor-plan-inner-fancybox-left-item-inner">
+          <img :src="props.boxContent?.innerImage" alt="" />
         </div>
-        <div class="floor-plan-inner-fancybox-left-item-2">AESTHETICS FLOOR PLAN</div>
       </div>
       <div
         class="floor-plan-inner-fancybox-right"
@@ -21,7 +23,7 @@
       >
         <ScaleDrag
           :max-ratio="2"
-          :init="{ x: -400, y: -100 }"
+          :init="{ x: 0, y: 0 }"
           @hide-text="hideLeft"
           @show-text="showLeft"
           @watch-scale="watchScale"
@@ -34,6 +36,9 @@
             </div>
           </div>
         </ScaleDrag>
+      </div>
+      <div class="floor-plan-inner-fancybox-left-bottom">
+        <img src="@/assets/img/floor-plan/new/left-bottom-cloud@2x.webp" />
       </div>
     </div>
 
@@ -67,12 +72,6 @@
         <div class="swiper-button-next floor-plan-next" @click.stop="handleClick"></div>
       </Swiper>
     </div>
-    <!-- <div
-      class="floor-plan-inner-fancybox-left-bottom"
-      :class="[show ? 'plan-inner-fancybox-left-hide' : '']"
-    >
-      <img src="../../assets/img/floor-plan/floor-plan-left-bottom.png" />
-    </div> -->
   </div>
 </template>
 
