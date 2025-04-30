@@ -140,6 +140,9 @@
         margin-bottom: 7vw;
         z-index: 11;
       }
+      @include pad {
+        padding-bottom: 3%;
+      }
     }
     .plan-inner-fancybox-zIndex {
       .imgBoxIn {
