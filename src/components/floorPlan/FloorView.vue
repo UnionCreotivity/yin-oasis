@@ -78,12 +78,6 @@
               <img :src="imageItem?.night" alt="view" v-else />
             </FadeIn>
           </div>
-          <div class="floor-view-img" v-else>
-            <FadeIn>
-              <video :src="imageItem?.videoDay" autoplay controls v-if="day" />
-              <video :src="imageItem?.videoNight" autoplay controls v-else />
-            </FadeIn>
-          </div>
         </FadeIn>
       </div>
     </div>

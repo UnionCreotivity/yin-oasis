@@ -631,8 +631,8 @@ export const FloorViewData = [
       },
       {
         tag: 'video',
-        videoDay: new URL('@/assets/img/floor-plan/6F/環景.mp4', import.meta.url).href,
-        videoNight: new URL('@/assets/img/floor-plan/6F/night/環景.mp4', import.meta.url).href,
+        videoDay: '',
+        videoNight: '',
       },
     ],
   },
@@ -661,8 +661,8 @@ export const FloorViewData = [
       },
       {
         tag: 'video',
-        videoDay: new URL('@/assets/img/floor-plan/10F/環景.mp4', import.meta.url).href,
-        videoNight: new URL('@/assets/img/floor-plan/10F/night/環景.mp4', import.meta.url).href,
+        videoDay: '',
+        videoNight: '',
       },
     ],
   },
