@@ -18,7 +18,7 @@ export const menuData = [
       {
         key: 'sub-3',
         name: '營造巨匠',
-        link: '',
+        link: 'craft',
       },
       {
         key: 'sub-4',

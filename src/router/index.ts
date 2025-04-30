@@ -8,6 +8,7 @@ import BrandView from '@/views/brand/BrandView.vue'
 import DeepView from '@/views/brand/deep/DeepView.vue'
 import InterView from '@/views/brand/inter/InterView.vue'
 import TeamView from '@/views/brand/team/TeamView.vue'
+import CraftView from '@/views/brand/craft/CraftView.vue'
 
 //13期首席
 import ChoiceView from '@/views/choice/ChoiceView.vue'
@@ -53,6 +54,11 @@ const router = createRouter({
           path: 'team',
           name: 'team',
           component: TeamView,
+        },
+        {
+          path: 'craft',
+          name: 'craft',
+          component: CraftView,
         },
       ],
     },

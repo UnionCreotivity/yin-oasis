@@ -41,7 +41,6 @@
         <img src="@/assets/img/floor-plan/new/left-bottom-cloud@2x.webp" />
       </div>
     </div>
-
     <div
       v-else
       class="floor-plan-inner-fancybox-2"
