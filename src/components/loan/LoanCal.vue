@@ -1,4 +1,5 @@
 <template>
+  <!-- 鍵盤 -->
   <div class="loan-view-right">
     <div class="loan-view-bg"></div>
     <div class="loan-view-right-container">

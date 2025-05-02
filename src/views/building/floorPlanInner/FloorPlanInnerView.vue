@@ -1,28 +1,21 @@
 <template>
+  <!-- 每個左側大字的圖片大小不一，所以提供個別的class來調整 -->
   <div id="floor-plan-inner" :class="`F-${mainItem?.id}-out`" @click.stop="backToFloor">
     <p class="floor-plan-inner-mention">本圖面僅供參考，實際圖面依合約書附圖為準</p>
+    <!-- 判斷平面圖是否有左側大字 -->
     <div class="floor-plan-inner-txt-img" v-if="mainItem?.txtImg">
       <img :src="mainItem?.txtImg" alt="" />
     </div>
-    <div class="floor-plan-inner-left" :class="[show ? 'plan-inner-left-hide' : '']" v-else>
+    <div class="floor-plan-inner-left" v-else>
       <div class="floor-plan-inner-left-item-1-squre"></div>
       <h1>{{ mainItem?.floor }}</h1>
       <div class="floor-plan-inner-left-item-1">
         <div>全區配置圖</div>
         <p>FLOOR PLAN</p>
       </div>
-      <div
-        class="floor-plan-inner-left-view"
-        v-if="tag === '4F-9F' || tag === '10F'"
-        @click.stop="viewClick(tag)"
-      >
-        景觀 VIEW
-      </div>
     </div>
-    <div
-      class="floor-plan-inner-right"
-      :class="[show ? 'plan-inner-zIndex' : '', `F-${mainItem?.id}`]"
-    >
+    <!-- 每個家配圖的圖片大小不一，所以提供個別的class來調整 -->
+    <div class="floor-plan-inner-right" :class="`F-${mainItem?.id}`">
       <ScaleDrag
         :max-ratio="2"
         :init="{ x: 0, y: 0 }"
@@ -57,6 +50,7 @@
           </div>
         </div>
       </ScaleDrag>
+      <!-- 判斷是否有子點擊項目 -->
       <div class="floor-plan-inner-left-item-3" v-if="mainItem?.list">
         <ul class="floor-plan-inner-left-ul">
           <li
@@ -84,9 +78,9 @@
     <FadeIn>
       <FloorPlanInFancyBox :boxContent="boxContent" @remove-tag="removeTag" v-if="boxContent" />
     </FadeIn>
-    <FadeIn>
+    <!-- <FadeIn>
       <FloorView v-if="viewContent" :viewContent="viewContent" @view-click="viewClick" />
-    </FadeIn>
+    </FadeIn> -->
   </div>
 </template>
 
@@ -95,10 +89,10 @@ import { ref, onMounted, provide } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import FloorPoints from '@/components/floorPlan/FloorPoints.vue'
-import FloorView from '@/components/floorPlan/FloorView.vue'
+// import FloorView from '@/components/floorPlan/FloorView.vue'
 import FloorPlanInFancyBox from '@/components/floorPlan/FloorPlanInFancyBox.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
-import { FloorPlanAest, FloorPlanImg, FloorViewData } from '@/views/building/floorPlanData'
+import { FloorPlanAest, FloorPlanImg } from '@/views/building/floorPlanData'
 import '@/assets/scss/building/floor-plan-in-page.scss'
 
 const route = useRoute()
@@ -117,7 +111,7 @@ const mainItem = ref()
 
 const boxContent = ref<object | null>(null)
 
-const viewContent = ref<object | null>(null)
+// const viewContent = ref<object | null>(null)
 
 const show = ref(false)
 
@@ -179,18 +173,18 @@ const watchScale = (val: boolean) => {
 }
 
 //景觀view點擊
-const viewClick = (val: string) => {
-  let findItem
-  if (val) {
-    findItem = FloorViewData.find((item) => item.tag === val)
-  } else {
-    viewContent.value = null
-  }
+// const viewClick = (val: string) => {
+//   let findItem
+//   if (val) {
+//     findItem = FloorViewData.find((item) => item.tag === val)
+//   } else {
+//     viewContent.value = null
+//   }
 
-  if (findItem) {
-    viewContent.value = findItem
-  }
-}
+//   if (findItem) {
+//     viewContent.value = findItem
+//   }
+// }
 
 onMounted(() => {
   if (route.query.q) {

@@ -1,4 +1,5 @@
 <template>
+  <!-- 結果 -->
   <div class="loan-view-result">
     <ul class="loan-result-col">
       <li class="loan-result-li">

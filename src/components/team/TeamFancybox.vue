@@ -95,6 +95,7 @@
         <img src="/src/assets/img/team/fancy-close.svg" alt="" />
       </button>
       <FadeIn>
+        <!-- 輪播彈跳頁面 -->
         <div class="team-fancy-bump-box" v-if="bumpData">
           <div class="team-fancy-bump-box-img"><img :src="bumpData.img" alt="" /></div>
           <span class="team-fancy-bump-box-para">
@@ -124,14 +125,17 @@ const emits = defineEmits(['handle-fancy'])
 
 const bumpData = ref<{ key: string; p: string; img: string } | null>(null)
 
+//有人沒有經歷，只有獲獎經歷
 const experienceTxt = computed(() => {
   return props.fancyItem.experience ? props.fancyItem.experience : props.fancyItem.award
 })
 
+//有人的獲獎經歷有兩段，所以有的話會加上去
 const awardSecTxt = computed(() => {
   return props.fancyItem.awardSec ? props.fancyItem.awardSec : props.fancyItem.award
 })
 
+//內頁不顯示menu
 const zIndexComputed = computed(() => {
   return bumpData.value ? 'z-15' : ''
 })

@@ -4,6 +4,7 @@
     :class="props.boxContent?.className"
     @click.stop="handleBack"
   >
+    <!-- 1、2樓的內頁可能會有輪播 -->
     <div
       class="floor-plan-inner-fancybox-1"
       v-if="props.boxContent?.tag !== '1f' && props.boxContent?.tag !== '2f'"
@@ -17,10 +18,7 @@
           <img :src="props.boxContent?.innerImage" alt="" />
         </div>
       </div>
-      <div
-        class="floor-plan-inner-fancybox-right"
-        :class="[show ? 'plan-inner-fancybox-zIndex' : '']"
-      >
+      <div class="floor-plan-inner-fancybox-right">
         <ScaleDrag
           :max-ratio="2"
           :init="{ x: 0, y: 0 }"
@@ -41,14 +39,7 @@
         <img src="@/assets/img/floor-plan/new/left-bottom-cloud@2x.webp" />
       </div>
     </div>
-    <div
-      v-else
-      class="floor-plan-inner-fancybox-2"
-      :class="[
-        props.boxContent?.name === '梯廳B' ? 'floor-plan-inner-fancybox-2-spec' : '',
-        show ? 'plan-inner-fancybox-left-hide' : '',
-      ]"
-    >
+    <div v-else class="floor-plan-inner-fancybox-2">
       <Swiper
         :speed="1000"
         :slides-per-view="1"

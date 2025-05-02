@@ -4,7 +4,8 @@
     <div class="menu-right">
       <img src="../../assets/img/other/menu-icon.svg" alt="" />
     </div>
-    <div class="menu-left" @click.stop v-if="showMenuLeft">
+    <!-- 判斷是否顯示頁面上方的submenu -->
+    <div class="menu-left" @click.stop v-if="showSubMenu">
       <div
         class="menu-left-item"
         v-for="menu in subMenu"
@@ -55,7 +56,9 @@ import { useRoute } from 'vue-router'
 import { menuData } from './menuData'
 import '@/assets/scss/menu/menu.scss'
 
+//隱藏上方submenu的地方
 const pathMap = ['building', 'life', 'floorInner']
+
 const is_Show = ref(false)
 
 const subMenu = ref<{ key: string; name: string; link: string }[]>()
@@ -69,13 +72,15 @@ const showClick = (val: boolean) => {
 }
 
 const findSubMenu = () => {
+  //抓第一個路徑，例如/construction/feature就會抓construction
   const path = route.path.split('/')[1]
+  // 尋找tag對應的id
   const findList = menuData.find((item) => item.pathName === path)?.list
   pathName.value = path
   subMenu.value = findList
 }
 
-const showMenuLeft = computed(() => {
+const showSubMenu = computed(() => {
   return pathMap.includes(pathName.value) ? false : true
 })
 
