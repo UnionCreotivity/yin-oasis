@@ -18,6 +18,12 @@
       gap: 4vw;
       .rise-view-top-left {
         width: 64.25vw;
+        mask-image: url(../../img/rise/mask_1.png);
+        mask-size: 200% 200%;
+        mask-repeat: no-repeat;
+        mask-position: 200% -100%;
+        -webkit-mask-size: 200% 200%;
+        -webkit-mask-position: 200% -100%;
       }
       .rise-view-top-right {
         display: flex;

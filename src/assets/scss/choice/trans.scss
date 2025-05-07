@@ -19,6 +19,14 @@
     .trans-bg {
       position: relative;
       width: 100%;
+      mask-image: url(../../img/rise/mask_1.png);
+
+      mask-size: 0%;
+      mask-repeat: no-repeat;
+      mask-position: 0% 100%;
+
+      -webkit-mask-size: 0%;
+      -webkit-mask-position: 0% 100%;
       video {
         position: absolute;
         width: 10.75vw;

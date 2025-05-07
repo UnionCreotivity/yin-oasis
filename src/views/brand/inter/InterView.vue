@@ -110,47 +110,40 @@ import '@/assets/scss/brand/inter.scss'
 
 const gsapInit = () => {
   const tl = gsap.timeline({ delay: 0.5 })
-  tl.from('.inter-view-cloud', {
-    x: '50%',
-    y: '50%',
+  tl.from('.inter-view-right-top h3,.inter-view-title-en', {
+    y: '3vw',
     opacity: 0,
-    duration: 2.5,
+    stagger: 0.2,
+    duration: 1,
   })
-    .from(
-      '.inter-view-shine',
-      {
-        opacity: 0,
-        duration: 1.5,
-      },
-      '<+0.1',
-    )
-    .from(
-      '.inter-view-right-top h3,.inter-view-title-en',
-      {
-        y: '2vw',
-        opacity: 0,
-        stagger: 0.1,
-        duration: 1.5,
-      },
-      '<+0.25',
-    )
     .from(
       '.inter-view-right p',
       {
-        y: '2vw',
+        y: '3vw',
         opacity: 0,
-        duration: 1,
+        stagger: 0.2,
+        duration: 1.2,
       },
-      '<+0.25',
+      '<0.3',
     )
     .from(
       '.inter-view-right-bottom',
       {
-        y: '2vw',
+        y: '3vw',
         opacity: 0,
-        duration: 1.5,
+        duration: 1.2,
       },
-      '<+0.15',
+      '<0.35',
+    )
+    .from(
+      '.inter-view-cloud',
+      {
+        x: '50%',
+        y: '50%',
+        opacity: 0,
+        duration: 2.5,
+      },
+      '<0.3',
     )
 }
 

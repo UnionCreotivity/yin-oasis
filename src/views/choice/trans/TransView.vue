@@ -41,41 +41,69 @@ import gsap from 'gsap'
 import '@/assets/scss/choice/trans.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline()
-  tl.from('.trans-cloud-1', {
-    x: '50%',
-    y: '50%',
-    opacity: 0,
-    duration: 2.5,
-  })
+  const tl = gsap.timeline({ delay: 0.3 })
+  tl.fromTo(
+    '.trans-view .trans-view-container .trans-bg',
+    {
+      maskPosition: '0% 100%',
+      maskSize: '0%',
+    },
+    {
+      duration: 2,
+      maskSize: '120%',
+      maskPosition: '0% 100%',
+    },
+  )
+    .fromTo(
+      '.trans-view .trans-view-container .trans-bg img',
+      { filter: 'brightness(1.5)' },
+      {
+        duration: 1.5,
+        x: 0,
+        filter: 'brightness(1)',
+      },
+      '<0.2',
+    )
+    .from(
+      '.trans-cloud-1',
+      {
+        x: '50%',
+        y: '50%',
+        scale: 2,
+        opacity: 0,
+        duration: 2,
+      },
+      '<0.3',
+    )
     .from(
       '.trans-cloud-2',
       {
         x: '-50%',
+        scale: 2,
         y: '50%',
         opacity: 0,
-        duration: 2.5,
+        duration: 2,
       },
       '<',
     )
     .from(
       '.trans-para-left h3,.trans-para-left-img img',
       {
-        y: '2vw',
+        y: '3vw',
         opacity: 0,
-        stagger: 0.3,
-        duration: 1.5,
+        stagger: 0.15,
+        duration: 1,
       },
-      '<+0.25',
+      '<0.2',
     )
     .from(
       '.trans-para-right',
       {
-        y: '2vw',
+        y: '5vw',
         opacity: 0,
         duration: 1.5,
       },
-      '<+0.5',
+      '<0.1',
     )
 }
 

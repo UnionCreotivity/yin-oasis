@@ -45,21 +45,32 @@ import gsap from 'gsap'
 import '@/assets/scss/choice/rise.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.5 })
+  const tl = gsap.timeline({ delay: 0 })
   tl.from('.rise-view-top-left img', {
     x: '-5%',
     opacity: 0,
-    duration: 1.5,
+    duration: 1.3,
   })
+    .fromTo(
+      '.rise-view-top-left',
+      {
+        maskPosition: '200% -100%',
+      },
+      {
+        duration: 1.7,
+        maskPosition: '0% 100%',
+      },
+      '<0.2',
+    )
     .from(
       '.rise-view-top-right h3,.rise-view-top-right h1,.rise-view-top-right p',
       {
-        y: '2vw',
+        y: '3vw',
         opacity: 0,
         stagger: 0.2,
-        duation: 1.5,
+        duration: 1,
       },
-      '<+0.5',
+      '<0.8',
     )
     .from(
       '.rise-view-bottom-line',
@@ -67,17 +78,17 @@ const gsapInit = () => {
         scale: 0,
         duration: 1,
       },
-      '<+0.5',
+      '<0.15',
     )
     .from(
       '.rise-view-bottom-item',
       {
-        y: '1vw',
+        y: '2vw',
         opacity: 0,
         stagger: 0.15,
-        duration: 1.5,
+        duration: 1,
       },
-      '<+0.5',
+      '<0.2',
     )
 }
 
