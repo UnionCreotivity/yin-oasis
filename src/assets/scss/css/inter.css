@@ -1,0 +1,165 @@
+.inter-view {
+  width: 100%;
+  height: 100%;
+}
+.inter-view .inter-view-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  gap: 15%;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container {
+    gap: 10%;
+  }
+}
+.inter-view .inter-view-container .inter-view-left {
+  display: flex;
+  gap: 3vw;
+}
+.inter-view .inter-view-container .inter-view-left .inter-view-col,
+.inter-view .inter-view-container .inter-view-left .inter-view-col-2 {
+  display: flex;
+  gap: 1.25vw;
+}
+.inter-view .inter-view-container .inter-view-left .inter-view-col .inter-view-col-inner,
+.inter-view .inter-view-container .inter-view-left .inter-view-col-2 .inter-view-col-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25vw;
+}
+.inter-view .inter-view-container .inter-view-left .inter-view-col .inter-view-col-inner-2,
+.inter-view .inter-view-container .inter-view-left .inter-view-col-2 .inter-view-col-inner-2 {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.25vw;
+}
+.inter-view .inter-view-container .inter-view-left .inter-view-col .inter-view-col-item,
+.inter-view .inter-view-container .inter-view-left .inter-view-col-2 .inter-view-col-item {
+  position: relative;
+  width: 22vw;
+}
+.inter-view .inter-view-container .inter-view-left .inter-view-col .inter-view-col-item p,
+.inter-view .inter-view-container .inter-view-left .inter-view-col-2 .inter-view-col-item p {
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  font-family: var(--micro);
+  font-size: var(--paraSize);
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px black;
+  color: white;
+}
+.inter-view .inter-view-container .inter-view-left .inter-view-col {
+  align-items: flex-start;
+}
+.inter-view .inter-view-container .inter-view-left .inter-view-col-2 {
+  align-items: flex-end;
+}
+@keyframes transYAni {
+  0% {
+    transform: translateY(0%) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translateY(-50.5%) translate3d(0, 0, 0);
+  }
+}
+@keyframes transYAniRev {
+  0% {
+    transform: translateY(0%) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translateY(33.6%) translate3d(0, 0, 0);
+  }
+}
+.inter-view .inter-view-container .inter-view-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 21.5%;
+  margin-right: 3%;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container .inter-view-right {
+    width: 25%;
+  }
+}
+.inter-view .inter-view-container .inter-view-right .inter-view-right-top {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+.inter-view .inter-view-container .inter-view-right h3 {
+  font-family: var(--serif);
+  font-weight: var(----titleWeight);
+  font-size: var(--titleSize);
+  letter-spacing: 5px;
+  margin-bottom: 9%;
+  color: #fff9de;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container .inter-view-right h3 {
+    font-size: 1.8vw;
+  }
+}
+.inter-view .inter-view-container .inter-view-right .inter-view-title-en {
+  width: 83%;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container .inter-view-right .inter-view-title-en {
+    width: 75%;
+  }
+}
+.inter-view .inter-view-container .inter-view-right p {
+  font-family: var(--micro);
+  font-weight: 300;
+  font-size: var(--paraSize);
+  letter-spacing: 4px;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 20%;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container .inter-view-right p {
+    font-size: 1.1vw;
+  }
+}
+.inter-view .inter-view-container .inter-view-right .inter-view-right-bottom {
+  width: 85%;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container .inter-view-right .inter-view-right-bottom {
+    width: 90%;
+  }
+}
+.inter-view .inter-view-container .inter-view-cloud {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 42%;
+  pointer-events: none;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container .inter-view-cloud {
+    width: 50%;
+  }
+}
+.inter-view .inter-view-container .inter-view-shine {
+  position: absolute;
+  right: 13%;
+  bottom: 0;
+  width: 36%;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+@media all and (max-width: 1400px) {
+  .inter-view .inter-view-container .inter-view-shine {
+    right: 12%;
+    width: 40%;
+  }
+}
