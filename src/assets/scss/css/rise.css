@@ -20,14 +20,6 @@
 }
 .rise-view .rise-view-container .rise-view-top .rise-view-top-left {
   width: 64.25vw;
-  -webkit-mask-image: url(../../img/rise/mask_1.png);
-          mask-image: url(../../img/rise/mask_1.png);
-  mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  mask-position: 200% -100%;
-  -webkit-mask-size: 200% 200%;
-  -webkit-mask-position: 200% -100%;
 }
 .rise-view .rise-view-container .rise-view-top .rise-view-top-right {
   display: flex;
@@ -91,7 +83,11 @@
   justify-content: center;
   width: 100%;
 }
-.rise-view .rise-view-container .rise-view-bottom .rise-view-bottom-container .rise-view-bottom-item {
+.rise-view
+  .rise-view-container
+  .rise-view-bottom
+  .rise-view-bottom-container
+  .rise-view-bottom-item {
   position: absolute;
 }
 .rise-view .rise-view-container .rise-view-bottom .rise-view-bottom-container .item-1999 {
@@ -113,7 +109,11 @@
   width: 15.75vw;
   left: 79%;
 }
-.rise-view .rise-view-container .rise-view-bottom .rise-view-bottom-container .rise-view-bottom-line {
+.rise-view
+  .rise-view-container
+  .rise-view-bottom
+  .rise-view-bottom-container
+  .rise-view-bottom-line {
   width: 85.75vw;
   margin: auto;
 }

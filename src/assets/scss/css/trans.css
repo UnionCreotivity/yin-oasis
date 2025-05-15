@@ -22,14 +22,6 @@
 .trans-view .trans-view-container .trans-bg {
   position: relative;
   width: 100%;
-  -webkit-mask-image: url(../../img/rise/mask_1.png);
-          mask-image: url(../../img/rise/mask_1.png);
-  mask-size: 0%;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  mask-position: 0% 100%;
-  -webkit-mask-size: 0%;
-  -webkit-mask-position: 0% 100%;
 }
 .trans-view .trans-view-container .trans-bg video {
   position: absolute;

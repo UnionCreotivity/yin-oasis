@@ -13,17 +13,9 @@
   justify-content: flex-start;
 }
 .metro-view .metro-view-container .metro-view-left {
-  width: 60%;
-  margin-top: 4%;
+  width: 56%;
+  margin-top: 1%;
   margin-left: 3%;
-  -webkit-mask-image: url(../../img/metro/cloud-mask_2.png);
-          mask-image: url(../../img/metro/cloud-mask_2.png);
-  -webkit-mask-size: 20%;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-size: 20%;
-  mask-repeat: no-repeat;
-  mask-position: center;
 }
 @media all and (max-width: 1400px) {
   .metro-view .metro-view-container .metro-view-left {
@@ -34,7 +26,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-left: 4%;
+  margin-left: 6%;
   width: 22.25%;
 }
 @media all and (max-width: 1400px) {
