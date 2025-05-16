@@ -19,13 +19,7 @@
         </div>
       </div>
       <div class="floor-plan-inner-fancybox-right">
-        <ScaleDrag
-          :max-ratio="2"
-          :init="{ x: 0, y: 0 }"
-          @hide-text="hideLeft"
-          @show-text="showLeft"
-          @watch-scale="watchScale"
-        >
+        <ScaleDrag :max-ratio="2" :init="{ x: 0, y: 0 }" @watch-scale="watchScale">
           <div class="container">
             <div class="anchor-area">
               <div class="anchor-area-map">
@@ -80,14 +74,6 @@ const show = ref(false)
 
 //偵測圖片是否縮放
 const isScale = ref(false)
-
-const hideLeft = () => {
-  show.value = true
-}
-
-const showLeft = () => {
-  show.value = false
-}
 
 const handleClick = (e: MouseEvent) => {
   e.stopPropagation()

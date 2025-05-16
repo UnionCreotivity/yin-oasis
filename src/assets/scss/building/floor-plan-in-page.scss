@@ -100,6 +100,9 @@
       }
     }
   }
+  .floor-plan-inner-txt-img {
+    transition: all 0.5s;
+  }
 
   .floor-plan-inner-right {
     position: absolute;
@@ -107,7 +110,8 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    // align-items: center;
+    align-items: flex-end;
     justify-content: center;
     flex-direction: column;
     @include pad {
@@ -199,8 +203,10 @@
       width: 90%;
       height: auto;
       padding-block: 1vw;
+      margin-right: 7%;
+      transition: all 0.75s;
       .box {
-        justify-content: center;
+        justify-content: flex-end;
       }
     }
     .container {
@@ -211,7 +217,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
       .anchor-area {
         position: relative;
         width: auto;
@@ -249,6 +255,108 @@
         margin-inline: 3vw;
         margin-bottom: 9vw;
       }
+    }
+  }
+
+  .F-1F {
+    .imgBoxIn {
+      width: 90%;
+      height: 65%;
+      margin: 0 auto;
+    }
+  }
+  .F-2F {
+    .imgBoxIn {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  .F-2F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: auto;
+    }
+  }
+  .F-3F {
+    .imgBoxIn {
+      width: 55%;
+      height: 80%;
+    }
+  }
+  .F-3F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: 80%;
+    }
+  }
+  .F-M-1F {
+    .imgBoxIn {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  .F-M-1F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  .F-4F {
+    .imgBoxIn {
+      width: 55%;
+      height: 80%;
+    }
+  }
+  .F-4F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: 80%;
+    }
+  }
+  .F-5F-11F {
+    .imgBoxIn {
+      width: 55%;
+      height: 80%;
+    }
+  }
+  .F-5F-11F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: 80%;
+    }
+  }
+  .F-6F-13F {
+    .imgBoxIn {
+      width: 55%;
+      height: 80%;
+    }
+  }
+  .F-6F-13F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: 80%;
+    }
+  }
+  .F-R1 {
+    .imgBoxIn {
+      width: 55%;
+      height: 80%;
+    }
+  }
+  .F-R1.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: 80%;
+    }
+  }
+  .floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 90%;
+      height: auto;
+      transition: all 0.25s;
     }
   }
   .plan-inner-zIndex {
@@ -314,7 +422,7 @@
     .imgBoxIn {
       .box {
         .container {
-          width: 92.5%;
+          // width: 92.5%;
         }
       }
     }
@@ -323,7 +431,7 @@
     .imgBoxIn {
       .box {
         .container {
-          width: 92.5%;
+          // width: 92.5%;
         }
       }
     }
@@ -332,7 +440,7 @@
     .imgBoxIn {
       .box {
         .container {
-          width: 92.5%;
+          // width: 92.5%;
         }
       }
     }
@@ -341,7 +449,7 @@
     .imgBoxIn {
       .box {
         .container {
-          width: 92.5%;
+          // width: 92.5%;
         }
       }
     }
@@ -350,7 +458,7 @@
     .imgBoxIn {
       .box {
         .container {
-          width: 92.5%;
+          // width: 92.5%;
         }
       }
     }
@@ -363,61 +471,58 @@
       right: -2%;
     }
   }
-  .F-3F {
-    .imgBoxIn {
-      width: 54%;
-      align-self: flex-end;
-      margin-right: 8%;
-      @include pad {
-        width: 66%;
-        margin-right: 9%;
-      }
-    }
-  }
-  .F-4F {
-    .imgBoxIn {
-      width: 54%;
-      align-self: flex-end;
-      margin-right: 8%;
-      @include pad {
-        width: 66%;
-        margin-right: 9%;
-      }
-    }
-  }
-  .F-5F-11F {
-    .imgBoxIn {
-      width: 54%;
-      align-self: flex-end;
-      margin-right: 8%;
-      @include pad {
-        width: 66%;
-        margin-right: 9%;
-      }
-    }
-  }
-  .F-6F-13F {
-    .imgBoxIn {
-      width: 54%;
-      align-self: flex-end;
-      margin-right: 8%;
-      @include pad {
-        width: 66%;
-        margin-right: 9%;
-      }
-    }
-  }
-  .F-R1 {
-    .imgBoxIn {
-      width: 56%;
-      align-self: flex-end;
-      margin-right: 7%;
-      @include pad {
-        width: 68%;
-        margin-right: 8%;
-      }
-    }
-  }
+  // .F-3F {
+  //   .imgBoxIn {
+  //     width: 54%;
+  //     align-self: flex-end;
+  //     margin-right: 8%;
+  //     @include pad {
+  //       width: 66%;
+  //       margin-right: 9%;
+  //     }
+  //   }
+  // }
+  // .F-4F {
+  //   .imgBoxIn {
+  //     width: 54%;
+  //     align-self: flex-end;
+  //     margin-right: 8%;
+  //     @include pad {
+  //       width: 66%;
+  //       margin-right: 9%;
+  //     }
+  //   }
+  // }
+  // .F-5F-11F-out {
+  //   .floor-plan-inner-right-show{
+  //     .imgBoxIn {
+  //       width: 90%;
+  //           height: 80%;
+  //     }
+  //   }
+  // }
+  // .F-6F-13F {
+  //   .imgBoxIn {
+  //     width: 54%;
+  //     align-self: flex-end;
+  //     margin-right: 8%;
+  //     @include pad {
+  //       width: 66%;
+  //       margin-right: 9%;
+  //     }
+  //   }
+  // }
+  // .F-R1 {
+  //   .imgBoxIn {
+  //     width: 56%;
+  //     align-self: flex-end;
+  //     margin-right: 7%;
+  //     @include pad {
+  //       width: 68%;
+  //       margin-right: 8%;
+  //     }
+  //   }
+  // }
 }
 
 .F-3F-out {

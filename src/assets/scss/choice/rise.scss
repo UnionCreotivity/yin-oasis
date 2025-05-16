@@ -47,7 +47,7 @@
           color: #ffffff;
           margin-bottom: 5%;
           @include pad {
-            font-size: 4vw;
+            font-size: 4.5vw;
           }
         }
         p {
@@ -57,6 +57,7 @@
           letter-spacing: 4px;
           line-height: 1.8;
           width: 82%;
+          text-align: justify;
           color: white;
           @include pad {
             font-size: 1.1vw;

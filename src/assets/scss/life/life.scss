@@ -30,6 +30,20 @@
         left: 0;
         transition: all 0.5s;
         cursor: pointer;
+        > img {
+          position: relative;
+          z-index: 1;
+        }
+        .radiation {
+          top: 10%;
+          opacity: 0;
+          width: 2vw;
+          height: 2vw;
+          transition: opacity 0.5s;
+          .circle {
+            background-color: rgba(229, 28, 28, 0.4862745098);
+          }
+        }
       }
       .life-point-1 {
         top: 52%;
@@ -151,6 +165,10 @@
       .active {
         transition: all 0.5s;
         animation: pointAni 1.5s ease infinite forwards;
+        .radiation {
+          opacity: 1;
+          transition: opacity 0.5s;
+        }
       }
       @keyframes pointAni {
         0% {

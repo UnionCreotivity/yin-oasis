@@ -1,4 +1,21 @@
 @use '../config' as *;
+
+@mixin lightUpDdown($range) {
+  animation: light-up-down 2s ease-in-out infinite;
+  animation-delay: 3s;
+  @keyframes light-up-down {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    50% {
+      transform: translate(0%, $range);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+}
+
 .craft-view {
   width: 100%;
   height: 100%;
@@ -8,28 +25,79 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    gap: 9vw;
     .craft-view-left {
       position: relative;
       width: 54.25vw;
-      margin-left: 3%;
       .craft-view-light-1 {
         position: absolute;
         top: -24%;
         right: -9%;
         width: 25.7vw;
         mix-blend-mode: luminosity;
+        @include lightUpDdown(2.5%);
       }
+
       .craft-view-light-2 {
         position: absolute;
         bottom: -21%;
         left: -16%;
         width: 37.25vw;
         mix-blend-mode: luminosity;
+        @include lightUpDdown(-2.5%);
       }
     }
     .craft-view-right {
-      width: 24vw;
-      margin-left: 8%;
+      width: 23.75%;
+      .craft-view-right-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        h3 {
+          font-family: var(--serif);
+          font-weight: var(--titleWeight);
+          font-size: var(--titleSize);
+          letter-spacing: 5px;
+          color: #fff9de;
+          text-align: center;
+          margin-bottom: 6%;
+          @include pad {
+            font-size: 1.8vw;
+          }
+        }
+        h1 {
+          font-family: var(--cor);
+          font-size: 4vw;
+          letter-spacing: 2px;
+          font-weight: 300;
+          letter-spacing: 2px;
+          opacity: 0.25;
+          color: #ffffff;
+          margin-bottom: 5%;
+          @include pad {
+            font-size: 4.5vw;
+          }
+        }
+        p {
+          font-family: var(--micro);
+          font-weight: 300;
+          font-size: 1vw;
+          letter-spacing: 4px;
+          line-height: 1.8;
+          text-align: justify;
+          color: white;
+          @include pad {
+            font-size: 1.1vw;
+          }
+        }
+        .craft-view-right-icon {
+          width: 65%;
+          margin-top: 13%;
+        }
+      }
     }
   }
 }

@@ -257,15 +257,14 @@
       .bump-close {
         position: absolute;
         right: 3vw;
-        top: 2vw;
-        width: 2.5vw;
+        top: 45%;
+        width: 3.25vw;
         background-color: transparent;
         border: none;
         cursor: pointer;
         @include pad {
-          right: 3%;
-          top: 7%;
-          width: 5vw;
+          right: 2.5vw;
+          width: 4vw;
         }
       }
     }

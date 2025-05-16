@@ -14,6 +14,7 @@
     .life-swiper-prev,
     .life-swiper-next {
       width: 2%;
+      height: auto;
       &::after {
         display: none;
       }

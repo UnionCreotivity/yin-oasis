@@ -39,26 +39,26 @@ const gsapInit = () => {
         opacity: 0,
         duration: 1.5,
       },
-      '<+0.25',
+      '<+0.35',
     )
     .from(
       '.deep-view-right-top h3,.deep-view-para-en',
       {
-        y: '2vw',
+        y: '3vw',
         opacity: 0,
-        stagger: 0.1,
+        stagger: 0.4,
         duration: 1.5,
       },
-      '<+0.25',
+      '<+0.5',
     )
     .from(
       '.deep-view-right-bottom',
       {
-        y: '2vw',
+        y: '3vw',
         opacity: 0,
         duration: 1,
       },
-      '<+0.15',
+      '<+0.75',
     )
     .from('.deep-view-title', { y: '2vw', opacity: 0, duration: 1.5 }, '<+0.15')
 }

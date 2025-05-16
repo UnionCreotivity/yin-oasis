@@ -245,6 +245,7 @@
   left: 0;
   bottom: 0;
   width: 26%;
+  transition: all 0.5s;
   @include pad {
     width: 26vw;
   }

@@ -3,10 +3,14 @@
   <div id="floor-plan-inner" :class="`F-${mainItem?.id}-out`" @click.stop="backToFloor">
     <p class="floor-plan-inner-mention">本圖面僅供參考，實際圖面依合約書附圖為準</p>
     <!-- 判斷平面圖是否有左側大字 -->
-    <div class="floor-plan-inner-txt-img" v-if="mainItem?.txtImg">
+    <div
+      class="floor-plan-inner-txt-img"
+      v-if="mainItem?.txtImg"
+      :class="[is_showLeft ? 'plan-inner-left-hide' : '']"
+    >
       <img :src="mainItem?.txtImg" alt="" />
     </div>
-    <div class="floor-plan-inner-left" v-else>
+    <div class="floor-plan-inner-left" v-else :class="[is_showLeft ? 'plan-inner-left-hide' : '']">
       <div class="floor-plan-inner-left-item-1-squre"></div>
       <h1>{{ mainItem?.floor }}</h1>
       <div class="floor-plan-inner-left-item-1">
@@ -15,12 +19,14 @@
       </div>
     </div>
     <!-- 每個家配圖的圖片大小不一，所以提供個別的class來調整 -->
-    <div class="floor-plan-inner-right" :class="`F-${mainItem?.id}`">
+    <div
+      class="floor-plan-inner-right"
+      :class="[`F-${mainItem?.id}`, is_showLeft ? 'floor-plan-inner-right-show' : '']"
+    >
       <ScaleDrag
         :max-ratio="2"
-        :init="{ x: 0, y: 0 }"
-        @hide-text="hideLeft"
-        @show-text="showLeft"
+        :init="{ x: -500, y: 0 }"
+        @toggle-text="toggleLeft"
         @watch-scale="watchScale"
       >
         <div class="container">
@@ -71,7 +77,10 @@
         </ul>
       </div>
     </div>
-    <div class="floor-plan-inner-fancybox-left-bottom">
+    <div
+      class="floor-plan-inner-fancybox-left-bottom"
+      :class="[is_showLeft ? 'plan-inner-left-hide' : '']"
+    >
       <img src="@/assets/img/floor-plan/new/left-bottom-cloud@2x.webp" />
     </div>
     <!-- <Back /> -->
@@ -113,7 +122,7 @@ const boxContent = ref<object | null>(null)
 
 // const viewContent = ref<object | null>(null)
 
-const show = ref(false)
+const is_showLeft = ref(false)
 
 const treeCategory = ref('')
 
@@ -151,12 +160,8 @@ const removeTag = () => {
   clickTag.value = ''
 }
 
-const hideLeft = () => {
-  show.value = true
-}
-
-const showLeft = () => {
-  show.value = false
+const toggleLeft = () => {
+  is_showLeft.value = !is_showLeft.value
 }
 
 // const videoClick = (val: boolean) => {

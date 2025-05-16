@@ -56,7 +56,7 @@ const gsapInit = () => {
       {
         y: '2vw',
         opacity: 0,
-        stagger: 0.2,
+        stagger: 0.15,
         duation: 1.5,
       },
       '<+0.5',
@@ -74,7 +74,7 @@ const gsapInit = () => {
       {
         y: '1vw',
         opacity: 0,
-        stagger: 0.15,
+        stagger: 0.35,
         duration: 1.5,
       },
       '<+0.5',

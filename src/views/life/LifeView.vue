@@ -17,6 +17,11 @@
             :class="[point.className, tag === point.tag ? 'active' : '']"
             @click.stop="showFancybox(point.id)"
           >
+            <div className="radiation">
+              <div className="circle"></div>
+              <div className="circle"></div>
+              <div className="circle"></div>
+            </div>
             <img src="/src/assets/img/life/point@2x.png" alt="" />
           </div>
         </ScaleDrag>
@@ -124,7 +129,7 @@ const gsapInit = () => {
       {
         y: '2vw',
         opacity: 0,
-        stagger: 0.15,
+        stagger: 0.2,
         duration: 1.5,
       },
       '<+0.25',
@@ -134,7 +139,7 @@ const gsapInit = () => {
       {
         x: '50%',
         opacity: 0,
-        stagger: 0.15,
+        stagger: 0.2,
         duration: 1.5,
       },
       '<+0.25',

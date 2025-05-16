@@ -61,21 +61,21 @@ const gsapInit = () => {
     .from(
       '.trans-para-left h3,.trans-para-left-img img',
       {
-        y: '2vw',
+        y: '4vw',
         opacity: 0,
-        stagger: 0.3,
-        duration: 1.5,
+        stagger: 0.35,
+        duration: 1,
       },
-      '<+0.25',
+      '<+0.5',
     )
     .from(
       '.trans-para-right',
       {
-        y: '2vw',
+        y: '4vw',
         opacity: 0,
-        duration: 1.5,
+        duration: 1.25,
       },
-      '<+0.5',
+      '<+0.75',
     )
 }
 

@@ -160,9 +160,9 @@ const gsapInit = () => {
   }).from(
     '.team-fancy-title,.team-fancy-para,.team-fancy-content',
     {
-      x: '10%',
+      x: '15%',
       opacity: 0,
-      stagger: 0.25,
+      stagger: 0.5,
       duration: 1.5,
     },
     '<+0.5',
