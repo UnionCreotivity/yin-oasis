@@ -51,6 +51,17 @@ const gsapInit = () => {
     opacity: 0,
     duration: 1.5,
   })
+    .fromTo(
+      '.rise-view-top-left',
+      {
+        maskPosition: '200% -100%',
+      },
+      {
+        duration: 1.7,
+        maskPosition: '0% 100%',
+      },
+      '<0.2',
+    )
     .from(
       '.rise-view-top-right h3,.rise-view-top-right h1,.rise-view-top-right p',
       {
@@ -59,7 +70,7 @@ const gsapInit = () => {
         stagger: 0.15,
         duation: 1.5,
       },
-      '<+0.5',
+      '<+0.8',
     )
     .from(
       '.rise-view-bottom-line',

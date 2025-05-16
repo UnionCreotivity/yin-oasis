@@ -35,9 +35,9 @@ const gsapInit = () => {
     .from(
       '.deep-view-left img',
       {
-        y: '5%',
+        y: '10%',
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
       },
       '<+0.35',
     )
@@ -60,7 +60,7 @@ const gsapInit = () => {
       },
       '<+0.75',
     )
-    .from('.deep-view-title', { y: '2vw', opacity: 0, duration: 1.5 }, '<+0.15')
+    .from('.deep-view-title', { opacity: 0, duration: 1 }, '<0.3')
 }
 
 onMounted(() => {

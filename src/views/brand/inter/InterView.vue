@@ -129,7 +129,7 @@ const gsapInit = () => {
       {
         y: '3vw',
         opacity: 0,
-        stagger: 0.3,
+        stagger: 0.5,
         duration: 1.5,
       },
       '<+0.5',
@@ -146,7 +146,7 @@ const gsapInit = () => {
     .from(
       '.inter-view-right-bottom',
       {
-        y: '3vw',
+        y: '4vw',
         opacity: 0,
         duration: 1.5,
       },

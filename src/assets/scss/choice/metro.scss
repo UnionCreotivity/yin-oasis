@@ -15,6 +15,14 @@
       width: 56%;
       margin-top: 1%;
       margin-left: 3%;
+      mask-image: url(../../img/metro/cloud-mask_2.png);
+      -webkit-mask-size: 20%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-size: 20%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+
       @include pad {
         margin-left: 1.5%;
       }

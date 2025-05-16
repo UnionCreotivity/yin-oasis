@@ -33,7 +33,7 @@ import gsap from 'gsap'
 import '@/assets/scss/choice/metro.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.5 })
+  const tl = gsap.timeline({ delay: 0 })
   tl.from('.metro-cloud-1', {
     x: '50%',
     y: '50%',
@@ -50,14 +50,16 @@ const gsapInit = () => {
       },
       '<',
     )
-    .from(
-      '.metro-view-left img',
+    .fromTo(
+      '.metro-view-left',
       {
-        y: '5%',
-        opacity: 0,
-        duration: 1.5,
+        maskSize: '0%',
       },
-      '<+0.25',
+      {
+        duration: 2,
+        maskSize: '200%',
+      },
+      '<0.2',
     )
     .from(
       '.metro-view-right h3,.metro-view-en',
@@ -83,9 +85,9 @@ const gsapInit = () => {
       {
         y: '3vw',
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
       },
-      '<+0.25',
+      '<0.6',
     )
 }
 

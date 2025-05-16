@@ -83,7 +83,11 @@
   justify-content: center;
   width: 100%;
 }
-.rise-view .rise-view-container .rise-view-bottom .rise-view-bottom-container .rise-view-bottom-item {
+.rise-view
+  .rise-view-container
+  .rise-view-bottom
+  .rise-view-bottom-container
+  .rise-view-bottom-item {
   position: absolute;
 }
 .rise-view .rise-view-container .rise-view-bottom .rise-view-bottom-container .item-1999 {
@@ -105,7 +109,11 @@
   width: 15.75vw;
   left: 79%;
 }
-.rise-view .rise-view-container .rise-view-bottom .rise-view-bottom-container .rise-view-bottom-line {
+.rise-view
+  .rise-view-container
+  .rise-view-bottom
+  .rise-view-bottom-container
+  .rise-view-bottom-line {
   width: 85.75vw;
   margin: auto;
 }
