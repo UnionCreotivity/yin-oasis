@@ -51,15 +51,6 @@ const gsapInit = () => {
       },
       '<+0.35',
     )
-    .from(
-      '.deep-view-right-bottom',
-      {
-        y: '3vw',
-        opacity: 0,
-        duration: 0.75,
-      },
-      '<+0.35',
-    )
     .from('.deep-view-title', { opacity: 0, duration: 1 }, '<0.3')
 }
 
