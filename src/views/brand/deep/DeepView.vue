@@ -46,7 +46,7 @@ const gsapInit = () => {
       {
         y: '3vw',
         opacity: 0,
-        stagger: 0.15,
+        stagger: 0.25,
         duration: 0.75,
       },
       '<+0.35',
