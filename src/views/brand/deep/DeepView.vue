@@ -1,7 +1,10 @@
 <template>
   <section class="deep-view">
     <div class="deep-view-container">
-      <div class="deep-view-left"><img src="/src/assets/img/35/光束+字.webp" alt="" /></div>
+      <div class="deep-view-left">
+        <img src="/src/assets/img/35/光束+字.webp" alt="" />
+        <!-- <div class="shing"><img src="/src/assets/img/other/shining.png" alt=""></div> -->
+      </div>
       <div class="deep-view-right">
         <div class="deep-view-right-top">
           <h3>精英開發 石云建設<br />台中最大 七期豪宅推手</h3>
