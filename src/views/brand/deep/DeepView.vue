@@ -3,7 +3,9 @@
     <div class="deep-view-container">
       <div class="deep-view-left">
         <img src="/src/assets/img/35/光束+字.webp" alt="" />
-        <!-- <div class="shing"><img src="/src/assets/img/other/shining.png" alt="" /></div> -->
+        <div class="shing shing-1"><img src="/src/assets/img/other/shining.png" alt="" /></div>
+        <div class="shing shing-2"><img src="/src/assets/img/other/shining.png" alt="" /></div>
+        <div class="shing shing-3"><img src="/src/assets/img/other/shining.png" alt="" /></div>
       </div>
       <div class="deep-view-right">
         <div class="deep-view-right-top">
@@ -28,7 +30,7 @@ import gsap from 'gsap'
 import '@/assets/scss/brand/deep.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.25 })
+  const tl = gsap.timeline()
   tl.from('.deep-view-cloud', {
     x: '50%',
     y: '50%',
@@ -55,6 +57,9 @@ const gsapInit = () => {
       '<+0.35',
     )
     .from('.deep-view-title', { opacity: 0, duration: 1 }, '<0.3')
+    .from('.shing img', {
+      opacity: 0,
+    })
 }
 
 onMounted(() => {
