@@ -3,7 +3,7 @@
     <div class="deep-view-container">
       <div class="deep-view-left">
         <img src="/src/assets/img/35/光束+字.webp" alt="" />
-        <!-- <div class="shing"><img src="/src/assets/img/other/shining.png" alt=""></div> -->
+        <!-- <div class="shing"><img src="/src/assets/img/other/shining.png" alt="" /></div> -->
       </div>
       <div class="deep-view-right">
         <div class="deep-view-right-top">
@@ -36,7 +36,7 @@ const gsapInit = () => {
     duration: 2.5,
   })
     .from(
-      '.deep-view-left img',
+      '.deep-view-left > img',
       {
         y: '10%',
         opacity: 0,
