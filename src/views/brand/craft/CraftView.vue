@@ -35,38 +35,38 @@ import gsap from 'gsap'
 import '@/assets/scss/brand/craft.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.75 })
+  const tl = gsap.timeline()
 
-  tl.from('.craft-view-lfet-house img', {
-    scale: 0.8,
-    opacity: 0,
+  tl.from('.craft-view-light-1 img', {
+    x: '-50%',
+    y: '50%',
     duration: 1.25,
   })
     .from(
-      '.craft-view-light-1 img',
+      '.craft-view-light-2 img',
       {
-        x: '-35%',
-        y: '35%',
+        x: '50%',
+        y: '-50%',
         duration: 1.25,
       },
       '<',
     )
     .from(
-      '.craft-view-light-2 img',
+      '.craft-view-lfet-house img',
       {
-        x: '35%',
-        y: '-35%',
-        duration: 1.25,
+        scale: 0.7,
+        opacity: 0,
+        duration: 1.5,
       },
-      '<',
+      '<+0.15',
     )
     .from(
       '.craft-view-right-container h3,.craft-view-right-container h1,.craft-view-right-container p,.craft-view-right-icon img',
       {
         y: '3vw',
         opacity: 0,
-        stagger: 0.35,
-        duration: 1.5,
+        stagger: 0.15,
+        duration: 0.75,
       },
       '<+0.5',
     )

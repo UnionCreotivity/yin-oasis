@@ -1,6 +1,6 @@
 <template>
   <!-- 每個左側大字的圖片大小不一，所以提供個別的class來調整 -->
-  <div id="floor-plan-inner" :class="`F-${mainItem?.id}-out`" @click.stop="backToFloor">
+  <div id="floor-plan-inner" :class="`F-${mainItem?.id}-out`">
     <p class="floor-plan-inner-mention">本圖面僅供參考，實際圖面依合約書附圖為準</p>
     <!-- 判斷平面圖是否有左側大字 -->
     <div
@@ -56,6 +56,9 @@
           </div>
         </div>
       </ScaleDrag>
+      <div class="floor-plan-inner-right-back" @click.stop="backToFloor">
+        <img src="/src/assets/img/team/fancy-close.svg" alt="" />
+      </div>
       <!-- 判斷是否有子點擊項目 -->
       <div class="floor-plan-inner-left-item-3" v-if="mainItem?.list">
         <ul class="floor-plan-inner-left-ul">

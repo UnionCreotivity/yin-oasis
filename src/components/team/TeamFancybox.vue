@@ -158,14 +158,14 @@ const gsapInit = () => {
     opacity: 0,
     duration: 2,
   }).from(
-    '.team-fancy-title,.team-fancy-para,.team-fancy-content',
+    '.team-fancy-title p,.team-fancy-para-container p,.team-fancy-swiper',
     {
-      x: '15%',
+      x: '5vw',
       opacity: 0,
-      stagger: 0.5,
-      duration: 1.5,
+      stagger: 0.2,
+      duration: 1,
     },
-    '<+0.5',
+    '<+0.25',
   )
 }
 

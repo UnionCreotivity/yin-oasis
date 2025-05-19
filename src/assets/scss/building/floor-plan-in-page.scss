@@ -120,12 +120,30 @@
       width: 100%;
       height: 100%;
     }
+    .floor-plan-inner-right-back {
+      position: absolute;
+      right: 3vw;
+      top: 45%;
+      width: 3.25vw;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      @include pad {
+        right: 4vw;
+      }
+    }
     .floor-plan-inner-left-item-3 {
+      position: absolute;
+      bottom: 6.5%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       width: 100%;
+      transition: all 0.5s;
+      @include pad {
+        bottom: 10.5%;
+      }
       .floor-plan-inner-left-tree {
         display: flex;
         align-items: center;
@@ -201,10 +219,15 @@
     }
     .imgBoxIn {
       width: 90%;
-      height: auto;
+      height: 80%;
       padding-block: 1vw;
       margin-right: 7%;
       transition: all 0.75s;
+      @include pad {
+        width: 88%;
+        height: 78%;
+        margin-right: 9%;
+      }
       .box {
         justify-content: flex-end;
       }
@@ -248,117 +271,105 @@
       left: unset;
       bottom: 0;
       justify-content: flex-end;
-      margin-inline: 2vw;
+      margin-inline: 3vw;
       margin-bottom: 7vw;
       z-index: 15;
       @include pad {
-        margin-inline: 3vw;
+        margin-inline: 4vw;
         margin-bottom: 9vw;
       }
     }
   }
 
-  .F-1F {
-    .imgBoxIn {
-      width: 90%;
-      height: 65%;
-      margin: 0 auto;
-    }
-  }
   .F-2F {
     .imgBoxIn {
       width: 90%;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
-  .F-2F.floor-plan-inner-right-show {
-    .imgBoxIn {
-      width: 90%;
-      height: auto;
-    }
-  }
-  .F-3F {
-    .imgBoxIn {
-      width: 55%;
       height: 80%;
+      margin-right: 7%;
     }
   }
-  .F-3F.floor-plan-inner-right-show {
-    .imgBoxIn {
-      width: 90%;
-      height: 80%;
-    }
-  }
-  .F-M-1F {
-    .imgBoxIn {
-      width: 90%;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
-  .F-M-1F.floor-plan-inner-right-show {
-    .imgBoxIn {
-      width: 90%;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
-  .F-4F {
-    .imgBoxIn {
-      width: 55%;
-      height: 80%;
-    }
-  }
-  .F-4F.floor-plan-inner-right-show {
-    .imgBoxIn {
-      width: 90%;
-      height: 80%;
-    }
-  }
-  .F-5F-11F {
-    .imgBoxIn {
-      width: 55%;
-      height: 80%;
-    }
-  }
-  .F-5F-11F.floor-plan-inner-right-show {
-    .imgBoxIn {
-      width: 90%;
-      height: 80%;
-    }
-  }
-  .F-6F-13F {
-    .imgBoxIn {
-      width: 55%;
-      height: 80%;
-    }
-  }
-  .F-6F-13F.floor-plan-inner-right-show {
-    .imgBoxIn {
-      width: 90%;
-      height: 80%;
-    }
-  }
+
+  .F-3F,
+  .F-4F,
+  .F-5F-11F,
+  .F-6F-13F,
   .F-R1 {
     .imgBoxIn {
       width: 55%;
       height: 80%;
+      @include pad {
+        width: 65%;
+        height: 80%;
+        margin-right: 9%;
+      }
     }
   }
-  .F-R1.floor-plan-inner-right-show {
-    .imgBoxIn {
-      width: 90%;
-      height: 80%;
-    }
-  }
+  // .F-4F {
+  //   .imgBoxIn {
+  //     width: 55%;
+  //     height: 80%;
+  //   }
+  // }
+
+  // .F-5F-11F {
+  //   .imgBoxIn {
+  //     width: 55%;
+  //     height: 80%;
+  //   }
+  // }
+  // .F-6F-13F {
+  //   .imgBoxIn {
+  //     width: 55%;
+  //     height: 80%;
+  //   }
+  // }
+
+  // .F-R1 {
+  //   .imgBoxIn {
+  //     width: 55%;
+  //     height: 80%;
+  //   }
+  // }
   .floor-plan-inner-right-show {
+    .floor-plan-inner-left-item-3 {
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.5s;
+    }
     .imgBoxIn {
-      width: 90%;
-      height: auto;
+      width: 100%;
+      height: 100%;
       transition: all 0.25s;
     }
   }
+  .F-1F {
+    .imgBoxIn {
+      width: 90%;
+      height: 65%;
+      margin-right: 7%;
+      @include pad {
+        height: 60%;
+        margin-right: 8%;
+      }
+    }
+  }
+  .F-1F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 140%;
+      height: 100%;
+      @include pad {
+        margin-right: 9%;
+      }
+    }
+  }
+
+  .F-M-1F.floor-plan-inner-right-show {
+    .imgBoxIn {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .plan-inner-zIndex {
     .imgBoxIn {
       height: auto;
@@ -417,112 +428,11 @@
       right: 10%;
     }
   }
-  //-- 樓層 --
-  .F-R1 {
-    .imgBoxIn {
-      .box {
-        .container {
-          // width: 92.5%;
-        }
-      }
-    }
-  }
-  .F-B1 {
-    .imgBoxIn {
-      .box {
-        .container {
-          // width: 92.5%;
-        }
-      }
-    }
-  }
-  .F-B2 {
-    .imgBoxIn {
-      .box {
-        .container {
-          // width: 92.5%;
-        }
-      }
-    }
-  }
-  .F-B3 {
-    .imgBoxIn {
-      .box {
-        .container {
-          // width: 92.5%;
-        }
-      }
-    }
-  }
-  .F-M-1F {
-    .imgBoxIn {
-      .box {
-        .container {
-          // width: 92.5%;
-        }
-      }
-    }
-  }
   .F-2F {
-    width: 87%;
-    top: 1%;
-    left: 10%;
-    .zoom {
-      right: -2%;
-    }
+    width: 100%;
+    top: 0%;
+    left: 0%;
   }
-  // .F-3F {
-  //   .imgBoxIn {
-  //     width: 54%;
-  //     align-self: flex-end;
-  //     margin-right: 8%;
-  //     @include pad {
-  //       width: 66%;
-  //       margin-right: 9%;
-  //     }
-  //   }
-  // }
-  // .F-4F {
-  //   .imgBoxIn {
-  //     width: 54%;
-  //     align-self: flex-end;
-  //     margin-right: 8%;
-  //     @include pad {
-  //       width: 66%;
-  //       margin-right: 9%;
-  //     }
-  //   }
-  // }
-  // .F-5F-11F-out {
-  //   .floor-plan-inner-right-show{
-  //     .imgBoxIn {
-  //       width: 90%;
-  //           height: 80%;
-  //     }
-  //   }
-  // }
-  // .F-6F-13F {
-  //   .imgBoxIn {
-  //     width: 54%;
-  //     align-self: flex-end;
-  //     margin-right: 8%;
-  //     @include pad {
-  //       width: 66%;
-  //       margin-right: 9%;
-  //     }
-  //   }
-  // }
-  // .F-R1 {
-  //   .imgBoxIn {
-  //     width: 56%;
-  //     align-self: flex-end;
-  //     margin-right: 7%;
-  //     @include pad {
-  //       width: 68%;
-  //       margin-right: 8%;
-  //     }
-  //   }
-  // }
 }
 
 .F-3F-out {

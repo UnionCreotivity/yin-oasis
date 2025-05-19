@@ -75,7 +75,7 @@ const handleFancy = (val?: string) => {
 }
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.25 })
+  const tl = gsap.timeline()
   tl.from('.team-view-left', {
     opacity: 0,
     filter: 'blur(10px)',

@@ -2,6 +2,7 @@
   <div class="metro-view">
     <div class="metro-view-container">
       <div class="metro-view-left">
+        <Glow :parentLength="20" />
         <img src="../../../assets/img/metro/metro-left@2x.webp" alt="" />
       </div>
       <div class="metro-view-right">
@@ -30,10 +31,11 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import gsap from 'gsap'
+import Glow from '@/components/glow/Glow.vue'
 import '@/assets/scss/choice/metro.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0 })
+  const tl = gsap.timeline()
   tl.from('.metro-cloud-1', {
     x: '50%',
     y: '50%',
@@ -67,7 +69,7 @@ const gsapInit = () => {
         y: '3vw',
         opacity: 0,
         stagger: 0.35,
-        duration: 1.25,
+        duration: 1,
       },
       '<+0.5',
     )
@@ -76,9 +78,9 @@ const gsapInit = () => {
       {
         y: '3vw',
         opacity: 0,
-        duration: 1,
+        duration: 0.75,
       },
-      '<+0.75',
+      '<+0.5',
     )
     .from(
       '.metro-view-title',

@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: flex-start;
     .metro-view-left {
+      position: relative;
       width: 56%;
       margin-top: 1%;
       margin-left: 3%;
@@ -25,6 +26,14 @@
 
       @include pad {
         margin-left: 1.5%;
+      }
+      .glow {
+        position: absolute;
+        width: 3.5vw;
+        height: 5vw;
+        top: 62%;
+        left: 50.25%;
+        opacity: 0.5;
       }
     }
     .metro-view-right {

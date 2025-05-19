@@ -4,7 +4,7 @@
       <div class="life-view-left">
         <ScaleDrag :init="initXY" :max-ratio="2">
           <img class="life-map" src="/src/assets/img/life/map@2x.webp" alt="" />
-          <!-- <Glow /> -->
+          <Glow :parent-length="20" />
           <!-- <div class="life-mask">
             <div class="life-mask-inner">
               <div class="life-mask-light"></div>
@@ -66,6 +66,7 @@ import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import ViewFixed from '@/components/view-fixed/ViewFixed.vue'
 import LifeFancybox from '@/components/life-fancybox/LifeFancybox.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
+import Glow from '@/components/glow/Glow.vue'
 import { lifeData, lifeFancyData } from './LifeData'
 import '@/assets/scss/life/life.scss'
 
@@ -125,12 +126,12 @@ const gsapInit = () => {
     duration: 2.5,
   })
     .from(
-      '.life-view-right-top,.life-view-right-top-p-en',
+      '.life-view-right-top h3,.life-view-right-top-p-en',
       {
-        y: '2vw',
+        y: '3vw',
         opacity: 0,
-        stagger: 0.2,
-        duration: 1.5,
+        stagger: 0.3,
+        duration: 1,
       },
       '<+0.25',
     )

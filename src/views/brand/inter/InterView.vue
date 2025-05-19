@@ -109,7 +109,7 @@ import gsap from 'gsap'
 import '@/assets/scss/brand/inter.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.5 })
+  const tl = gsap.timeline()
   tl.from('.inter-view-cloud', {
     x: '50%',
     y: '50%',
@@ -129,28 +129,28 @@ const gsapInit = () => {
       {
         y: '3vw',
         opacity: 0,
-        stagger: 0.5,
-        duration: 1.5,
+        stagger: 0.3,
+        duration: 0.75,
       },
-      '<+0.5',
+      '<+0.35',
     )
     .from(
       '.inter-view-right p',
       {
         y: '3vw',
         opacity: 0,
-        duration: 1,
+        duration: 0.75,
       },
-      '<+0.65',
+      '<+0.6',
     )
     .from(
       '.inter-view-right-bottom',
       {
         y: '4vw',
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
       },
-      '<+0.45',
+      '<+0.25',
     )
 }
 

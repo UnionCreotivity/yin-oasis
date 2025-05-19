@@ -8,6 +8,8 @@
 defineOptions({
   name: 'GlowEffect',
 })
+const props = defineProps(['parentLength'])
+
 interface DOT {
   left: string
   scale: number
@@ -23,6 +25,9 @@ const length = ref(30)
 const dot = ref<DOT[]>([])
 
 onMounted(() => {
+  if (props.parentLength) {
+    length.value = props.parentLength
+  }
   for (let i = 0; i < length.value; i++) {
     dot.value.push({
       left: Math.floor(Math.random() * 100) + '%',
@@ -43,7 +48,7 @@ onMounted(() => {
   width: 10vw;
   height: 7vw;
   top: 54%;
-  left: 37.25%;
+  left: 38.25%;
 }
 @media screen and (max-width: 1400px) {
   .glow {
