@@ -25,7 +25,7 @@
     >
       <ScaleDrag
         :max-ratio="2"
-        :init="{ x: -500, y: 0 }"
+        :init="{ x: 0, y: 0 }"
         @toggle-text="toggleLeft"
         @watch-scale="watchScale"
       >
@@ -162,9 +162,9 @@ const removeTag = () => {
   boxContent.value = null
   clickTag.value = ''
 }
-
-const toggleLeft = () => {
-  is_showLeft.value = !is_showLeft.value
+//左側文字隱藏
+const toggleLeft = (val: boolean) => {
+  is_showLeft.value = val
 }
 
 // const videoClick = (val: boolean) => {

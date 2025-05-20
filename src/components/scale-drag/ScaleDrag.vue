@@ -68,11 +68,11 @@ const zoomIn = (e: MouseEvent) => {
   e.stopPropagation()
   e.preventDefault()
   if (scaleRatio.value < props.maxRatio) {
-    scaleRatio.value += 1
+    scaleRatio.value += 0.5
     x.value = props.init.x
     y.value = props.init.y
     startScale.value = true
-    emits('toggle-text')
+    emits('toggle-text', true)
   }
 }
 
@@ -80,13 +80,13 @@ const zoomOut = (e: MouseEvent) => {
   e.stopPropagation()
   e.preventDefault()
   if (scaleRatio.value > 1) {
-    scaleRatio.value -= 1
-    startScale.value = false
-    emits('toggle-text')
+    scaleRatio.value -= 0.5
   }
-  if (scaleRatio.value < 2) {
+  if (scaleRatio.value <= 1) {
     x.value = 0
     y.value = 0
+    startScale.value = false
+    emits('toggle-text', false)
   }
 }
 
@@ -95,7 +95,7 @@ const onMouseMove = (e: MouseEvent) => {
   e.preventDefault()
   const maxHorizontal = (mapRect.width - boxRect.width) / 2
   const maxVertical = (mapRect.height - boxRect.height) / 2
-  if (flag.value && scaleRatio.value >= 2) {
+  if (flag.value && scaleRatio.value >= 1.5) {
     requestAnimationFrame(() => {
       //限制可拖動範圍
       if (Math.abs(deltaXY.x) > Math.abs(deltaXY.y)) {
@@ -155,7 +155,7 @@ const onTouchStart = (e: TouchEvent) => {
 const onTouchMove = (e: TouchEvent) => {
   const maxHorizontal = (mapRect.width - boxRect.width) / 2
   const maxVertical = (mapRect.height - boxRect.height) / 2
-  if (flag.value && scaleRatio.value >= 2) {
+  if (flag.value && scaleRatio.value >= 1.5) {
     requestAnimationFrame(() => {
       if (Math.abs(deltaXY.x) > Math.abs(deltaXY.y)) {
         if (deltaXY.x > 0 && x.value <= maxHorizontal) {
@@ -213,6 +213,7 @@ watch(scaleRatio, () => {
     y.value = 0
     scaleRatio.value = 1
   }
+  console.log(scaleRatio.value)
 })
 </script>
 
