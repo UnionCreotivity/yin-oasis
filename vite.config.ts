@@ -9,6 +9,9 @@ export default defineConfig({
   base: './',
   build: {
     outDir: 'dist',
+    modulePreload: {
+      polyfill: true,
+    },
   },
   plugins: [
     vue(),
