@@ -129,6 +129,8 @@ const is_showLeft = ref(false)
 
 const treeCategory = ref('')
 
+// const test = ref()
+
 // const play = ref(false)
 
 //偵測圖片是否縮放
@@ -148,6 +150,11 @@ const hoverListHandle = (val: string) => {
 const outListHandle = () => {
   listTag.value = ''
 }
+
+// const preloadImg = (src) => {
+//   const img = new Image()
+//   return (img.src = src)
+// }
 
 const handleClick = (val: string) => {
   clickTag.value = val
@@ -202,6 +209,7 @@ onMounted(() => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const findItem = FloorPlanAest.find((item: any) => item.tag === tag.value)
   mainItem.value = findItem
+  // test.value = preloadImg(mainItem.value.image)
 })
 
 provide('toggle', backToFloor)
