@@ -213,7 +213,6 @@ watch(scaleRatio, () => {
     y.value = 0
     scaleRatio.value = 1
   }
-  console.log(scaleRatio.value)
 })
 </script>
 

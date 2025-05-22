@@ -116,8 +116,6 @@ export const useLoanStore = defineStore('loan', () => {
     state.value.afterAllowancePeriodCost = toMoneyStyle(
       Math.floor(val.total * 0.5 * avgMonthRatio * 10000),
     )
-    console.log(state.value.ownMoney)
-    console.log(typeof state.value.ownMoney)
   }
   function cleanAll() {
     state.value.deposit = ''

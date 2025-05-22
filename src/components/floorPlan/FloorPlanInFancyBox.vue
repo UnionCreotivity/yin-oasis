@@ -101,7 +101,6 @@ const handleBack = () => {
 }
 //左側文字隱藏
 const toggleLeft = (val: boolean) => {
-  console.log(val)
   is_showLeft.value = val
 }
 
