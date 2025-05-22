@@ -4,6 +4,7 @@
       <div class="life-view-left">
         <ScaleDrag :init="initXY" :max-ratio="2">
           <img class="life-map" src="/src/assets/img/life/map@2x.webp" alt="" />
+          <!-- <img class="life-map" :src="test" alt="" /> -->
           <Glow :parent-length="20" />
           <!-- <div class="life-mask">
             <div class="life-mask-inner">
@@ -100,6 +101,8 @@ const lifeList = [
 
 const tag = ref('')
 
+// const test = ref()
+
 const fancyboxItem = ref<{ key: string; image: string; txt: string }[] | null>(null)
 
 const handleTag = (val: string) => {
@@ -116,6 +119,13 @@ const showFancybox = (val: string) => {
     fancyboxItem.value = null
   }
 }
+
+// const preloadImg = () => {
+//   const img = new Image()
+//   const src = new URL('/src/assets/img/life/map@2x.webp', import.meta.url).href
+//   img.src = src
+//   test.value = img.src
+// }
 
 const gsapInit = () => {
   const tl = gsap.timeline()
@@ -151,6 +161,7 @@ const initXY = computed(() => {
   return window.innerWidth > 1400 ? { x: 300, y: -200 } : { x: 100, y: -100 }
 })
 onMounted(() => {
+  // preloadImg()
   gsapInit()
 })
 </script>
