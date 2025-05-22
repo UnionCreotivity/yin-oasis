@@ -4,13 +4,7 @@
       <div class="life-view-left">
         <ScaleDrag :init="initXY" :max-ratio="2">
           <img class="life-map" src="/src/assets/img/life/map@2x.webp" alt="" />
-          <!-- <img class="life-map" :src="test" alt="" /> -->
           <Glow :parent-length="20" />
-          <!-- <div class="life-mask">
-            <div class="life-mask-inner">
-              <div class="life-mask-light"></div>
-            </div>
-          </div> -->
           <div
             class="life-view-point"
             v-for="point in lifeData"
