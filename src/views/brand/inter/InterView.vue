@@ -160,12 +160,16 @@ const imageInfinite = () => {
     y: '33.6%',
     ease: 'linear',
     duration: 30,
+    force3D: true,
+    willChange: 'transform',
   })
   const tlSecond = gsap.timeline({ repeat: -1 })
   tlSecond.to('.inter-view-col-inner', {
     y: '-50.5%',
     ease: 'linear',
     duration: 36,
+    force3D: true,
+    willChange: 'transform',
   })
 }
 

@@ -41,6 +41,8 @@ const gsapInit = () => {
     x: '-50%',
     y: '50%',
     duration: 1.25,
+    force3D: true,
+    willChange: 'transform',
   })
     .from(
       '.craft-view-light-2 img',
@@ -48,6 +50,8 @@ const gsapInit = () => {
         x: '50%',
         y: '-50%',
         duration: 1.25,
+        force3D: true,
+        willChange: 'transform',
       },
       '<',
     )
@@ -57,6 +61,8 @@ const gsapInit = () => {
         scale: 0.7,
         opacity: 0,
         duration: 1.5,
+        force3D: true,
+        willChange: 'transform',
       },
       '<+0.15',
     )

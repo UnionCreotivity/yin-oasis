@@ -60,6 +60,8 @@ const gsapInit = () => {
       {
         duration: 2,
         maskSize: '200%',
+        force3D: true,
+        willChange: 'transform',
       },
       '<0.2',
     )
