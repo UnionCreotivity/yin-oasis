@@ -30,7 +30,7 @@
       <li class="loan-result-li">
         <div class="loan-result-container">
           <div class="loan-result-li-top">
-            <h4>契稅申款:</h4>
+            <h4>契稅申報:</h4>
             <p class="loan-result-number">{{ state.tax }}</p>
             <div class="loan-result-text">萬元</div>
           </div>
