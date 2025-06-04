@@ -72,10 +72,16 @@ export const useLoanStore = defineStore('loan', () => {
     // this.sixteenThFloor = toMoneyStyle(Math.ceil(val.total * 0.01))
     //開工款
     state.value.kickOff = toMoneyStyle(Math.ceil(val.total * 0.03))
-    //契稅
-    state.value.tax = toMoneyStyle(Math.ceil(val.total * 0.2))
     //結構完成(工程款)
-    // state.value.construction = toMoneyStyle(Math.ceil(val.total * 0.1))
+    state.value.construction = toMoneyStyle(Math.ceil(val.total * 0.15))
+    //契稅
+    // state.value.tax = toMoneyStyle(Math.ceil(val.total * 0.1))
+
+    // //契稅
+    // state.value.tax = toMoneyStyle(Math.ceil(val.total * 0.2))
+    // //結構完成(工程款)
+    // // state.value.construction = toMoneyStyle(Math.ceil(val.total * 0.1))
+
     //交屋款
     state.value.delivery = toMoneyStyle(Math.ceil(val.total * 0.05))
 
@@ -86,15 +92,24 @@ export const useLoanStore = defineStore('loan', () => {
     //貸款
     state.value.loanMoney = toMoneyStyle(Math.floor(val.total * 0.5))
 
-    //結構完成(工程款)
-    state.value.construction = toMoneyStyle(
+    //契稅
+    state.value.tax = toMoneyStyle(
       Math.ceil(val.total * 0.5) -
         10 -
         Math.ceil(val.total * 0.07 - 10) -
         Math.ceil(val.total * 0.03) -
-        Math.ceil(val.total * 0.2) -
+        Math.ceil(val.total * 0.15) -
         Math.ceil(val.total * 0.05),
     )
+    // //結構完成(工程款)
+    // state.value.construction = toMoneyStyle(
+    //   Math.ceil(val.total * 0.5) -
+    //     10 -
+    //     Math.ceil(val.total * 0.07 - 10) -
+    //     Math.ceil(val.total * 0.03) -
+    //     Math.ceil(val.total * 0.2) -
+    //     Math.ceil(val.total * 0.05),
+    // )
 
     //使照申請 自備款減去拆款後的值當作使照申請
     state.value.license = toMoneyStyle(
