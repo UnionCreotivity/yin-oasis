@@ -73,7 +73,7 @@ export const useLoanStore = defineStore('loan', () => {
     //開工款
     state.value.kickOff = toMoneyStyle(Math.ceil(val.total * 0.03))
     //契稅
-    state.value.tax = toMoneyStyle(Math.ceil(val.total * 0.25))
+    state.value.tax = toMoneyStyle(Math.ceil(val.total * 0.2))
     //結構完成(工程款)
     // state.value.construction = toMoneyStyle(Math.ceil(val.total * 0.1))
     //交屋款
@@ -92,7 +92,7 @@ export const useLoanStore = defineStore('loan', () => {
         10 -
         Math.ceil(val.total * 0.07 - 10) -
         Math.ceil(val.total * 0.03) -
-        Math.ceil(val.total * 0.25) -
+        Math.ceil(val.total * 0.2) -
         Math.ceil(val.total * 0.05),
     )
 
