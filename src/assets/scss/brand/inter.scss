@@ -10,6 +10,12 @@
     justify-content: center;
     overflow: hidden;
     gap: 15%;
+    mask-image: url(../../img/rise/mask_1.png);
+    mask-size: 200% 200%;
+    mask-repeat: no-repeat;
+    mask-position: 200% -100%;
+    -webkit-mask-size: 200% 200%;
+    -webkit-mask-position: 200% -100%;
     @include pad {
       gap: 10%;
     }
@@ -93,7 +99,7 @@
         margin-bottom: 9%;
         color: #fff9de;
         @include pad {
-          font-size: 1.8vw;
+          font-size: 24px;
         }
       }
       .inter-view-title-en {
@@ -108,10 +114,11 @@
         font-size: var(--paraSize);
         letter-spacing: 4px;
         line-height: 1.8;
-        color: white;
         margin-bottom: 20%;
+        text-align: justify;
+        color: white;
         @include pad {
-          font-size: 1.1vw;
+          font-size: 16px;
         }
       }
       .inter-view-right-bottom {

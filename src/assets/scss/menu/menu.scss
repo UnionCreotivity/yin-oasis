@@ -27,6 +27,7 @@
     .menu-left-item {
       display: flex;
       align-items: center;
+      .menu-left-item-inner,
       a {
         position: relative;
         display: flex;
@@ -39,6 +40,7 @@
         letter-spacing: 4px;
         height: 100%;
         color: white;
+        cursor: pointer;
         @include pad {
           font-size: 1.2vw;
           letter-spacing: 2px;
@@ -71,6 +73,7 @@
       }
     }
     .menu-left-item-active {
+      .menu-left-item-inner,
       a {
         color: #aeffe0;
         .menu-left-triangle {

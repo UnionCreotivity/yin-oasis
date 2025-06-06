@@ -40,6 +40,7 @@ const gsapInit = () => {
   tl.from('.craft-view-light-1 img', {
     x: '-50%',
     y: '50%',
+    scale: 0.5,
     duration: 1.25,
     force3D: true,
     willChange: 'transform',
@@ -49,6 +50,7 @@ const gsapInit = () => {
       {
         x: '50%',
         y: '-50%',
+        scale: 0.5,
         duration: 1.25,
         force3D: true,
         willChange: 'transform',

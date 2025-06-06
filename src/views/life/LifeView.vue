@@ -95,8 +95,6 @@ const lifeList = [
 
 const tag = ref('')
 
-// const test = ref()
-
 const fancyboxItem = ref<{ key: string; image: string; txt: string }[] | null>(null)
 
 const handleTag = (val: string) => {
@@ -114,21 +112,30 @@ const showFancybox = (val: string) => {
   }
 }
 
-// const preloadImg = () => {
-//   const img = new Image()
-//   const src = new URL('/src/assets/img/life/map@2x.webp', import.meta.url).href
-//   img.src = src
-//   test.value = img.src
-// }
-
 const gsapInit = () => {
   const tl = gsap.timeline()
-  tl.from('.life-view-right-cloud', {
-    x: '50%',
-    y: '50%',
-    opacity: 0,
-    duration: 2.5,
-  })
+  tl.fromTo(
+    '.life-view-container',
+    {
+      maskPosition: '200% -100%',
+    },
+    {
+      maskPosition: '0% 100%',
+      force3D: true,
+      willChange: 'transform',
+      duration: 2,
+    },
+  )
+    .from(
+      '.life-view-right-cloud',
+      {
+        x: '50%',
+        y: '50%',
+        opacity: 0,
+        duration: 2.5,
+      },
+      '<+0.2',
+    )
     .from(
       '.life-view-right-top h3,.life-view-right-top-p-en',
       {

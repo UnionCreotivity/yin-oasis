@@ -10,6 +10,12 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    mask-image: url(../../img/rise/mask_1.png);
+    mask-size: 200% 200%;
+    mask-repeat: no-repeat;
+    mask-position: 200% -100%;
+    -webkit-mask-size: 200% 200%;
+    -webkit-mask-position: 200% -100%;
     .deep-view-left {
       position: relative;
       width: 37%;
@@ -61,8 +67,8 @@
       width: 25%;
       margin-right: 6%;
       @include pad {
-        width: 26%;
-        margin-right: 7%;
+        width: 27%;
+        margin-right: 6%;
       }
       .deep-view-right-top {
         display: flex;
@@ -79,7 +85,7 @@
           margin-bottom: 10%;
           color: #fff9de;
           @include pad {
-            font-size: 1.8vw;
+            font-size: 24px;
           }
         }
         .deep-view-para-en {
@@ -94,8 +100,9 @@
         letter-spacing: 4px;
         line-height: 1.8;
         color: white;
+        text-align: justify;
         @include pad {
-          font-size: 1.1vw;
+          font-size: 16px;
         }
       }
     }

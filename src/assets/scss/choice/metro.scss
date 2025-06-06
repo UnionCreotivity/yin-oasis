@@ -43,7 +43,8 @@
       margin-left: 6%;
       width: 22.25%;
       @include pad {
-        width: 25%;
+        width: 27%;
+        margin-left: 4%;
       }
       h3 {
         font-family: var(--serif);
@@ -53,7 +54,7 @@
         margin-bottom: 7%;
         color: #fff9de;
         @include pad {
-          font-size: 1.8vw;
+          font-size: 24px;
         }
       }
       .metro-view-en {
@@ -69,9 +70,10 @@
         font-size: var(--paraSize);
         letter-spacing: 4px;
         line-height: 1.8;
+        text-align: justify;
         color: white;
         @include pad {
-          font-size: 1.1vw;
+          font-size: 16px;
         }
       }
     }

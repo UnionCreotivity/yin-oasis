@@ -10,6 +10,12 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    mask-image: url(../../img/rise/mask_1.png);
+    mask-size: 200% 200%;
+    mask-repeat: no-repeat;
+    mask-position: 200% -100%;
+    -webkit-mask-size: 200% 200%;
+    -webkit-mask-position: 200% -100%;
     .life-view-left {
       width: 76.5%;
       display: flex;
@@ -246,7 +252,7 @@
           letter-spacing: 5px;
           color: #fff9de;
           @include pad {
-            font-size: 1.8vw;
+            font-size: 24px;
           }
         }
         .life-view-right-top-p-en {

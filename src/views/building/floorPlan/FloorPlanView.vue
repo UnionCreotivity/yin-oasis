@@ -1,7 +1,7 @@
 <template>
   <div class="floor-plan-view">
     <div class="floor-plan-left">
-      <ScaleDrag :max-ratio="2" :init="{ x: 0, y: 0 }">
+      <ScaleDrag :max-ratio="2" :init="{ x: 0, y: 0 }" :plusImg="plusImg" :minus-img="minusImg">
         <div class="container">
           <div class="anchor-area">
             <div class="anchor-area-map">
@@ -13,7 +13,6 @@
       <div class="floor-plan-left-text">3D外觀示意圖</div>
     </div>
     <div class="floor-plan-right">
-      <h1 class="floor-plan-title">FLOOR PLAN</h1>
       <ul class="floor-plan-right-ul">
         <li
           v-for="item in FloorPlanList"
@@ -22,27 +21,31 @@
           @mouseover="addTag(item.tag)"
           @mouseout="removeTag()"
         >
-          <router-link :to="{ name: 'floorInner', query: { q: item.tag } }" :class="[item.is_use ? '' : 'disabled-link']">
+          <router-link
+            :to="{ name: 'floorInner', query: { q: item.tag } }"
+            :class="[item.is_use ? '' : 'disabled-link']"
+          >
             <div class="floor-plan-right-tag">{{ item.floor }}</div>
             <div class="floor-plan-right-ul-line"></div>
           </router-link>
         </li>
       </ul>
-      <div class="floor-plan-cloud">
-        <img src="/src/assets/img/floor-plan/floor-cloud-2@2x.webp" alt="" />
-      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import gsap from 'gsap'
 import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import { FloorPlanList } from '../floorPlanData'
 import '@/assets/scss/building/floor-plan.scss'
 
 const liTag = ref('')
 
+const plusImg = ref()
+
+const minusImg = ref()
 
 const addTag = (val: string) => {
   liTag.value = val
@@ -51,8 +54,29 @@ const addTag = (val: string) => {
 const removeTag = () => {
   liTag.value = ''
 }
+
+const gsapInit = () => {
+  const tl = gsap.timeline()
+  tl.fromTo(
+    '.floor-plan-view',
+    {
+      maskPosition: '200% -100%',
+    },
+    {
+      maskPosition: '0% 100%',
+      //在ipad會造成menu也受到遮罩影響，所以關掉
+      // force3D: true,
+      // willChange: 'transform',
+      duration: 1.5,
+    },
+  )
+}
+
+onMounted(() => {
+  plusImg.value = new URL('@/assets/img/floor-plan/new/green-plus.svg', import.meta.url).href
+  minusImg.value = new URL('@/assets/img/floor-plan/new/green-minus.svg', import.meta.url).href
+  gsapInit()
+})
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

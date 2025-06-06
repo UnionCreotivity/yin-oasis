@@ -9,4 +9,12 @@ import { RouterView } from 'vue-router'
 import ViewFixed from '@/components/view-fixed/ViewFixed.vue'
 </script>
 
-<style scoped></style>
+<style lang="scss">
+#building-view {
+  .menu-icon-container {
+    .menu-right {
+      background-color: #5f8081;
+    }
+  }
+}
+</style>

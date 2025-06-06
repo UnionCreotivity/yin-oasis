@@ -1,0 +1,109 @@
+@use '../config' as *;
+.feature-view {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(to top, #445e61 0%, #547273 26%, #5f8081 84%, #97a392 100%);
+  .feature-view-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 8vw;
+    mask-image: url(../../img/rise/mask_1.png);
+    mask-size: 200% 200%;
+    mask-repeat: no-repeat;
+    mask-position: 200% -100%;
+    -webkit-mask-size: 200% 200%;
+    -webkit-mask-position: 200% -100%;
+    .feature-view-left {
+      display: flex;
+      justify-content: center;
+      gap: 1.5vw;
+      .feature-en-title {
+        font-family: var(--cor);
+        font-weight: 500;
+        font-size: 4vw;
+        letter-spacing: 2px;
+        writing-mode: vertical-lr;
+        color: #aeffe0;
+      }
+      .feature-zh-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        writing-mode: vertical-lr;
+        letter-spacing: 6px;
+        gap: 1.75vw;
+        h3 {
+          font-family: var(--serif);
+          font-weight: 400;
+          font-size: 2.75vw;
+          color: #fff9de;
+        }
+        h4 {
+          font-family: var(--serif);
+          font-weight: 400;
+          font-size: 1.65vw;
+          color: #aeffe0;
+          padding-inline: 0.75vw;
+          padding-block: 0.25vw;
+          border: 1px solid #aeffe0;
+        }
+      }
+    }
+    .feature-view-right {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 56.7%;
+      gap: 1.5vw;
+      margin-right: 5%;
+      .feature-view-right-top,
+      .feature-view-right-bottom {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+      }
+      .feature-view-right-top {
+        justify-content: flex-start;
+      }
+      .feature-view-right-bottom {
+        justify-content: flex-end;
+      }
+      .feature-view-right-item {
+        display: flex;
+        flex-direction: column;
+        width: 16vw;
+        gap: 0.75vw;
+        overflow: hidden;
+        cursor: pointer;
+        .feature-view-right-item-img {
+          width: 100%;
+          overflow: hidden;
+          img {
+            transition: all 0.5s;
+          }
+          &:hover {
+            img {
+              transform: scale(1.1);
+              transition: all 0.5s;
+            }
+          }
+        }
+        p {
+          font-family: var(--serif);
+          font-weight: 600;
+          font-size: 1.25vw;
+          text-align: center;
+          letter-spacing: 2px;
+          color: white;
+          @include pad {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

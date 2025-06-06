@@ -90,7 +90,7 @@ export const menuData = [
       {
         key: 'sub-2',
         name: '嚴選建材',
-        link: '',
+        link: 'feature',
       },
     ],
   },

@@ -26,6 +26,12 @@
     justify-content: center;
     height: 100%;
     gap: 9vw;
+    // mask-image: url(../../img/rise/mask_1.png);
+    // mask-size: 200% 200%;
+    // mask-repeat: no-repeat;
+    // mask-position: 200% -100%;
+    // -webkit-mask-size: 200% 200%;
+    // -webkit-mask-position: 200% -100%;
     .craft-view-left {
       position: relative;
       width: 54.25vw;
@@ -49,6 +55,9 @@
     }
     .craft-view-right {
       width: 23.75%;
+      @include pad {
+        width: 24.75%;
+      }
       .craft-view-right-container {
         display: flex;
         align-items: flex-start;
@@ -65,7 +74,7 @@
           text-align: center;
           margin-bottom: 6%;
           @include pad {
-            font-size: 1.8vw;
+            font-size: 24px;
           }
         }
         h1 {
@@ -90,7 +99,7 @@
           text-align: justify;
           color: white;
           @include pad {
-            font-size: 1.1vw;
+            font-size: 16px;
           }
         }
         .craft-view-right-icon {

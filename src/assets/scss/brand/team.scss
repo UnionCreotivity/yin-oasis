@@ -98,7 +98,7 @@
           width: 34%;
           gap: 1.5vw;
           @include pad {
-            width: 37%;
+            width: 50%;
           }
         }
       }
@@ -109,7 +109,7 @@
         left: 30%;
         z-index: 1;
         @include pad {
-          bottom: 15%;
+          bottom: 10%;
         }
         .team-view-people-main {
           width: 100%;
@@ -120,7 +120,9 @@
           top: 47%;
           width: 33%;
           @include pad {
-            left: 57%;
+            left: 37%;
+            top: 47%;
+            width: 50%;
           }
         }
       }
@@ -140,6 +142,11 @@
           left: 42%;
           top: 56%;
           width: 39%;
+          @include pad {
+            width: 51%;
+            left: 40%;
+            top: 53%;
+          }
         }
       }
     }

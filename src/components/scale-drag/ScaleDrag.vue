@@ -23,8 +23,8 @@
     v-if="maxRatio !== 1"
     :style="{ display: 'flex', pointerEvents: 'auto', padding: '0.6vw' }"
   >
-    <img src="../../assets/img/other/plus.svg" @click="zoomIn" />
-    <img src="../../assets/img/other/minus.svg" @click="zoomOut" />
+    <img :src="renderPlus" @click="zoomIn" />
+    <img :src="renderMinus" @click="zoomOut" />
   </div>
 </template>
 
@@ -39,6 +39,8 @@ interface InitPosition {
 const props = defineProps<{
   maxRatio: number
   init: InitPosition
+  plusImg?: string
+  minusImg?: string
 }>()
 
 const emits = defineEmits(['toggle-text', 'isInter', 'watch-scale'])
@@ -202,6 +204,18 @@ const boxStyle = computed(() => ({
 
 const isTocuhAction = computed(() => {
   return scaleRatio.value >= 2 ? { touchAction: 'none' } : { touchAction: 'auto' }
+})
+
+const renderPlus = computed(() => {
+  return props.plusImg
+    ? props.plusImg
+    : new URL('@/assets/img/other/plus.svg', import.meta.url).href
+})
+
+const renderMinus = computed(() => {
+  return props.plusImg
+    ? props.plusImg
+    : new URL('@/assets/img/other/minus.svg', import.meta.url).href
 })
 
 watch(scaleRatio, () => {

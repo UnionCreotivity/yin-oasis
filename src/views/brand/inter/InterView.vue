@@ -110,12 +110,26 @@ import '@/assets/scss/brand/inter.scss'
 
 const gsapInit = () => {
   const tl = gsap.timeline()
-  tl.from('.inter-view-cloud', {
-    x: '50%',
-    y: '50%',
-    opacity: 0,
-    duration: 2.5,
-  })
+  tl.fromTo(
+    '.inter-view-container',
+    {
+      maskPosition: '200% -100%',
+    },
+    {
+      maskPosition: '0% 100%',
+      duration: 2,
+    },
+  )
+    .from(
+      '.inter-view-cloud',
+      {
+        x: '50%',
+        y: '50%',
+        opacity: 0,
+        duration: 2.5,
+      },
+      '<+0.2',
+    )
     .from(
       '.inter-view-shine',
       {

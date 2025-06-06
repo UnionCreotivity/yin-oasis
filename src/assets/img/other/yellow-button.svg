@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.71 38.71">
+  <g id="_圖層_3" data-name="圖層 3">
+    <g>
+      <circle cx="19.35" cy="19.35" r="19.35" fill="#c9a063"/>
+      <g>
+        <line x1="10.22" y1="19.35" x2="28.49" y2="19.35" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.49"/>
+        <line x1="19.35" y1="10.22" x2="19.35" y2="28.49" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.49"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -24,6 +24,10 @@ import FloorPlanInnerView from '@/views/building/floorPlanInner/FloorPlanInnerVi
 //生活機能
 import LifeView from '@/views/life/LifeView.vue'
 
+//智慧精工
+import MethodView from '@/views/method/MethodView.vue'
+import FeatureView from '@/views/method/feature/FeatureView.vue'
+
 //市場直擊
 import LiveView from '@/views/live/LiveView.vue'
 import LoanView from '@/views/live/loan/LoanView.vue'
@@ -103,6 +107,17 @@ const router = createRouter({
       path: '/life',
       name: 'life',
       component: LifeView,
+    },
+    {
+      path: '/method',
+      component: MethodView,
+      children: [
+        {
+          path: '',
+          name: 'feature',
+          component: FeatureView,
+        },
+      ],
     },
     {
       path: '/live',

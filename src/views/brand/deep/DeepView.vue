@@ -31,12 +31,26 @@ import '@/assets/scss/brand/deep.scss'
 
 const gsapInit = () => {
   const tl = gsap.timeline()
-  tl.from('.deep-view-cloud', {
-    x: '50%',
-    y: '50%',
-    opacity: 0,
-    duration: 2.5,
-  })
+  tl.fromTo(
+    '.deep-view-container',
+    {
+      maskPosition: '200% -100%',
+    },
+    {
+      maskPosition: '0% 100%',
+      duration: 2.5,
+    },
+  )
+    .from(
+      '.deep-view-cloud',
+      {
+        x: '50%',
+        y: '50%',
+        opacity: 0,
+        duration: 2.5,
+      },
+      '<',
+    )
     .from(
       '.deep-view-left > img',
       {

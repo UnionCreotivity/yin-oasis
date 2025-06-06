@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 4vw;
   @include pad {
-    gap: 2vw;
+    gap: 1.5vw;
   }
   .loan-result-col {
     display: flex;
@@ -46,7 +46,7 @@
         text-align-last: justify;
         @include pad {
           width: 8vw;
-          font-size: 1.25vw;
+          font-size: 18px;
         }
       }
       .loan-result-number {

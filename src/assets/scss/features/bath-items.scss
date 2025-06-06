@@ -1,0 +1,211 @@
+@use '../config' as *;
+.bath-items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgb(68, 94, 97) 0%,
+    rgb(84, 114, 115) 44%,
+    rgb(95, 128, 129) 100%
+  );
+  z-index: 15;
+  .bath-items-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    @include pad {
+      position: unset;
+      height: 100%;
+    }
+    .bath-items-left {
+      position: relative;
+      width: 61.5%;
+      // height: 100%;
+      margin-left: 1.5%;
+      @include pad {
+        // height: 87%;
+      }
+      .bath-items-left-bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+          // position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          // object-fit: contain;
+          @include pad {
+            object-fit: unset;
+          }
+        }
+      }
+      .bath-point-1 {
+        left: 90%;
+        top: 80%;
+      }
+      .bath-point-2 {
+        left: 54%;
+        top: 51%;
+      }
+      .bath-point-3 {
+        left: 3.25%;
+        top: 21%;
+      }
+      .bath-point-4 {
+        left: 68%;
+        top: 61%;
+      }
+      .bath-point-5 {
+        left: 56%;
+        top: 31%;
+      }
+      .bath-point-6 {
+        left: 59%;
+        top: 60%;
+      }
+      .bath-point-7 {
+        left: 18%;
+        top: 48%;
+      }
+      .bath-point-8 {
+        left: 85%;
+        top: 12%;
+      }
+      .bath-point-9 {
+        left: 22%;
+        top: 62%;
+      }
+      .bath-point-10 {
+        left: 14%;
+        top: 28%;
+      }
+    }
+    .bath-items-right {
+      position: relative;
+      flex: 1;
+      width: 37%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 100%;
+      @include pad {
+        // height: 87%;
+      }
+      .bath-items-right-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-right: 63%;
+        z-index: 1;
+        @include pad {
+          margin-top: 4%;
+          margin-right: 64%;
+        }
+        button {
+          font-family: var(--serif);
+          font-weight: 400;
+          font-size: 1.5vw;
+          letter-spacing: 5px;
+          color: black;
+          background-color: transparent;
+          border: none;
+          transition: all 0.5s;
+          cursor: pointer;
+        }
+        .line {
+          height: 75%;
+          width: 1px;
+          margin-inline: 26px;
+          background-color: black;
+          @include pad {
+            margin-inline: 16px;
+          }
+        }
+        .main-active {
+          color: brown;
+          transition: all 0.5s;
+        }
+      }
+      .bath-items-right-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10%;
+        @include pad {
+          margin-bottom: 0%;
+        }
+        .bath-items-right-para {
+          width: 100%;
+        }
+      }
+      .bath-1 {
+        .bath-items-right-para {
+          width: 94%;
+        }
+      }
+      .bath-2 {
+        .bath-items-right-para {
+          width: 82%;
+        }
+      }
+      .bath-3 {
+        .bath-items-right-para {
+          width: 88%;
+        }
+      }
+      .bath-4 {
+        .bath-items-right-para {
+          width: 90%;
+        }
+      }
+      .bath-5 {
+        .bath-items-right-para {
+          width: 75%;
+        }
+      }
+      .bath-6 {
+        .bath-items-right-para {
+          width: 88%;
+        }
+      }
+      .bath-7 {
+        .bath-items-right-para {
+          width: 75%;
+        }
+      }
+      .bath-8 {
+        .bath-items-right-para {
+          width: 78%;
+        }
+      }
+    }
+    .close {
+      position: absolute;
+      right: 1vw;
+      top: 50%;
+      width: 3.25vw;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      @include pad {
+        top: 50%;
+        right: 1vw;
+      }
+    }
+  }
+}

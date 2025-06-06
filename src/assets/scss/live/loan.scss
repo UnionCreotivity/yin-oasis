@@ -66,7 +66,7 @@
               margin-bottom: 0.5vw;
               color: white;
               @include pad {
-                font-size: 1.25vw;
+                font-size: 18px;
               }
             }
             .loan-input {
@@ -79,7 +79,7 @@
                 border-radius: 2vw;
                 padding: 0.5vw 0.75vw;
                 @include pad {
-                  font-size: 1.25vw;
+                  font-size: 18px;
                   padding: 0.5vw 1vw;
                 }
               }
@@ -91,7 +91,7 @@
                 margin-left: 1vw;
                 color: white;
                 @include pad {
-                  font-size: 1.25vw;
+                  font-size: 18px;
                 }
               }
             }
@@ -109,7 +109,7 @@
               letter-spacing: 2px;
               color: white;
               @include pad {
-                font-size: 1.25vw;
+                font-size: 18px;
               }
             }
             .loan-select-main {
@@ -126,7 +126,7 @@
                 letter-spacing: 2px;
                 color: white;
                 @include pad {
-                  font-size: 1.25vw;
+                  font-size: 18px;
                 }
                 input {
                   margin-right: 0.5vw;
@@ -144,6 +144,10 @@
             justify-content: center;
             gap: 0.5vw;
             margin-top: 8%;
+            @include pad {
+              justify-content: space-between;
+              gap: 1vw;
+            }
             .loan-click-clear {
               button {
                 color: white;
@@ -172,7 +176,7 @@
                 transition: all 0.1s;
               }
               @include pad {
-                font-size: 1.25vw;
+                font-size: 18px;
                 padding-block: 0.5vw;
                 padding-inline: 3vw;
               }
@@ -185,7 +189,7 @@
           margin-inline: 3.5vw;
           background-color: white;
           @include pad {
-            margin-inline: 2vw;
+            margin-inline: 1.25vw;
           }
         }
       }
