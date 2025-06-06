@@ -1,7 +1,7 @@
 <template>
   <div class="floor-plan-view">
     <div class="floor-plan-left">
-      <ScaleDrag :max-ratio="2" :init="{ x: 0, y: 0 }" :plusImg="plusImg" :minus-img="minusImg">
+      <ScaleDrag :max-ratio="2" :init="{ x: 0, y: 0 }" :plusImg="plusImg" :minusImg="minusImg">
         <div class="container">
           <div class="anchor-area">
             <div class="anchor-area-map">

@@ -206,15 +206,16 @@ const isTocuhAction = computed(() => {
   return scaleRatio.value >= 2 ? { touchAction: 'none' } : { touchAction: 'auto' }
 })
 
+//部分頁面替換成綠色的加號
 const renderPlus = computed(() => {
   return props.plusImg
     ? props.plusImg
     : new URL('@/assets/img/other/plus.svg', import.meta.url).href
 })
-
+//部分頁面替換成綠色的減號
 const renderMinus = computed(() => {
-  return props.plusImg
-    ? props.plusImg
+  return props.minusImg
+    ? props.minusImg
     : new URL('@/assets/img/other/minus.svg', import.meta.url).href
 })
 
