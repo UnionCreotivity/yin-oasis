@@ -42,7 +42,7 @@
         color: white;
         cursor: pointer;
         @include pad {
-          font-size: 1.2vw;
+          font-size: 16px;
           letter-spacing: 2px;
         }
         .menu-left-triangle {
@@ -202,7 +202,7 @@
             @include pad {
               font-weight: 400;
               letter-spacing: 4px;
-              font-size: 1.2vw;
+              font-size: 16px;
               padding-block: 5%;
             }
           }
